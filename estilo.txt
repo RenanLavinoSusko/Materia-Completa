@@ -1,0 +1,25 @@
+Letras
+"mDisplay Mono Principal" --> titulo "@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');"
+"montserrat" --> base "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+
+Matematica --> Azul
+    #338AFF
+    #5287CC
+    #5C7699
+    #525A66
+    #292D33
+
+Portugues --> Vermelho
+    #FF373E
+    #CC565A
+    #995F61
+    #665454
+    #332828
+
+Química --> Roxo
+    #B70FFF
+    #9F35CC
+    #804699
+    #5C4366
+    #312C33
+
