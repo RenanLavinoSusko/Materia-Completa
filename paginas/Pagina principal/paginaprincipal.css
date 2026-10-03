@@ -1,0 +1,78 @@
+/*Letras*/
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font: italic 1.3em "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header/Topo */
+header {
+    display: flex; 
+    justify-content: center;/* Ativa o modo Flexbox */
+    align-items: center; 
+    margin: 1em 0;  
+}
+
+h1 {
+    font: 400 2em "Major Mono Display", sans-serif;
+    display: inline-block;
+    margin: 5px
+}
+
+header > a {
+    display: inline-block;
+    margin: 0 5em;
+    border: 2px solid black;   
+}
+
+/*Seletor*/
+
+ul {
+    list-style: none;
+}
+
+#girador li {
+    position: absolute;   /* todos no mesmo lugar: o centro */
+    top: 50%;
+    left: 50%;
+    /* desconta metade do próprio tamanho pra ficar centralizado de verdade */
+    transform-origin: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* padrão = coluna (vale pro celular E pro desktop quebrado) */
+.materias { display: flex; flex-direction: column; }
+
+/* upgrade = círculo, só desktop*/ 
+@media (min-width: 768px) {
+    .materias { /* aqui entra o 3D no futuro */ 
+        /*Tamanho*/
+        width: 90%;    /*Tamanho fixo*/
+        height: 90%;   /*Tamanho fixo*/
+        max-width: 30em;
+        max-height: 30em;
+
+        /*posição*/
+        position: absolute;
+        top: 50%;
+        right: 20%;
+
+        border-radius: 50%;
+        background-color: aliceblue;
+        position: relative;   /* vira o ponto de referência */
+        width: 40em;
+        aspect-ratio: 1;
+    }
+}
+
+/*.materias {
+    width: 10em;
+    height: 20em;
+    background-color: rgba(95, 98, 100, 0.671);
+    display: inline-flex;
+}*/
