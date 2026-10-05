@@ -68,6 +68,11 @@ a {
         width: 40em;
         aspect-ratio: 1;
     }
+    #conteudo {
+        width: 400px;
+        height: 400px;
+        background-color: aliceblue;
+    }
 }
 
 /*.materias {

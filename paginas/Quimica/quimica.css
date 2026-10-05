@@ -49,6 +49,14 @@ header > a {
 }
 
 /*Main*/
+button {
+    border: none;
+    text-decoration: none;
+    background-color: var(--cor4);
+    color: white;
+    font: italic 1.3em var(--letrap), sans-serif;
+}
+
 input[type="radio"] {
     display: block;
     appearance: none;
