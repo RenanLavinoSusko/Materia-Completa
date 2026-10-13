@@ -18,7 +18,10 @@
         <div class="container">
             <main>
                 <!--Qumica A-->
-                <button type="button">Química A</button>
+                <input type="radio" name="materia" id="A" checked></input>
+                <label for="A">Química A</label>
+
+                <div id="materia_A">
                     <input type="radio" name="conteudo" id="ASM">
                     <label for="ASM">Átomo, Substancias e Misturas</label>
                     <input type="radio" name="conteudo" id="PM">
@@ -31,12 +34,22 @@
                     <label for="FM">Fórmulas Químicas</label>
                     <input type="radio" name="conteudo" id="PA">
                     <label for="PA">Princípio de Avogadro</label>
+                </div>
 
                 <!--Quimica B-->
+                <input type="radio" name="materia" id="B">
+                <label for="B">Química B</label>
+
+                <div id="materia_B">
+
+                </div>
             </main>
+
         <div id="quadro"></div>
+
     </div>
 
-    <script src="quimica.js"></script>
+    <script src="conteudos.js"></script>
+    <script src="materia.js"></script>
 </body>
 </html>

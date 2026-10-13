@@ -10,15 +10,16 @@ body {
 /* header/Topo */
 header {
     display: flex; 
-    justify-content: center;/* Ativa o modo Flexbox */
+    justify-content: center; /* Ativa o modo Flexbox */
     align-items: center; 
-    margin: 1em 0;  
+    margin: 1em 0; 
+    color: white; 
 }
 
 h1 {
-    font: 400 2em "Major Mono Display", sans-serif;
+    font: 400 4em "Major Mono Display", sans-serif;
     display: inline-block;
-    margin: 5px
+    margin: 5px;
 }
 
 header > a {
@@ -27,57 +28,57 @@ header > a {
     border: 2px solid black;   
 }
 
-/*Seletor*/
+/* Upgrade (Desktop): Vira um círculo com rotação 3D */ 
+@media (min-width: 1400px) {
+    #roda {
+        position: absolute; 
+        top: 25%;
+        left: -20%; /* Ajustado de -20% para 20% para ficar visível na tela por padrão */
 
-ul {
-    list-style: none;
-}
-
-#girador li {
-    position: absolute;   /* todos no mesmo lugar: o centro */
-    top: 50%;
-    left: 50%;
-    /* desconta metade do próprio tamanho pra ficar centralizado de verdade */
-    transform-origin: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* padrão = coluna (vale pro celular E pro desktop quebrado) */
-.materias { display: flex; flex-direction: column; }
-
-/* upgrade = círculo, só desktop*/ 
-@media (min-width: 768px) {
-    .materias { /* aqui entra o 3D no futuro */ 
-        /*Tamanho*/
-        width: 90%;    /*Tamanho fixo*/
-        height: 90%;   /*Tamanho fixo*/
+        /* Garante o formato circular perfeito e responsivo */
+        width: 90%;
         max-width: 30em;
-        max-height: 30em;
-
-        /*posição*/
-        position: absolute;
-        top: 50%;
-        right: 20%;
-
+        height: auto; /* Anula qualquer altura fixa anterior */
+        aspect-ratio: 1; 
         border-radius: 50%;
+        
         background-color: aliceblue;
-        position: relative;   /* vira o ponto de referência */
-        width: 40em;
-        aspect-ratio: 1;
+        
+        /* Preparação para o 3D */
+        transform-style: preserve-3d; 
     }
-    #conteudo {
-        width: 400px;
-        height: 400px;
-        background-color: aliceblue;
+
+    /* Seletor (Menu em formato de Roda) */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul > li {
+        position: absolute;   /* Todos no mesmo lugar: o centro do pai */
+        top: 50%;
+        left: 50%;
+        /* Correção: move o elemento exatamente metade do seu próprio tamanho para trás */
+        transform: translate(-50%, -53%); 
+        transform-origin: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        color: white;
+    }
+
+    /* --- CONFIGURAÇÃO DA RODA --- */
+
+    /* Padrão (Celular): Formato de container simples em coluna */
+    #roda { 
+        display: flex; 
+        flex-direction: column; 
+        width: 100%;
+        max-width: 30em;
+        margin: 0 auto;
+        background-color: rgba(95, 98, 100, 0.671);
     }
 }
-
-/*.materias {
-    width: 10em;
-    height: 20em;
-    background-color: rgba(95, 98, 100, 0.671);
-    display: inline-flex;
-}*/

@@ -1,1 +1,0 @@
-Animação do circulo em JS devido a interatividade

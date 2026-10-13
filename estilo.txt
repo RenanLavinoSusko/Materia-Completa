@@ -2,23 +2,86 @@ Letras
 "mDisplay Mono Principal" --> titulo "@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');"
 "montserrat" --> base "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 
+Artes --> lilas
+    #F5C6F5
+    #C8A2C8
+    #A384A3
+    #7A637A
+    #333333
+
+Biologia --> Verde
+    #00F57A
+    #00C864
+    #00A352
+    #007A3D
+    #333333
+
+Filosofia --> bege
+    #F5EDDC
+    #D1CABC
+    #A8A397
+    #7F7B73
+    #333333
+
+Física --> vinho
+    #F2003D
+    #C90032
+    #A10028
+    #73001D
+    #333333
+
+Geografia --> laranja
+    #FFA500
+    #DB8F00
+    #B37400
+    #8A5A00
+    #333333
+
+Historia --> amarelo velho 
+    #FEEEC5
+    #DBCEAB
+    #B3A78B
+    #8A816B
+    #333333
+
+Ingles --> Azul-esverdeado
+    #00FCF4
+    #00CEC8
+    #00ABA5
+    #00827E
+    #333333
+
 Matematica --> Azul
     #338AFF
-    #5287CC
-    #5C7699
-    #525A66
-    #292D33
+    #2C78DB
+    #2462B3
+    #1C4B8A
+    #333333
 
 Portugues --> Vermelho
     #FF373E
-    #CC565A
-    #995F61
-    #665454
-    #332828
+    #DB3036
+    #B3272C
+    #8A1E22
+    #333333
 
 Química --> Roxo
     #B70FFF
-    #9F35CC
-    #804699
-    #5C4366
-    #312C33
+    #9D0DDB
+    #800BB3
+    #63088A
+    #333333
+
+Redacao --> verde claro
+    #D2FCDE
+    #AACEB5
+    #8EAB97
+    #6C8273
+    #333333
+
+Sociologia --> amarelo desbotado
+    #FFF9B2
+    #DBD69A
+    #B3AE7D
+    #8A8660
+    #333333
