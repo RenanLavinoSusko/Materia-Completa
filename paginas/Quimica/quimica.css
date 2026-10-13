@@ -1,6 +1,18 @@
 /*Letras*/
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita barras de rolagem horizontais indesejadas */
+}
+
 :root {
     /*cores*/
     --cor1: #B70FFF;
@@ -46,6 +58,71 @@ header > a {
 .container {
     display: flex;
     min-height: calc(100vh - 2em); /* 100% da tela menos a altura do header */
+}
+
+@media (max-width: 760px) {
+    main {
+        width: 8em;
+        background-color: var(--cor3);
+    }
+
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        width: 7em;
+        border-radius: 2px;
+    }
+
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+        width: 7em;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        width: 7em;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 1em;
+        }
+
+    #quadro p {
+        text-align: left;
+        text-indent: 1em;
+    }
+
+
+    h2 {
+        width: 15em;
+        margin: 0 auto;
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
+        font: 400 1em var(--letrat);
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
