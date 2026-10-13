@@ -48,69 +48,69 @@ header > a {
     min-height: calc(100vh - 2em); /* 100% da tela menos a altura do header */
 }
 
-main {
-    width: 12em;
-    background-color: var(--cor3);
-}
-
-input[name="materia"] + label {
-    background-color: var(--cor4);
-    width: 11em;
-    border-radius: 2px;
-}
-
-/*Main*/
-input[type="radio"] {
-    display: block;
-    appearance: none;
-    text-decoration: underline;
-    margin: 0.5em auto;
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-input[type="radio"] + label:hover {
-    display: block;
-    align-items: center;
-    margin: 0 auto;
-    background-color: var(--cor5);
-    width: 11em;
-    border-radius: 5px;
-    text-align: center;
-}
-
-input[type="radio"]:checked + label {
-    appearance: none;
-    width: 11em;
-    border-bottom: 2px solid var(--cor1);
-}
-
-#quadro {
-        flex: 1;
-        background-color: var(--cor5);
-        text-align: center;
-        padding: 1em;
+@media (min-width: 768px) {
+    main {
+        width: 12em;
+        background-color: var(--cor3);
     }
 
-#quadro p {
-    text-align: left;
-    text-indent: 2em;
-}
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        width: 11em;
+        border-radius: 2px;
+    }
 
-#materia_A, #materia_B {
-    margin: 1em auto;
-}
-h2 {
-    width: 15em;
-    margin: 0 auto;
-    background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
-    font: 400 1.5em var(--letrat);
-    text-align: center;
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+        width: 11em;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        width: 11em;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 1em;
+        }
+
+    #quadro p {
+        text-align: left;
+        text-indent: 2em;
+    }
+
+
+    h2 {
+        width: 15em;
+        margin: 0 auto;
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
+        font: 400 1.5em var(--letrat);
+        text-align: center;
+    }
 }
 
 @media (min-width: 1300px) {
@@ -149,4 +149,8 @@ h2 {
     border-radius: 5px;
     text-align: center;
     }
+}
+
+#materia_A, #materia_B {
+    margin: 1em auto;
 }
