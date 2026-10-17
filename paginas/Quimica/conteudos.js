@@ -33,14 +33,19 @@ function escrita(titulo, texto) {
                 clearInterval(intervalo);
                 resolve();
             };
-        }, 1);
+        }, 10);
     });
 };
 
-function imagem(img1, img2, alt) {
-    const tela = window.matchMedia('(min-width: 900px)');
+function imagem(img1, img2, img3, alt) {
     const img = document.createElement('img');
-    img.src = tela.matches ? img1 : img2;
+    if (window.matchMedia('(min-width: 800px).').matches) {
+        img.src = img1;
+    } else if (window.matchMedia('(min-width: 600px').matches){
+        img.src = img2;
+    } else {
+        img.src = img3;
+    };
     img.alt = alt;
     local.appendChild(img);
 };
@@ -96,7 +101,7 @@ document.getElementsByName('conteudo').forEach((input) => {
             Sólido:     Forma -> Definida.      Volume -> Definido.     Particulas -> Muito próximas, ordenadas, vibrando
             Líquido:    Forma -> Do recipiente.  Volume -> Definido.     Particulas -> Próximas, desordenadas, deslizando
             Gasoso:     Forma -> Do recipiente.      Volume -> Variável.     Particulas -> Muito afastadas, movimento livre`)
-            imagem('../../imagens/imagens de quimica/mudancas-estados-fisicos-materia.webp', '../../imagens/imagens de quimica/mudancas-estados-fisicos-materia_pequeno.webp', 'imagem dos estados fisicos e os efeitos sofridos')
+            imagem('../../imagens/imagens de quimica/mudancas-estados-fisicos-materia.webp', '../../imagens/imagens de quimica/mudancas-estados-fisicos-materia_pequeno.webp', '../../imagens/imagens de quimica/mudancas-estados-fisicos-materia_ppequeno.webp' ,'imagem dos estados fisicos e os efeitos sofridos')
         }
     });
 });

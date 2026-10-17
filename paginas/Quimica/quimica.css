@@ -7,12 +7,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Evita barras de rolagem horizontais indesejadas */
-}
-
 :root {
     /*cores*/
     --cor1: #B70FFF;
@@ -46,13 +40,12 @@ header {
 h1 {
     font: 400 2em var(--letrat), sans-serif;
     display: inline-block;
-    margin: 0px 5px;
+    margin: 0px 0.5em;
 }
 
 header > a {
     display: inline-block;
-    margin: 0 5em;
-    border: 2px solid black;   
+    margin: 3px 5em 0;  
 }
 
 .container {
@@ -60,15 +53,19 @@ header > a {
     min-height: calc(100vh - 2em); /* 100% da tela menos a altura do header */
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     main {
         width: 8em;
         background-color: var(--cor3);
+        padding: 0 0.5em;
+    }
+
+    h1 {
+        font: 400 1.5em var(--letrat);
     }
 
     input[name="materia"] + label {
         background-color: var(--cor4);
-        width: 7em;
         border-radius: 2px;
     }
 
@@ -92,14 +89,13 @@ header > a {
         align-items: center;
         margin: 0 auto;
         background-color: var(--cor5);
-        width: 7em;
+
         border-radius: 5px;
         text-align: center;
     }
 
     input[type="radio"]:checked + label {
         appearance: none;
-        width: 7em;
         border-bottom: 2px solid var(--cor1);
     }
 
@@ -112,7 +108,7 @@ header > a {
 
     #quadro p {
         text-align: left;
-        text-indent: 1em;
+        text-indent: 5px;
     }
 
 
@@ -129,11 +125,11 @@ header > a {
     main {
         width: 12em;
         background-color: var(--cor3);
+        padding: 0 0.5em;
     }
 
     input[name="materia"] + label {
         background-color: var(--cor4);
-        width: 11em;
         border-radius: 2px;
     }
 
@@ -157,14 +153,12 @@ header > a {
         align-items: center;
         margin: 0 auto;
         background-color: var(--cor5);
-        width: 11em;
         border-radius: 5px;
         text-align: center;
     }
 
     input[type="radio"]:checked + label {
         appearance: none;
-        width: 11em;
         border-bottom: 2px solid var(--cor1);
     }
 
@@ -183,7 +177,7 @@ header > a {
 
     h2 {
         width: 15em;
-        margin: 0 auto;
+        margin: 0em auto 1em;
         background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
         font: 400 1.5em var(--letrat);
         text-align: center;
@@ -195,30 +189,28 @@ header > a {
         width: 14em;      /* coluna fixa */
         flex-shrink: 0;
         background-color: var(--cor3);
+        padding: 0 1em;
     }
 
     h2 {
-    width: 25em;
-    margin: 0 auto;
-    background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
-    font: 400 2em var(--letrat);
-    text-align: center;
+        width: 25em;
+        margin: 0em auto 1em auto;
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
+        font: 400 2em var(--letrat);
+        text-align: center;
     }
 
     input[name="materia"] + label {
     background-color: var(--cor4);
-    width: 13em;
     border-radius: 2px;
     }
 
     input[type="radio"]:checked + label {
     appearance: none;
-    width: 13em;
     border-bottom: 2px solid var(--cor1);
     }
 
     input[type="radio"] + label:hover {
-    width: 13em;
     display: block;
     align-items: center;
     margin: 0 auto;
@@ -231,3 +223,7 @@ header > a {
 #materia_A, #materia_B {
     margin: 1em auto;
 }
+
+h3 {
+    margin: 0.8em auto 0.2em;
+} 

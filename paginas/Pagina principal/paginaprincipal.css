@@ -5,6 +5,8 @@ body {
     font: italic 1.3em "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* header/Topo */
@@ -12,7 +14,7 @@ header {
     display: flex; 
     justify-content: center; /* Ativa o modo Flexbox */
     align-items: center; 
-    margin: 1em 0; 
+    margin: 0 0 1em; 
     color: white; 
 }
 
@@ -24,8 +26,7 @@ h1 {
 
 header > a {
     display: inline-block;
-    margin: 0 5em;
-    border: 2px solid black;   
+    margin: 0 5em;  
 }
 
 /* Upgrade (Desktop): Vira um círculo com rotação 3D */ 
@@ -35,14 +36,9 @@ header > a {
         top: 25%;
         left: -20%; /* Ajustado de -20% para 20% para ficar visível na tela por padrão */
 
-        /* Garante o formato circular perfeito e responsivo */
-        width: 90%;
-        max-width: 30em;
         height: auto; /* Anula qualquer altura fixa anterior */
         aspect-ratio: 1; 
         border-radius: 50%;
-        
-        background-color: aliceblue;
         
         /* Preparação para o 3D */
         transform-style: preserve-3d; 
@@ -70,9 +66,22 @@ header > a {
         color: white;
     }
 
-    /* --- CONFIGURAÇÃO DA RODA --- */
+    #conteudo {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        text-align: center;
+        width: 30em;
+    }
 
-    /* Padrão (Celular): Formato de container simples em coluna */
+    #conteudo h2 {
+        background-color: white;
+        display: inline-block;
+        width: 14.5em;
+        margin: 0.2em;
+        font: 400 2em "Major Mono Display";
+    }
+ 
     #roda { 
         display: flex; 
         flex-direction: column; 
@@ -80,5 +89,20 @@ header > a {
         max-width: 30em;
         margin: 0 auto;
         background-color: rgba(95, 98, 100, 0.671);
+    }
+
+    #conteudo p {
+        background-color: white;
+        display: inline-block;
+        width: 28.5em;
+        height: 10em;
+        margin: 0.5em;
+        font-size: 1,5em;
+    }
+
+    #conteudo > div {
+        width: 30em;
+        margin: 1em;
+        display: block;
     }
 }
