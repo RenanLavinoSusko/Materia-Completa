@@ -1,18 +1,16 @@
-function giro() { 
-  // Avança o giro e mantém entre 0 e 359
-  angulodogiro = (angulodogiro + vel) % 360
-
+function atualizarPosicoes() {
+  main.style.backgroundColor = '#33333300';
   elementosgirando.forEach((elemento, posicao) => { 
-    // Calcula o ângulo específico deste item
-    let anguloItem = (angulodogiro + posicao * 30) % 360
+    let anguloItem = (angulodogiro + posicao * 30) % 360;
 
-    // Aplica a rotação no elemento HTML
-    elemento.style.transform = `rotate(${anguloItem}deg) translate(15em) rotate(${-anguloItem}deg)`
+    if (anguloItem < 0) anguloItem += 360; 
+
+    elemento.style.transform = `rotate(${anguloItem}deg) translate(14em) rotate(${-anguloItem}deg)`;
     
-    // MELHORIA NA CONDIÇÃO: 
     if (anguloItem >= 345 || anguloItem <= 15) { 
-      // Só atualiza a cor se a propriedade cor1 não estiver vazia
-      if (design[posicao].cor1 !== '') {
+      if (itemAtivo !== posicao && design[posicao].cor1 !== '') {
+        itemAtivo = posicao;
+
         fundo.style.backgroundImage = `url(${design[posicao].imagem})`;
         header.style.backgroundColor = design[posicao].cor1;
         roda.style.backgroundColor = design[posicao].cor3;
@@ -21,34 +19,78 @@ function giro() {
         
         bordas.forEach(borda => {
           borda.style.backgroundImage = `linear-gradient(180deg, ${design[posicao].cor1}, ${design[posicao].cor2}, ${design[posicao].cor3}, ${design[posicao].cor4})`;
-      });
+        });
+      }
     } 
-  }});
+  });
+}
 
-  animacao = requestAnimationFrame(giro); 
+function loopGiroAutomatico() { 
+  if (!modoManual) {
+    angulodogiro = (angulodogiro + vel) % 360;
+    atualizarPosicoes();
+    animacao = requestAnimationFrame(loopGiroAutomatico); 
+  }
 }
 
 function controlarGiro() {
   if (Tela.matches) {
-    if (!animacao) giro();
+    if (!animacao && !modoManual) {
+      loopGiroAutomatico();
+    };
   } else {
-    cancelAnimationFrame(animacao);
-    animacao = null;
+    pararAnimacaoCompleta();
     resetarEstilos();
   }
 }
 
-function resetarEstilos() {
-  elementosgirando.forEach(el => el.style.transform = '');
-  fundo.style.backgroundColor = '';
-  header.style.backgroundColor = '';
-  roda.style.backgroundColor = '';
-  itemAtivo = -1;
+function pararAnimacaoCompleta() {
+  cancelAnimationFrame(animacao);
+  animacao = null;
 }
 
-//Variaveis
-    //do html
-let elementosgirando = document.querySelectorAll('#itens_que_rodam li')
+function resetarEstilos() {
+  elementosgirando.forEach(el => el.style.transform = '');
+  fundo.style.backgroundImage = 'none';
+  header.style.backgroundColor = '';
+  roda.style.backgroundColor = '';
+  main.style.backgroundColor = '';
+  itemAtivo = -1; 
+  modoManual = false;
+}
+
+function tratarScrollRoda(evento) {
+  evento.preventDefault(); 
+  
+  if (!modoManual) {
+    pararAnimacaoCompleta();
+    modoManual = true; 
+  }
+  
+  const direcao = evento.deltaY > 0 ? 4 : -4; 
+  angulodogiro = (angulodogiro + direcao) % 360;
+  
+  atualizarPosicoes();
+}
+
+function gerenciarResponsividade() {
+  if (Tela.matches) {
+    // Tela grande: Ativa bloqueio de scroll e escuta a roda do mouse
+    document.documentElement.style.overflowY = 'hidden';
+    roda.addEventListener('wheel', tratarScrollRoda, { passive: false });
+    controlarGiro();
+  } else {
+    // Tela pequena: Desativa bloqueio de scroll e REMOVE o evento do mouse
+    document.documentElement.style.overflowY = '';
+    roda.removeEventListener('wheel', tratarScrollRoda);
+    
+    pararAnimacaoCompleta();
+    resetarEstilos();
+  }
+}
+
+// Variáveis do HTML
+let elementosgirando = document.querySelectorAll('#itens_que_rodam li');
 let header = document.getElementsByTagName('header')[0];
 let fundo = document.getElementsByTagName('body')[0];
 let roda = document.getElementById('roda');
@@ -56,26 +98,31 @@ let materia = document.getElementsByTagName('h2')[0];
 let descricao = document.querySelector('#conteudo p');
 let bordas = document.querySelectorAll('.bordado');
 let img = document.querySelector('#conteudo img');
-    //do giro
-const vel = 0.02;
+let main = document.getElementsByTagName('main')[0];
+
+// Variáveis do giro
+const vel = 0.02; 
 let angulodogiro = 0;
 let animacao;
-    //Da area visual
-const design = [
-  {cor1: '#F5C6F5', cor2: '#C8A2C8', cor3: '#A384A3', cor4: '#7A637A', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.artes.jpg', nome: 'artes', descricao: 'Estuda as manifestações artísticas (artes visuais, música, teatro, dança) e sua evolução histórica. Pontos centrais: movimentos artísticos (Renascimento, Barroco, Impressionismo, Modernismo, Arte Contemporânea), arte brasileira (Semana de 22, Tarsila, Portinari) e a função social e cultural da arte.'},    
-  {cor1: '#00F57A', cor2: '#00C864', cor3: '#00A352', cor4: '#007A3D', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.biologia.jpg', nome: 'biologia', descricao: 'Estuda os seres vivos e suas relações. Temas principais: citologia, genética (Leis de Mendel), evolução, ecologia, fisiologia humana, botânica e microbiologia (vírus, bactérias, doenças).'},
-  {cor1: '#F5EDDC', cor2: '#D1CABC', cor3: '#A8A397', cor4: '#7F7B73', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.filosofia.jpg', nome: 'filosofia', descricao: 'Estuda questões fundamentais sobre conhecimento, ética, política e existência. Vai da Grécia Antiga (Sócrates, Platão, Aristóteles) até os modernos (Descartes, Kant) e contemporâneos (Nietzsche, Foucault), passando por ética, política e teoria do conhecimento.'},
-  {cor1: '#F2003D', cor2: '#C90032', cor3: '#A10028', cor4: '#73001D', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.fisica.jpg', nome: 'física', descricao: 'Estuda os fenômenos naturais e as leis que regem o universo. Temas principais: mecânica (movimentos e leis de Newton), termodinâmica, óptica, ondulatória (acústica), eletromagnetismo e introdução à física moderna.'},
-  {cor1: '#FFA500', cor2: '#DB8F00', cor3: '#B37400', cor4: '#8A5A00', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.geografia.jpg', nome: 'geografia', descricao: 'Estuda a relação entre sociedade e espaço. Temas principais: cartografia, geologia e relevo, clima, hidrografia, urbanização, globalização, geopolítica, questões ambientais e agropecuária.'},
-  {cor1: '#FEEEC5', cor2: '#DBCEAB', cor3: '#B3A78B', cor4: '#8A816B', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.historia.jpg', nome: 'história', descricao: 'Estuda o passado humano para entender o presente. Cobre História Geral (Antiguidade, Idade Média, Revoluções, Guerras Mundiais) e do Brasil (Colônia, Império, República, Ditadura Militar, redemocratização).'},
-  {cor1: '#00FCF4', cor2: '#00CEC8', cor3: '#00ABA5', cor4: '#00827E', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.ingles.jpg', nome: 'inglês', descricao: 'Foca em interpretação de textos e vocabulário. Temas principais: tempos verbais, preposições, conectivos, cognatos e falsos cognatos, e leitura de textos jornalísticos, charges e letras de música.'},
-  {cor1: '#338AFF', cor2: '#2C78DB', cor3: '#2462B3', cor4: '#1C4B8A', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.matematica.jpg', nome: 'matemâtica', descricao: 'Estuda números, formas, padrões e raciocínio lógico. Temas principais: aritmética, álgebra, funções, geometria plana e espacial, trigonometria, estatística, probabilidade e análise combinatória.'},
-  {cor1: '#FF373E', cor2: '#DB3036', cor3: '#B3272C', cor4: '#8A1E22', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.portugues.jpg', nome: 'português', descricao: 'Estuda a língua e a literatura. Temas principais: gramática (morfologia, sintaxe, concordância, regência, crase), interpretação de texto, gêneros textuais, figuras de linguagem e escolas literárias (Barroco ao Modernismo).'},
-  {cor1: '#B70FFF', cor2: '#9D0DDB', cor3: '#800BB3', cor4: '#63088A', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.quimica.jpg', nome: 'química', descricao: 'Estuda a composição, as propriedades e as transformações da matéria. Temas principais: atomística, tabela periódica, ligações químicas, estequiometria, soluções, termoquímica, cinética, equilíbrio, eletroquímica e química orgânica.'},
-  {cor1: '#D2FCDE', cor2: '#AACEB5', cor3: '#8EAB97', cor4: '#6C8273', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.redacao.jpg', nome: 'redação', descricao: 'Foca em produzir textos dissertativo-argumentativos. No modelo do ENEM, são cinco competências: norma culta, compreensão do tema, argumentação, coesão e proposta de intervenção detalhada (agente, ação, meio, finalidade e detalhamento).'},
-  {cor1: '#FFF9B2', cor2: '#DBD69A', cor3: '#B3AE7D', cor4: '#8A8660', cor5: '#333333', imagem: '../../imagens/imagens_pg_principal/principal.sociologia.jpg', nome: 'sociologia', descricao: 'Estuda a sociedade e as relações sociais. Temas principais: os clássicos (Durkheim, Weber, Marx), cultura e identidade, desigualdade, movimentos sociais, trabalho, cidadania, violência e mudança social.'}    
-]
-const Tela = window.matchMedia('(min-width: 1400px)');
+let itemAtivo = -1;
 
-Tela.addEventListener('change', controlarGiro);
-controlarGiro();
+const design = [
+  {cor1: '#F5C6F5', cor2: '#C8A2C8', cor3: '#A384A3', cor4: '#7A637A', imagem: '../../imagens/imagens_pg_principal/principal_artes.jpg', nome: 'artes', descricao: 'Estuda as manifestações artísticas (artes visuais, música, teatro, dança) e sua evolução histórica. Pontos centrais: movimentos artísticos (Renascimento, Barroco, Impressionismo, Modernismo, Arte Contemporânea), arte brasileira (Semana de 22, Tarsila, Portinari) e a função social e cultural da arte.'},    
+  {cor1: '#00F57A', cor2: '#00C864', cor3: '#00A352', cor4: '#007A3D', imagem: '../../imagens/imagens_pg_principal/principal_biologia.jpg', nome: 'biologia', descricao: 'Estuda os seres vivos e suas relações. Temas principais: citologia, genética (Leis de Mendel), evolução, ecologia, fisiologia humana, botânica e microbiologia (vírus, bactérias, doenças).'},
+  {cor1: '#F5EDDC', cor2: '#D1CABC', cor3: '#A8A397', cor4: '#7F7B73', imagem: '../../imagens/imagens_pg_principal/principal_filosofia.jpg', nome: 'filosofia', descricao: 'Estuda questões fundamentais sobre conhecimento, ética, política e existência. Vai da Grécia Antiga (Sócrates, Platão, Aristóteles) até os modernos (Descartes, Kant) e contemporâneos (Nietzsche, Foucault), passando por ética, política e teoria do conhecimento.'},
+  {cor1: '#F2003D', cor2: '#C90032', cor3: '#A10028', cor4: '#73001D', imagem: '../../imagens/imagens_pg_principal/principal_fisica.jpg', nome: 'física', descricao: 'Estuda os fenômenos naturais e as leis que regem o universo. Temas principais: mecânica (movimentos e leis de Newton), termodinâmica, óptica, ondulatória (acústica), eletromagnetismo e introdução à física moderna.'},
+  {cor1: '#FFA500', cor2: '#DB8F00', cor3: '#B37400', cor4: '#8A5A00', imagem: '../../imagens/imagens_pg_principal/principal_geografia.jpg', nome: 'geografia', descricao: 'Estuda a relação entre sociedade e espaço. Temas principais: cartografia, geologia e relevo, clima, hidrografia, urbanização, globalização, geopolítica, questões ambientais e agropecuária.'},
+  {cor1: '#FEEEC5', cor2: '#DBCEAB', cor3: '#B3A78B', cor4: '#8A816B', imagem: '../../imagens/imagens_pg_principal/principal_historia.jpg', nome: 'história', descricao: 'Estuda o passado humano para entender o presente. Cobre História Geral (Antiguidade, Idade Média, Revoluções, Guerras Mundiais) e do Brasil (Colônia, Império, República, Ditadura Militar, redemocratização).'},
+  {cor1: '#00FCF4', cor2: '#00CEC8', cor3: '#00ABA5', cor4: '#00827E', imagem: '../../imagens/imagens_pg_principal/principal_ingles.jpg', nome: 'inglês', descricao: 'Foca em interpretação de textos e vocabulário. Temas principais: tempos verbais, preposições, conectivos, cognatos e falsos cognatos, e leitura de textos jornalísticos, charges e letras de música..'},
+  {cor1: '#338AFF', cor2: '#2C78DB', cor3: '#2462B3', cor4: '#1C4B8A', imagem: '../../imagens/imagens_pg_principal/principal_matematica.jpg', nome: 'matemática', descricao: 'Estuda números, formas, padrões e raciocínio lógico. Temas principais: aritmética, álgebra, funções, geometria plana e espacial, trigonometria, estatística, probabilidade e análise combinatória.'},
+  {cor1: '#FF373E', cor2: '#DB3036', cor3: '#B3272C', cor4: '#8A1E22', imagem: '../../imagens/imagens_pg_principal/principal_portugues.jpg', nome: 'português', descricao: 'Estuda a língua e a literatura. Temas principais: gramática (morfologia, sintaxe, concordância, regência, crase), interpretação de texto, gêneros textuais, figuras de linguagem e escolas literárias (Barroco ao Modernismo).'},
+  {cor1: '#B70FFF', cor2: '#9D0DDB', cor3: '#800BB3', cor4: '#63088A', imagem: '../../imagens/imagens_pg_principal/principal_quimica.jpg', nome: 'química', descricao: 'Estuda a composição, as propriedades e as transformações da matéria. Temas principais: atomística, tabela periódica, ligações químicas, estequiometria, soluções, termoquímica, cinética, equilíbrio, eletroquímica e química orgânica.'},
+  {cor1: '#D2FCDE', cor2: '#AACEB5', cor3: '#8EAB97', cor4: '#6C8273', imagem: '../../imagens/imagens_pg_principal/principal_redacao.jpg', nome: 'redação', descricao: 'Foca em produzir textos dissertativo-argumentativos. No modelo do ENEM, são cinco competências: norma culta, compreensão do tema, argumentação, coesão e proposta de intervenção detalhada (agente, ação, meio, finalidade e detalhamento).'},
+  {cor1: '#FFF9B2', cor2: '#DBD69A', cor3: '#B3AE7D', cor4: '#8A8660', imagem: '../../imagens/imagens_pg_principal/principal_sociologia.jpg', nome: 'sociologia', descricao: 'Estuda a sociedade e as relações sociais. Temas principais: os clássicos (Durkheim, Weber, Marx), cultura e identidade, desigualdade, movimentos sociais, trabalho, cidadania, violência e mudança social.'}    
+];
+
+const Tela = window.matchMedia('(min-width: 1400px)');
+let modoManual = false
+
+Tela.addEventListener('change', gerenciarResponsividade);
+gerenciarResponsividade();
