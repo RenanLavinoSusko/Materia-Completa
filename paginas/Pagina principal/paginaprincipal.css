@@ -49,6 +49,100 @@ button {
     min-height: calc(100vh - 6em); /* 100% da tela menos a altura do header */
 }
 
+@media (max-width: 867px) {
+    header {
+        background-color: brown;
+        margin: 0;
+    }
+    
+    h1 {
+        font: 400 2em "Major Mono Display", sans-serif;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    h2 {
+        font: 400 1em "Major Mono Display", sans-serif;
+    }
+
+    header > a {
+        display: inline-block;
+        margin: 0 2em;  
+    }
+
+    main {
+        display: inline-block;
+        width: 6.5em;
+        height: 41.5em;
+        padding: 0 0.5em;
+        margin: 0;
+        text-align: center;
+    }
+
+    ul {
+       position: absolute;
+       left: 0.5% 
+    }
+
+    li {
+        font-size: 100 1.5em "Montserrat";
+        margin: 2em 0.1em;
+        background-color: #ffffff;
+        width: 6em;
+
+        border-radius: 5px;
+    }
+
+    a:hover {
+        display: block;
+        background-color: rgba(158, 158, 158, 0.678);
+        width: 6em;
+        border-radius: 5px;
+}
+    
+    button {
+        margin: 0 5em;
+    }
+
+    #itens_que_rodam {
+        margin: 0;
+        display: block;
+    }
+
+    #conteudo {
+        display: inline-block;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+
+
+
+        margin: 0 auto;
+    }
+
+    #conteudo > div {
+        width: 20em;
+        margin: 2em 1em;
+        display: block;
+    }
+
+    #conteudo h2 {
+        display: inline-block;
+        background-color: #ffffff;
+        margin: 0.3em auto;
+        width: 19.5em;
+    }
+
+    #conteudo p {
+        background-color: #ffffff;
+        display: inline-block;
+        width: 19.5em;
+        height: 11em;
+        padding: 1.2em 0;
+        margin: 0.3em auto;
+    }
+}
+
 /*Flexivel*/
 @media (min-width: 868px) {
     header {
@@ -145,7 +239,7 @@ button {
 }
 
 /* PC */ 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
     h1 {
         font: 400 4em "Major Mono Display", sans-serif;
         display: inline-block;
@@ -165,9 +259,13 @@ button {
         height: auto; /* Anula qualquer altura fixa anterior */
         aspect-ratio: 1; 
         border-radius: 50%;
+        display: flex; 
+        flex-direction: column; 
+        width: 100%;
+        max-width: 30em;
+        margin: 0 auto;
+        background-color: rgba(95, 98, 100, 0.671);
         
-        /* Preparação para o 3D */
-        transform-style: preserve-3d; 
     }
 
     /* Seletor (Menu em formato de Roda) */
@@ -175,8 +273,6 @@ button {
         position: absolute;   /* Todos no mesmo lugar: o centro do pai */
         top: 41.5%;
         left: 45%;
-        /* Correção: move o elemento exatamente metade do seu próprio tamanho para trás */
-        transform: translate(-50%, -53%); 
         width: 7em;
         text-align: center;
         transform-origin: center;
@@ -211,15 +307,6 @@ button {
         width: 14.5em;
         margin: 0.2em;
         font: 400 2em "Major Mono Display";
-    }
- 
-    #roda { 
-        display: flex; 
-        flex-direction: column; 
-        width: 100%;
-        max-width: 30em;
-        margin: 0 auto;
-        background-color: rgba(95, 98, 100, 0.671);
     }
 
     #conteudo p {
