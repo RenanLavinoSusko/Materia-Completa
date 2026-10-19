@@ -110,7 +110,8 @@ button {
     }
 
     #conteudo > div {
-        width: 100%;           /* cada bloco ocupa o conteudo todo */
+        width: 100%;          /* cada bloco ocupa o conteudo todo */
+        margin: auto;
     }
 
     #conteudo h2 {
@@ -124,7 +125,7 @@ button {
         background-color: #ffffff;
         display: inline-block;
         width: 7.5em;
-        height: 28em;
+        height: 31em;
         padding: 1.2em 0;
         margin: 0.3em auto;
     }
