@@ -121,7 +121,7 @@ button {
     }
 
     #conteudo > div {
-        width: 15em;
+        width: 10em;
         margin: 2em 1em;
         display: block;
     }
@@ -130,14 +130,14 @@ button {
         display: inline-block;
         background-color: #ffffff;
         margin: 0.3em auto;
-        width: 14.5em;
+        width: 9.5em;
     }
 
     #conteudo p {
         background-color: #ffffff;
         display: inline-block;
-        width: 14.5em;
-        height: 11em;
+        width: 9.5em;
+        height: 15em;
         padding: 1.2em 0;
         margin: 0.3em auto;
     }
