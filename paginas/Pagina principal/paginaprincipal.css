@@ -106,7 +106,7 @@ button {
     #conteudo {
         position: static;      /* mata o absolute que tá causando o corte */
         width: 90%;            /* ocupa 90% da tela, sempre */
-        margin: 1em auto;      /* centraliza com respiro */
+        margin: 1em 2em;      /* centraliza com respiro */
     }
 
     #conteudo > div {
