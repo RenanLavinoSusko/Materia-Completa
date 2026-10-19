@@ -71,26 +71,20 @@ button {
     }
 
     main {
-        display: inline-block;
-        width: 6.5em;
-        height: 41.5em;
-        padding: 0 0.5em;
-        margin: 0;
-        text-align: center;
+        width: 100%;
+        height: auto;          /* cresce com o conteúdo */
+        padding: 1em;
     }
 
     ul {
-       position: absolute;
-       left: 0.5% 
+        position: static;      /* remove o absolute left: 0.5% */
+        width: 100%;
     }
 
     li {
-        font-size: 100 1.5em "Montserrat";
-        margin: 2em 0.1em;
-        background-color: #ffffff;
-        width: 6em;
-
-        border-radius: 5px;
+        width: auto;           /* deixa o item ter a largura do texto */
+        max-width: 90%;        /* nunca maior que 90% da tela */
+        margin: 1em auto;      /* centraliza verticalmente com respiro */
     }
 
     a:hover {
@@ -110,20 +104,13 @@ button {
     }
 
     #conteudo {
-        display: inline-block;
-        position: absolute;
-        top: 7%;
-        left: 30%;
-
-
-
-        margin: 0 auto;
+        position: static;      /* mata o absolute que tá causando o corte */
+        width: 90%;            /* ocupa 90% da tela, sempre */
+        margin: 1em auto;      /* centraliza com respiro */
     }
 
     #conteudo > div {
-        width: 8em;
-        margin: 2em 1em;
-        display: block;
+        width: 100%;           /* cada bloco ocupa o conteudo todo */
     }
 
     #conteudo h2 {
@@ -140,6 +127,12 @@ button {
         height: 28em;
         padding: 1.2em 0;
         margin: 0.3em auto;
+    }
+
+    #conteudo h2, #conteudo p {
+        width: 100%;           /* preenche o bloco, sem estourar */
+        box-sizing: border-box; /* padding conta DENTRO da largura */
+        overflow-wrap: break-word; /* quebra palavra longa se precisar */
     }
 }
 
