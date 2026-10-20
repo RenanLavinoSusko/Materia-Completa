@@ -106,7 +106,7 @@ button {
     #conteudo {
         position: static;      /* mata o absolute que tá causando o corte */
         width: 90%;            /* ocupa 90% da tela, sempre */
-        margin: 1em 2em;      /* centraliza com respiro */
+        margin: auto;      /* centraliza com respiro */
     }
 
     #conteudo > div {
@@ -134,6 +134,7 @@ button {
         width: 100%;           /* preenche o bloco, sem estourar */
         box-sizing: border-box; /* padding conta DENTRO da largura */
         overflow-wrap: break-word; /* quebra palavra longa se precisar */
+        margin: 0.5em;
     }
 }
 
