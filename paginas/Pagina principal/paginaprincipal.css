@@ -104,14 +104,15 @@ button {
     }
 
     #conteudo {
-        position: static;      /* mata o absolute que tá causando o corte */
-        width: 90%;            /* ocupa 90% da tela, sempre */
-        margin: auto;      /* centraliza com respiro */
+        position: static;
+        width: 90%;
+        margin: 1em auto;
+        text-align: center;
     }
 
     #conteudo > div {
-        width: 100%;          /* cada bloco ocupa o conteudo todo */
-        margin: auto;
+        width: 100%;
+        margin: 1em auto;
     }
 
     #conteudo h2 {
@@ -134,7 +135,6 @@ button {
         width: 100%;           /* preenche o bloco, sem estourar */
         box-sizing: border-box; /* padding conta DENTRO da largura */
         overflow-wrap: break-word; /* quebra palavra longa se precisar */
-        margin: 0.5em;
     }
 }
 
