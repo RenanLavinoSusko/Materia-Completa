@@ -43,9 +43,16 @@ h1 {
     margin: 0px 0.5em;
 }
 
-header > a {
+header > button {
+    background-color: var(--cor1);
+    border: none;
     display: inline-block;
-    margin: 3px 5em 0;  
+    flex-shrink: 0;
+    height: 64px;
+}
+
+header > button:hover {
+    background-color: #63088a60;
 }
 
 .container {
@@ -53,11 +60,33 @@ header > a {
     min-height: calc(100vh - 2em); /* 100% da tela menos a altura do header */
 }
 
+#quadro > img {
+    margin: 0.5em auto;
+}
+
+main {
+    background-color: var(--cor2);
+}
+
+h2 {
+    background-image: linear-gradient(135deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    font-family: var(--letrat);
+}
+
+#quadro p {
+    text-indent: 0; /* remove o 5px */
+    padding-left: 1em; /* indentação controlada */
+    text-align: left;
+}
+
 @media (max-width: 767px) {
+    button {
+        margin: 0.2em 4em
+    }
+    
     main {
-        width: 8em;
-        background-color: var(--cor3);
-        padding: 0 0.5em;
+        width: 30%;
+        min-width: 8em;
     }
 
     h1 {
@@ -106,22 +135,77 @@ header > a {
             padding: 1em;
         }
 
-    #quadro p {
-        text-align: left;
-        text-indent: 5px;
+    h2 {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 450px) {
+    button {
+        margin: 0.2 1.5em;
     }
 
+    main {
+        width: 35%;           /* não 4em */
+        min-width: 7em;       /* nunca menor que isso */
+    }
 
-    h2 {
-        width: 15em;
-        margin: 0 auto;
-        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
-        font: 400 1em var(--letrat);
+    h1 {
+        font: 400 1.5em var(--letrat);
+    }
+
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
         text-align: center;
+    }
+
+    label {
+        font-size: 0.7em;     /* não 0.5em */
+        line-height: 1.2;     /* espaço entre linhas */
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 0.5em;
+        }
+    h2 {
+        width: 100%;          /* não 10em */
+        font-size: 1em;
     }
 }
 
 @media (min-width: 768px) {
+    button {
+        margin: 0.5em 6em
+    }
+
     main {
         width: 12em;
         background-color: var(--cor3);
@@ -167,13 +251,7 @@ header > a {
             background-color: var(--cor5);
             text-align: center;
             padding: 1em;
-        }
-
-    #quadro p {
-        text-align: left;
-        text-indent: 2em;
     }
-
 
     h2 {
         width: 15em;
@@ -185,6 +263,10 @@ header > a {
 }
 
 @media (min-width: 1300px) {
+    button {
+        margin: 0.5em 12em;
+    }
+
     main {
         width: 14em;      /* coluna fixa */
         flex-shrink: 0;
