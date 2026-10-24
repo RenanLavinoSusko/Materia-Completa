@@ -244,7 +244,7 @@ li a:hover {
         padding: 0.35em;
     }
 
-    header > a {
+    header > button {
         max-width: 20%;
     }
 
@@ -282,7 +282,7 @@ li a:hover {
         font: 400 4em "Major Mono Display", sans-serif;
     }
 
-    header > a {
+    header > button {
         margin: 0 7em;
     }
 
