@@ -411,7 +411,453 @@ const conteudosQuimica = {
             Mmédia = 0,5 . 20 + 0,5 . 40
             Mmédia = 30g/mol`, tipo: 'h3'},
     ],
-        
+    //Introdução à Radioatividade
+    IR: [
+        { titulo: 'introdução à radioatividade', texto: `A radioatividade é o fenômeno em que núcleos atômicos instáveis emitem partículas ou energia para alcançar uma configuração mais estável.
+            Esse processo ocorre naturalmente em alguns elementos químicos e também pode ser provocado artificialmente.
+            A radioatividade está relacionada às transformações que acontecem no núcleo do átomo, diferentemente das reações químicas comuns, que envolvem principalmente a eletrosfera.`, tipo: 'h2'},
+        { titulo: 'Estabilidade nuclear', texto: `O núcleo de um átomo é formado por:
+            - Prótons: partículas com carga positiva.
+            - Nêutrons: partículas sem carga elétrica.
+            Alguns núcleos apresentam uma combinação instável de prótons e nêutrons. Para alcançar maior estabilidade, podem emitir radiação.
+            Esse processo é chamado de decaimento radioativo.`, tipo: 'h3'},
+        { titulo: 'Tipos de radiação', texto: `Existem três tipos clássicos de radiação estudados na radioatividade:
+            Radiação alfa (α)
+            - Formada por 2 prótons e 2 nêutrons.
+            - Carga elétrica: +2.
+            - Baixo poder de penetração.
+            - Alto poder de ionização.
+            - Pode ser representada por ²He₄.
+
+            Radiação beta (β)
+            Na emissão beta negativa (β⁻):
+            - Um nêutron transforma-se em próton.
+            - Há emissão de um elétron.
+            - Carga elétrica: −1.
+            - Poder de penetração intermediário.
+
+            Radiação gama (γ)
+            - É uma onda eletromagnética.
+            - Não possui massa nem carga elétrica.
+            - Alto poder de penetração.
+            - Geralmente acompanha outras emissões radioativas.`, tipo: 'h3'},
+        { titulo: 'Comparação entre as radiações', texto: ``, tipo: 'h3'},
+        { titulo: '', texto: `Ordem de poder de penetração:
+            alpha < beta < gamma
+
+            Ordem de poder de ionização:
+            alpha > beta > gamma`, tipo: 'h3'},
+        { titulo: 'Emissões radioativas e alterações no núcleo', texto: `As emissões radioativas podem alterar o número atômico (Z) e o número de massa (A).
+            Emissão alfa
+            O núcleo perde 2 prótons e 2 nêutrons.
+            ⁶X₁₂ -> ⁶⁻²Y₁₂₋₄ + ²α₄
+            Consequências:
+            - Número de massa diminui 4 unidades.
+            - Número atômico diminui 2 unidades.
+
+            Emissão beta negativa (β⁻)
+            Um nêutron transforma-se em próton, emitindo um elétron.
+            ⁶X₁₂ -> ⁶⁻¹X₁₂ + ⁻¹β₀
+            Consequências:
+            - Número de massa permanece igual.
+            - Número atômico aumenta 1 unidade.
+
+            Emissão gama
+            O núcleo libera energia na forma de radiação eletromagnética.
+            ⁶X₁₂ -> ⁶X₁₂ + ₀
+
+            Consequências:
+            - Número de massa não muda.
+            - Número atômico não muda.
+            - O núcleo perde energia.
+            5. Radioatividade natural e artificial
+            Radioatividade natural: ocorre espontaneamente em núcleos instáveis encontrados na natureza.
+
+            Exemplos:
+            - Urânio-238.
+            - Tório-232.
+            - Rádio-226.
+            Radioatividade artificial: ocorre quando núcleos são transformados por processos provocados artificialmente, como determinadas reações nucleares.
+
+            Suas aplicações incluem:
+            - Medicina nuclear.
+            - Produção de radioisótopos.
+            - Pesquisas científicas.
+            - Indústria.`, tipo: 'h3'},
+        { titulo: 'Radioatividade natural e artificial', texto: `Radioatividade natural: ocorre espontaneamente em núcleos instáveis encontrados na natureza.
+            Exemplos:
+            - Urânio-238.
+            - Tório-232.
+            - Rádio-226.
+
+            Radioatividade artificial: ocorre quando núcleos são transformados por processos provocados artificialmente, como determinadas reações nucleares.
+            Suas aplicações incluem:
+            - Medicina nuclear.
+            - Produção de radioisótopos.
+            - Pesquisas científicas.
+            - Indústria.`, tipo: 'h3'},
+        { titulo: 'Macete', texto: `Alfa: perde 2 prótons e 2 nêutrons.
+            Beta negativa: ganha 1 próton no núcleo pela transformação de um nêutron.
+            Gama: libera energia, sem alterar A ou Z.`, tipo: 'h3'},
+    ],
+    //Decaimentos Radioativos
+    DC: [
+        { titulo: 'decaimentos radioativos', texto: `O decaimento radioativo é o processo espontâneo pelo qual um núcleo atômico instável emite partículas ou energia para se tornar mais estável. Durante esse processo, o núcleo original se transforma em outro núcleo, que pode pertencer ao mesmo elemento ou a um elemento químico diferente.
+            A radioatividade é um fenômeno nuclear: envolve alterações no núcleo do átomo, e não na eletrosfera.`, tipo: 'h2'},
+        { titulo: 'O que provoca o decaimento radioativo?', texto: `Alguns átomos possuem núcleos instáveis devido à proporção entre prótons e nêutrons ou ao excesso de energia nuclear.
+            Para alcançar uma configuração mais estável, esses núcleos podem emitir:
+            - Partículas alfa (α);
+            - Partículas beta (β);
+            - Radiação gama (γ).
+            Cada tipo de emissão provoca alterações diferentes no núcleo.`, tipo: 'h3'},
+        { titulo: 'Decaimento alfa (α)', texto: `Ocorre quando um núcleo instável emite uma partícula alfa, formada por dois prótons e dois nêutrons — equivalente ao núcleo de um átomo de hélio.
+            Características:
+            - O número de massa diminui em 4 unidades.
+            - O número atômico diminui em 2 unidades.
+            - A partícula emitida possui carga +2.
+            Representação geral:
+            ⁹²X₂₃₈ -> ⁹²⁻²Y₂₃₈₋₄ + ²α₄
+
+            Exemplo:
+            ⁹²U₂₃₈ -> ⁹⁰Th₂₃⁴ + ²α₄
+            O urânio-238 transforma-se em tório-234 ao emitir uma partícula alfa.`, tipo: 'h3'},
+        { titulo: 'Decaimento beta (β)', texto: `O decaimento beta ocorre quando há uma transformação entre partículas do núcleo, alterando o número de prótons e nêutrons.
+            Existem dois tipos principais:
+            Beta menos (β⁻)
+            Acontece quando um nêutron se transforma em um próton, emitindo um elétron (partícula beta negativa) e um antineutrino.
+            Características:
+            - O número de massa permanece igual.
+            - O número atômico aumenta em 1 unidade.
+            - A partícula emitida possui carga -1.
+            Representação simplificada:
+            ⁶X₁₄ -> ⁶⁺¹Y₁₄ + ⁻¹β₀
+            Exemplo:
+            ⁶C₁₄ -> ⁷N₁₄ + ⁻¹β₀
+            O carbono-14 transforma-se em nitrogênio-14.
+
+            Beta mais (β⁺)
+            Acontece quando um próton se transforma em um nêutron, emitindo um pósitron (partícula com a mesma massa do elétron, mas carga positiva) e um neutrino.
+            Características:
+            - O número de massa permanece igual.
+            - O número atômico diminui em 1 unidade.
+            - A partícula emitida possui carga +1.
+            Representação simplificada:
+            ⁶X₁₄ -> ⁶⁻¹Y₁₄ + ⁻¹β₀`, tipo: 'h3'},
+        { titulo: 'Emissão gama (γ)', texto: `A emissão gama ocorre quando um núcleo, após uma transformação nuclear ou por estar em estado excitado, libera energia na forma de radiação eletromagnética.
+            Diferentemente das emissões alfa e beta, a radiação gama não é uma partícula com massa: é um fóton de alta energia.
+            Características:
+            - Não altera o número de massa.
+            - Não altera o número atômico.
+            - Não possui carga elétrica.
+            - Apresenta alto poder de penetração.
+            Representação geral:
+            ⁶X*️₁₄ -> ⁶X*₁₄ + γ
+            O asterisco indica que o núcleo está em estado agitado.`, tipo: 'h3'},
+        { titulo: 'Leis da conservação nos decaimentos', texto: `Nas equações nucleares, devem ser conservados:
+            - Número de massa (A): a soma dos números de massa antes e depois da reação deve ser igual.
+            - Número atômico (Z): a soma das cargas nucleares deve permanecer igual.
+            Por exemplo:
+            ⁹²X₂₃₈ -> ⁹²⁻²Y₂₃₈₋₄ + ²α₄
+
+            Conferindo:
+            - Massa: 238 = 234 + 4
+            - Número atômico: 92 = 90 + 2
+            As duas conservações são respeitadas.`, tipo: 'h3'},
+    ],
+    //Reações Nucleares
+    RN: [
+        { titulo: 'reações nucleares', texto: `As reações nucleares são processos nos quais os núcleos dos átomos sofrem transformações, podendo liberar ou absorver grandes quantidades de energia.
+            Diferentemente das reações químicas, que envolvem principalmente alterações na eletrosfera e nas ligações entre átomos, as reações nucleares modificam a estrutura dos núcleos atômicos.`, tipo: 'h2'},
+        { titulo: 'O que acontece em uma reação nuclear?', texto: `Durante uma reação nuclear, um núcleo pode:
+            - Absorver partículas;
+            - Emitir partículas;
+            - Transformar-se em outro núcleo;
+            - Liberar ou absorver energia.
+            Essas transformações podem alterar o número de prótons, nêutrons e a identidade do elemento químico.`, tipo: 'h3'},
+        { titulo: 'Fissão nuclear', texto: `A fissão nuclear acontece quando um núcleo atômico pesado se divide em dois ou mais núcleos menores, liberando energia e, geralmente, nêutrons.
+            Um exemplo é a fissão do urânio-235, que pode ocorrer após a absorção de um nêutron.
+            Características:
+            - Divide núcleos pesados;
+            - Libera grande quantidade de energia;
+            - Geralmente libera nêutrons;
+            - Pode dar origem a uma reação em cadeia.
+            Aplicações: geração de eletricidade em usinas nucleares e pesquisas científicas.`, tipo: 'h3', imagem: ['../../imagens/quimica/reacoes_nucleares/fissao_nuclear_800px.jpg', '../../imagens/quimica/reacoes_nucleares/fissao_nuclear_600px.jpg', '../../imagens/quimica/reacoes_nucleares/fissao_nuclear_400px.jpg', '../../imagens/quimica/reacoes_nucleares/fissao_nuclear_200px.jpg', 'Como ocorre a fissão nuclear'] },
+        { titulo: 'Fusão nuclear', texto: `A fusão nuclear ocorre quando dois núcleos atômicos leves se unem, formando um núcleo mais pesado e liberando energia.
+            Esse processo acontece naturalmente no interior das estrelas, incluindo o Sol.
+            Características:
+            - Une núcleos leves;
+            - Libera grande quantidade de energia;
+            - Exige temperaturas e condições extremas para ocorrer;
+            - É responsável pela energia produzida pelas estrelas.
+            Aplicações: pesquisas para geração de energia e estudos sobre o funcionamento das estrelas.`, tipo: 'h3', imagem: ['../../imagens/quimica/reacoes_nucleares/fussao_nuclear_800px.jpg', '../../imagens/quimica/reacoes_nucleares/fussao_nuclear_600px.jpg', '../../imagens/quimica/reacoes_nucleares/fussao_nuclear_400px.jpg', '../../imagens/quimica/reacoes_nucleares/fussao_nuclear_200px.jpg', 'Imagem de Fusão Nuclear']},
+        { titulo: 'Diferenças entre fissão e fusão nuclear', texto: `Fissão -> Divisão de núcleos - Geralmente pesados - Libera energia - Pode ocorrer em certos materiais radioativos - Usinas nucleares
+            Fusão -> União de núcleos - Geralmente leves - Libera energia - Ocorre nas estrelas - Pesquisa energética`, tipo: 'h3'},
+        { titulo: 'Reações nucleares naturais e artificiais', texto: `As reações nucleares podem ser classificadas de acordo com sua origem.
+            Naturais: acontecem espontaneamente na natureza, como determinados decaimentos radioativos e processos de fusão no interior das estrelas.
+            Artificiais: são provocadas por seres humanos, geralmente por meio do bombardeamento de núcleos com partículas, produzindo transformações nucleares.
+            Um exemplo é a produção artificial de determinados radioisótopos utilizados na medicina.`, tipo: 'h3'},
+        { titulo: 'Energia nuclear', texto: `A energia liberada em reações nucleares está relacionada à transformação de massa em energia, explicada pela equação de Einstein:
+            E = mc²
+            Onde:
+            - E = energia;
+            - m = massa convertida em energia;
+            - c = velocidade da luz no vácuo.
+            Uma pequena diferença de massa entre os reagentes e os produtos pode corresponder a uma quantidade muito grande de energia.`, tipo: 'h3'},
+    ],
+    //Introdução às Soluções
+    IS: [
+        { titulo: 'introdução às soluções', texto: `Em Química, uma solução é uma mistura homogênea formada por duas ou mais substâncias. Ela apresenta apenas uma fase visível e possui composição uniforme em toda a sua extensão.
+            As soluções estão presentes em diversas situações do cotidiano, como água com sal, água com açúcar, ar atmosférico e ligas metálicas.`, tipo: 'h2'},
+        { titulo: 'Componentes de uma solução', texto: `Uma solução é formada por dois componentes principais:
+            Soluto: substância que é dissolvida em outra. Geralmente, está presente em menor quantidade.
+            Solvente: substância responsável por dissolver o soluto. Geralmente, está presente em maior quantidade.
+            Exemplo: água com sal
+            - Soluto: sal (cloreto de sódio – NaCl).
+            - Solvente: água (H₂O).
+            - Solução: água salgada.
+            Importante: a definição de soluto e solvente não depende exclusivamente da quantidade. Em alguns casos, as propriedades e o estado físico dos componentes também ajudam a identificá-los.`, tipo: 'h3'},
+        { titulo: 'Classificação das soluções quanto ao estado físico', texto: `As soluções podem ser classificadas de acordo com seu estado físico:
+            Soluções líquidas
+            Apresentam estado físico líquido.
+            Exemplo: água com sal e álcool misturado à água.
+
+            Soluções gasosas
+            Apresentam estado físico gasoso.
+            Exemplo: ar atmosférico, formado por uma mistura homogênea de gases.
+
+            Soluções sólidas
+            Apresentam estado físico sólido.
+            Exemplo: latão, uma liga metálica formada principalmente por cobre e zinco.`, tipo: 'h3'},
+        { titulo: 'Classificação quanto à quantidade de soluto', texto: `As soluções também podem ser classificadas de acordo com a quantidade de soluto dissolvida em determinada quantidade de solvente, considerando uma temperatura específica.
+            Solução insaturada
+            É aquela que apresenta quantidade de soluto inferior ao limite máximo de dissolução.
+            Ainda é possível dissolver mais soluto sem que haja excesso depositado no fundo.
+            Solução saturada
+            É aquela que contém a quantidade máxima de soluto que pode ser dissolvida em determinada quantidade de solvente, em uma temperatura específica.
+            Se mais soluto for adicionado, o excesso não será dissolvido e poderá ficar depositado no fundo.
+            Solução supersaturada
+            É aquela que apresenta quantidade de soluto dissolvida superior ao limite de solubilidade em determinada temperatura.
+            É uma condição instável: alterações no sistema, como a adição de um pequeno cristal do soluto, podem provocar a cristalização do excesso.`, tipo: 'h3'},
+        { titulo: 'Coeficiente de solubilidade', texto: `O coeficiente de solubilidade representa a quantidade máxima de soluto que consegue se dissolver em determinada quantidade de solvente, em uma temperatura e pressão especificadas.
+            Geralmente, é expresso em gramas de soluto para cada 100 g de solvente.
+            Exemplo:
+            Imagine que a solubilidade de uma substância seja de 36 g para cada 100 g de água a 20 °C.
+            Isso significa que:
+            - 36 g de soluto podem ser dissolvidos em 100 g de água;
+            - Quantidades menores podem formar soluções insaturadas;
+            - Uma quantidade superior pode deixar excesso de soluto sem dissolver, em condições de equilíbrio.`, tipo: 'h3'},
+        { titulo: 'Curvas de solubilidade', texto: `As curvas de solubilidade são gráficos que mostram como a solubilidade de uma substância varia conforme a temperatura.
+            De modo geral:
+            - Curva crescente: a solubilidade aumenta com a temperatura.
+            - Curva decrescente: a solubilidade diminui com a temperatura.
+            - Curva pouco inclinada: a solubilidade varia pouco com a temperatura.
+            A maioria dos sólidos apresenta aumento da solubilidade com a elevação da temperatura, enquanto muitos gases apresentam comportamento contrário.`, tipo: 'h3'},
+        { titulo: 'Diferença entre solução, coloide e suspensão', texto: `Nem toda mistura que parece uniforme é uma solução verdadeira.
+            Solução	-> Homogênea (uma fase). Ex: Água com sal dissolvido
+            Coloide	-> Partículas dispersas de tamanho intermediário. Ex: Leite e gelatina
+            Suspensão -> Partículas maiores, que podem sedimentar. Ex: Água com areia`, tipo: 'h3'},
+    ],
+    //Concentração de Soluções
+    CS: [
+        { titulo: 'concentração de soluções', texto: `A concentração de uma solução indica a quantidade de soluto presente em determinada quantidade de solução ou de solvente.
+            Ela permite identificar se uma solução é mais concentrada ou mais diluída, sendo fundamental em cálculos químicos, laboratórios, indústrias e na preparação de medicamentos.`, tipo: 'h2'},
+        { titulo: 'Concentração comum (C)', texto: `A concentração comum representa a massa de soluto dissolvida em determinado volume de solução.
+            Sua unidade mais utilizada é gramas por litro (g/L).
+            Fórmula:
+            C = m / V
+            Onde:
+            - C = concentração comum (g/L);
+            - m = massa do soluto (g);
+            - V = volume da solução (L).
+
+            Exemplo:
+            Uma solução foi preparada com 20 g de sal em 2 litros de solução. Qual é sua concentração comum?
+            Resolução:
+            C = 20 / 2
+            C = 10g/L
+            Isso significa que cada litro da solução contém 10 g de sal.`, tipo: 'h3'},
+        { titulo: 'Concentração molar ou molaridade (M)', texto: `A concentração molar, também chamada de molaridade, indica a quantidade de matéria (em mol) do soluto presente em um litro de solução.
+            Sua unidade é mol/L.
+            Fórmula:
+            M = n / V
+            Onde:
+            - M = concentração molar (mol/L);
+            - n = quantidade de matéria do soluto (mol);
+            - V = volume da solução (L).
+            Como a quantidade de matéria pode ser calculada pela massa e pela massa molar, também podemos utilizar:
+            M = m / (MM . V)
+            Onde:
+            - m = massa do soluto (g);
+            - MM = massa molar (g/mol);
+            - V = volume da solução (L).
+
+            Exemplo:
+            Uma solução contém 40 g de NaOH (hidróxido de sódio) em 2 litros de solução. Sabendo que sua massa molar é 40 g/mol, determine a molaridade.
+            Resolução:
+            Primeiro, calculamos a quantidade de matéria:
+            n = m / MM
+            n = 40 / 40 = 1 mol
+            Depois, calculamos a molaridade:
+            M = 1 / 2
+            M = 0,5mol/L`, tipo: 'h3'},
+        { titulo: 'Título em massa (T)', texto: `O título em massa representa a relação entre a massa do soluto e a massa total da solução.
+            É uma grandeza adimensional, ou seja, não possui unidade.
+            Fórmula:
+            T = m_1 / m
+            Onde:
+            - T = título em massa;
+            - m_1 = massa do soluto;
+            - m = massa total da solução.
+            Lembre-se:
+            m_solução = m_soluto + m_solvente
+
+            Exemplo:
+            Uma solução possui 20 g de sal dissolvidos em 180 g de água. Determine seu título em massa.
+            Resolução:
+            Primeiro, calculamos a massa total:
+            m = 20 + 180 = 200g
+            Depois:
+            T = 20 / 200
+            T = 0,1
+            Isso significa que 10% da massa da solução corresponde ao soluto.`, tipo: 'h3'},
+        { titulo: 'Porcentagem em massa (% m/m)', texto: `A porcentagem em massa indica quantos gramas de soluto existem em cada 100 g de solução.
+            Fórmula:
+            %m/m= T . 100
+            Exemplo:
+            Uma solução possui título em massa igual a 0,25.
+            %m/m = 0,25 . 100
+            25%
+            Portanto, 25% da massa total da solução corresponde ao soluto.`, tipo: 'h3'},
+        { titulo: 'Porcentagem em volume (% V/V)', texto: `A porcentagem em volume indica o volume de soluto presente em cada 100 unidades de volume da solução.
+            É muito utilizada em misturas de líquidos.
+            Fórmula:
+            %V/V= (V_1 / V) . 100
+            Onde:
+            - V_1 = volume do soluto;
+            - V = volume total da solução.
+
+            Exemplo:
+            Uma solução possui 40 mL de álcool em 200 mL de solução.
+            %V/V= (40 . 200) . 100
+            20%`, tipo: 'h3'},
+        { titulo: 'Concentração em partes por milhão (ppm)', texto: `A concentração em partes por milhão é utilizada para expressar quantidades muito pequenas de uma substância em uma mistura.
+            É comum em análises ambientais, controle da qualidade da água e estudos de poluição.
+            Fórmula:
+            ppm = (m_soluto / m_solução) . 10⁶
+            Quando a solução é aquosa e sua densidade é aproximadamente 1 kg/L:
+            1ppm ≈ 1mg/L
+
+            Exemplo:
+            Uma amostra de água contém 5 mg de determinada substância em 1 litro de água.
+            5ppm ≈ 5mg/L`, tipo: 'h3'},
+        { titulo: 'Diluição de soluções', texto: `A diluição acontece quando adicionamos solvente a uma solução, diminuindo sua concentração sem alterar a quantidade de soluto.
+            Durante uma diluição:
+            - A quantidade de soluto permanece constante.
+            - O volume da solução aumenta.
+            - A concentração diminui.
+            Fórmula da diluição:
+            C_1 . V_1 = C_2 . V_2
+            Onde:
+            - C_1 = concentração inicial;
+            - V_1 = volume inicial;
+            - C_2 = concentração final;
+            - V_2 = volume final.
+            A fórmula também pode ser utilizada com a molaridade, desde que a unidade de concentração seja a mesma nos dois lados.
+
+            Exemplo:
+            Uma solução de concentração 10 g/L possui volume de 200 mL. Ela é diluída até atingir 500 mL. Qual será a concentração final?
+            Resolução:
+            C_1 . V_1 = C_2 . V_2
+            10 . 200 = C_2 . 500
+            C_2= 2000 / 500
+            C_2 = 4g/L`, tipo: 'h3'},
+        { titulo: 'Comparação das principais concentrações', texto: `Comum -> C = m / V	- g/L
+            Molar -> M = n / V - mol/L
+            Título em massa -> T = m_1 / m - Sem unidade
+            Porcentagem em massa -> T . 100 - %
+            Porcentagem em volume -> (V_1 / V) . 100 - %
+            Partes por milhão -> (m_1 / 5m) . 10⁶ -	ppm`, tipo: 'h3'},
+        { titulo: 'Cuidados importantes nos cálculos', texto: `Converta o volume para litros quando utilizar fórmulas com unidade g/L ou mol/L.
+            Não confunda massa do soluto com massa total da solução.
+            A massa molar deve estar em g/mol quando a massa estiver em gramas.
+            Na diluição, a quantidade de soluto permanece constante.
+            Título em massa e porcentagem em massa representam a mesma relação, mas em escalas diferentes.`, tipo: 'h3'},
+        { titulo: 'Resumo para memorizar', texto: `Concentração comum: massa de soluto por volume de solução.
+            Molaridade: quantidade de matéria por volume de solução.
+            Título: proporção entre massa do soluto e massa da solução.
+            Porcentagem: concentração expressa em cada 100 partes.
+            PPM: concentração de substâncias em quantidades muito pequenas.
+            Diluição: adição de solvente para diminuir a concentração.
+            Regra principal: antes de escolher uma fórmula, identifique quais informações o exercício fornece e qual tipo de concentração ele solicita. Isso evita misturar grandezas diferentes.`, tipo: 'h3'},
+    ],
+    //Processos com Soluções
+    PS: [
+        { titulo: 'processos com soluções', texto: `Os processos envolvendo soluções são procedimentos utilizados para preparar, modificar, separar ou analisar misturas homogêneas. Eles são importantes em laboratórios, indústrias, no tratamento de água e em diversas situações do cotidiano.
+            Os principais processos estudados em Química são a dissolução, a diluição, a concentração e a mistura de soluções.`, tipo: 'h2'},
+        { titulo: 'Dissolução', texto: `A dissolução é o processo em que um soluto se dispersa em um solvente, formando uma solução homogênea.
+            Exemplo: quando adicionamos sal à água e agitamos, o sal se dissolve, formando uma solução aquosa.
+            A dissolução depende de fatores como:
+            - Natureza química do soluto e do solvente;
+            - Temperatura;
+            - Pressão, principalmente para gases;
+            - Agitação;
+            - Superfície de contato do soluto.
+            Importante: agitação e superfície de contato geralmente aumentam a velocidade da dissolução, mas não necessariamente a quantidade máxima que pode ser dissolvida.`, tipo: 'h3'},
+        { titulo: 'Diluição de soluções', texto: `A diluição acontece quando adicionamos solvente a uma solução, diminuindo sua concentração.
+            Durante a diluição:
+            - A quantidade de soluto permanece constante;
+            - O volume da solução aumenta;
+            - A concentração diminui.
+            Fórmula:
+            C₁V₁ = C₂V₂
+            Onde:
+            - C₁ = concentração inicial;
+            - V₁ = volume inicial;
+            - C₂ = concentração final;
+            - V₂ = volume final.`, tipo: 'h3', imagem: ['../../imagens/quimica/processo_solucoes/diluição_solução_800px.jpg', '../../imagens/quimica/processo_solucoes/diluição_solução_600px.jpg', '../../imagens/quimica/processo_solucoes/diluição_solução_400px.jpg', '../../imagens/quimica/processo_solucoes/diluição_solução_200px.jpg', 'Imagem de uma diluição']},
+        { titulo: 'Concentração de soluções', texto: `A concentração é a quantidade de soluto presente em determinada quantidade de solução.
+            Uma solução pode ficar mais concentrada quando:
+            - Adicionamos mais soluto;
+            - Retiramos parte do solvente, sem perder soluto.
+            Imagine três recipientes com o mesmo volume de água:
+            - Recipiente A: 5 g de sal;
+            - Recipiente B: 10 g de sal;
+            - Recipiente C: 20 g de sal.
+            Considerando que todo o sal foi dissolvido, o recipiente C apresenta a maior concentração.`, tipo: 'h3'},
+        { titulo: 'Mistura de soluções de mesmo soluto', texto: `A mistura de soluções de mesmo soluto acontece quando juntamos duas ou mais soluções que possuem a mesma substância dissolvida.
+            Nesse processo, as quantidades de soluto são somadas.
+            Quando os volumes são aditivos, podemos utilizar:
+            C_f = (C₁V₁ + C₂V₂) / (V₁+V₂)
+            Onde:
+            - C_f = concentração final;
+            - C₁ e C₂ = concentrações iniciais;
+            - V₁ e V₂ = volumes iniciais.`, tipo: 'h3'},
+        { titulo: 'Mistura de soluções de solutos diferentes', texto: `Quando misturamos soluções com solutos diferentes, cada substância deve ser analisada separadamente.
+            Dependendo das substâncias envolvidas, pode ocorrer:
+            - Reação química;
+            - Formação de precipitado;
+            - Liberação de gás;
+            - Apenas mistura, sem reação química.`, tipo: 'h3'},
+        { titulo: "Separação dos componentes de uma solução", texto: `Uma solução pode ser separada por diferentes processos físicos, dependendo das propriedades de seus componentes.
+            Destilação simples
+            Utilizada para separar um líquido de um soluto não volátil dissolvido nele.
+            Exemplo: obtenção de água a partir de água salgada.
+
+            Destilação fracionada
+            Utilizada para separar líquidos miscíveis com diferentes temperaturas de ebulição.
+            Exemplo: separação de componentes de uma mistura de líquidos.
+
+            Evaporação e cristalização
+            Permitem recuperar um soluto dissolvido por meio da remoção do solvente e da formação de cristais.
+            Exemplo: obtenção de sal a partir da água do mar.`, tipo: "h3"},
+        { titulo: "Resumo para memorizar", texto: `Dissolução: formação de uma solução a partir do soluto e do solvente.
+            Diluição: adição de solvente, diminuindo a concentração.
+            Concentração: aumento da proporção de soluto na solução.
+            Mistura de soluções: combinação de diferentes soluções.
+            Destilação: separação baseada na volatilidade dos componentes.
+            Cristalização: recuperação de um soluto na forma sólida.`, tipo: "h3"},
+    ],
+    
 //Matérias B
     //Estrutura da Matéria
     EM: [
@@ -846,5 +1292,553 @@ const conteudosQuimica = {
             - Substâncias polares tendem a dissolver substâncias polares.
             - Substâncias apolares tendem a dissolver substâncias apolares.
             Exemplo: água e óleo não se misturam facilmente porque possuem características de polaridade diferentes.`, tipo: 'h3'},
-    ]
+    ],
+    //Teoria de Arrhenius
+    TA: [
+        { titulo: 'teoria de Arrhenius', texto: `A Teoria de Arrhenius, também conhecida como teoria da dissociação e ionização eletrolítica, foi proposta pelo químico sueco Svante Arrhenius no século XIX.
+            Essa teoria explica o comportamento de determinadas substâncias quando dissolvidas em água, especialmente sua capacidade de formar íons e conduzir corrente elétrica.
+            Ela é uma das bases para o estudo das funções inorgânicas: ácidos, bases e sais.`, tipo: 'h2'},
+        { titulo: 'O que diz a Teoria de Arrhenius?', texto: `Segundo Arrhenius, determinadas substâncias, quando dissolvidas em água, produzem íons que permitem a condução de corrente elétrica.
+            Esses íons são partículas com carga elétrica:
+            - Cátions: íons positivos.
+            - Ânions: íons negativos.
+            Quanto maior a quantidade de íons livres em solução, maior tende a ser sua capacidade de conduzir corrente elétrica, considerando condições comparáveis.`, tipo: 'h3', imagem: ['../../imagens/quimica/teoria_arrhenius/experimento_arrhenius_800px.jpg', '../../imagens/quimica/teoria_arrhenius/experimento_arrhenius_600px.jpg', '../../imagens/quimica/teoria_arrhenius/experimento_arrhenius_400px.jpg', '../../imagens/quimica/teoria_arrhenius/experimento_arrhenius_200px.jpg', 'experimento da lampada feito por arrhenius']},
+        { titulo: 'Dissociação iônica', texto: `A dissociação iônica acontece quando uma substância que já possui íons em sua estrutura, como um composto iônico, separa esses íons ao ser dissolvida em água.
+            Exemplo: cloreto de sódio (NaCl)
+            O sal de cozinha é formado por íons sódio (Na⁺) e cloreto (Cl⁻).
+            Quando entra em contato com a água, seus íons se separam:
+            NaCl₍ₛ₎ - H₂O -> Na₍ₐᵩ₎ + Cl₍ₐᵩ₎
+            Observe que não ocorre a criação dos íons: eles já existiam na estrutura do composto.`, tipo: 'h3'},
+        { titulo: 'Ionização', texto: `A ionização ocorre quando uma substância molecular reage com a água e forma íons.
+            Diferentemente da dissociação, nesse processo os íons são formados durante a interação com a água.
+            Exemplo: ácido clorídrico (HCl)
+            O HCl é uma substância molecular. Ao entrar em contato com a água, forma íons hidrônio e cloreto:
+            HCl + H₂O -> H₃O⁺ + Cl⁻
+            O íon hidrônio (H₃O⁺) é formado quando uma molécula de água recebe um próton (H⁺).`, tipo: 'h3'},
+        { titulo: 'Limitações da Teoria de Arrhenius', texto: `Apesar de sua importância, a teoria apresenta algumas limitações:
+            - É restrita principalmente a soluções aquosas.s
+            - Não explica adequadamente todas as reações ácido-base.
+            - Não abrange bases que não possuem OH⁻ em sua fórmula, como a amônia (NH₃), de maneira direta.
+            Posteriormente, outras teorias foram desenvolvidas para ampliar a compreensão das reações ácido-base, como as teorias de Brønsted-Lowry e Lewis.`, tipo: 'h3'},
+    ],
+    //Ácidos
+    Aci: [
+        { titulo: 'ácidos', texto: `Os ácidos são uma das principais funções inorgânicas estudadas na Química. Estão presentes em diversos produtos e fenômenos do cotidiano, como o suco de limão, o vinagre, o ácido presente no estômago e as baterias de automóveis.
+            Segundo a Teoria de Arrhenius, ácidos são substâncias que, em solução aquosa, aumentam a concentração de íons hidrônio (H₃O⁺), formados pela transferência de prótons (H⁺) para moléculas de água.`, tipo: 'h2'},
+        { titulo: 'Características dos ácidos', texto: `Os ácidos apresentam algumas características gerais:
+            - Em solução aquosa, aumentam a concentração de H₃O⁺.
+            - Geralmente apresentam sabor azedo, mas nunca devem ser experimentados para identificação.
+            - Podem conduzir corrente elétrica quando dissolvidos em água, devido à presença de íons.
+            - Podem reagir com determinadas bases, formando sal e água.
+            - Alteram a coloração de indicadores ácido-base.`, tipo: 'h3'},
+        { titulo: 'Ionização dos ácidos', texto: `A maioria dos ácidos estudados no ensino médio é formada por substâncias moleculares que produzem íons quando entram em contato com a água.
+            Esse processo recebe o nome de ionização.
+            Exemplo: ácido clorídrico (HCl)
+            HCl + H₂O -> H₃O⁺ + Cl⁻
+            Observe que:
+            - HCl é a molécula do ácido;
+            - H₃O⁺ é o íon hidrônio;
+            - Cl⁻ é o ânion cloreto.
+            O H⁺ não permanece livre de maneira significativa na água: ele se associa às moléculas de H₂O, formando H₃O⁺.`, tipo: 'h3'},
+        { titulo: 'Classificação dos ácidos quanto à presença de oxigênio', texto: `Os ácidos podem ser classificados em dois grupos:
+            Hidrácidos
+            São ácidos que não apresentam oxigênio em sua composição.
+            Exemplos:
+            Fórmula	Nome
+            HCl - Ácido clorídrico
+            HF - Ácido fluorídrico
+            HBr - Ácido bromídrico
+            HI - Ácido iodídrico
+            H₂S - Ácido sulfídrico
+
+            Oxiácidos
+            São ácidos que apresentam oxigênio em sua composição.
+            Exemplos:
+            Fórmula	Nome
+            H₂SO₄ - Ácido sulfúrico
+            HNO₃ - Ácido nítrico
+            H₃PO₄ - Ácido fosfórico
+            H₂CO₃ - Ácido carbônico
+            HClO₄ - Ácido perclórico`, tipo: 'h3'},
+        { titulo: 'Classificação quanto ao número de hidrogênios ionizáveis', texto: `Os ácidos também podem ser classificados pela quantidade de hidrogênios ionizáveis presentes em sua fórmula.
+            Monoácido -> 1 - Ex: HCl
+            Diácido	-> 2 - Ex: H₂SO₄
+            Triácido -> 3 - Ex: H₃PO₄
+            Tetrácido -> 4 - Ex: H₄SiO₄
+            Atenção: nem todo hidrogênio presente na fórmula de um ácido é necessariamente ionizável. Nos oxiácidos, geralmente são ionizáveis os hidrogênios ligados ao oxigênio.`, tipo: 'h3'},
+        { titulo: 'Classificação quanto à força', texto: `A força de um ácido está relacionada ao seu grau de ionização em água, isto é, à proporção de moléculas que formam íons.
+            Ácidos fortes
+            Apresentam elevado grau de ionização em água.
+            Exemplos:
+            - HCl – ácido clorídrico;
+            - HBr – ácido bromídrico;
+            - HI – ácido iodídrico;
+            - HNO₃ – ácido nítrico;
+            - HClO₄ – ácido perclórico;
+            - H₂SO₄ – ácido sulfúrico (considerando principalmente sua primeira ionização).
+
+            Ácidos moderados
+            Apresentam grau de ionização intermediário.
+            Exemplo:
+            - H₃PO₄ – ácido fosfórico.
+
+            Ácidos fracos
+            Apresentam baixo grau de ionização em água.
+            Exemplos:
+            - HF – ácido fluorídrico;
+            - H₂CO₃ – ácido carbônico;
+            - H₂S – ácido sulfídrico;
+            - CH₃COOH – ácido acético.
+            Importante: força ácida não é a mesma coisa que concentração. Um ácido forte pode estar muito diluído, enquanto um ácido fraco pode estar bastante concentrado.`, tipo: 'h3'},
+        { titulo: 'Grau de ionização (α)', texto: `O grau de ionização representa a porcentagem de moléculas de um ácido que efetivamente formam íons em solução.
+            Fórmula:
+            α = n_ionizadas / n_inicial . 100
+            Onde:
+            - α = grau de ionização;
+            - n_ionizadas = quantidade de moléculas ionizadas;
+            - n_inicial = quantidade inicial de moléculas.
+            Quanto maior o grau de ionização, maior tende a ser a força do ácido em condições comparáveis.`, tipo: 'h3'},
+        { titulo: 'Nomenclatura dos ácidos', texto: `A nomenclatura dos ácidos depende da presença ou ausência de oxigênio.
+            Hidrácidos
+            Utiliza-se:
+            Ácido + (nome do elemento + ídrico)
+            Exemplos:
+            - HCl: ácido clorídrico;
+            - HBr: ácido bromídrico;
+            - H₂S: ácido sulfídrico.
+
+            Oxiácidos
+            A nomenclatura tradicional utiliza terminações relacionadas ao estado de oxidação do elemento central.
+            Terminação	Exemplo
+            -oso	H₂SO₃ – ácido sulfuroso
+            -ico	H₂SO₄ – ácido sulfúrico
+            Quando existem mais de dois oxiácidos de um mesmo elemento, também podem ser utilizados os prefixos hipo- e per-.
+            Exemplo da família dos oxiácidos do cloro:
+            Fórmula	Nome
+            HClO	Ácido hipocloroso
+            HClO₂	Ácido cloroso
+            HClO₃	Ácido clórico
+            HClO₄	Ácido perclórico`, tipo: 'h3'},
+        { titulo: 'Indicadores ácido-base', texto: `Os indicadores ácido-base são substâncias que mudam de cor de acordo com o pH do meio.
+            A escala de pH geralmente varia de 0 a 14 em soluções aquosas diluídas a 25 °C:
+            - pH menor que 7: meio ácido;
+            - pH igual a 7: meio neutro;
+            - pH maior que 7: meio básico.
+            Exemplos de indicadores:
+            - Papel de tornassol;
+            - Fenolftaleína;
+            - Indicador universal;
+            - Extrato de repolho roxo.`, tipo: 'h3', imagem: ['../../imagens/quimica/acidos/tabela_ph_800px.jpg', '../../imagens/quimica/acidos/tabela_ph_600px.jpg', '../../imagens/quimica/acidos/tabela_ph_400px.jpg', '../../imagens/quimica/acidos/tabela_ph_200px.jpg', 'Imagem da tabela do pH']},
+        { titulo: 'Resumo para memorizar', texto: `- Ácidos: aumentam a concentração de H₃O⁺ em água.
+            - Hidrácidos: não possuem oxigênio.
+            - Oxiácidos: possuem oxigênio.
+            - Monoácidos: possuem um hidrogênio ionizável.
+            - Diácidos: possuem dois hidrogênios ionizáveis.
+            - Triácidos: possuem três hidrogênios ionizáveis.
+            - Ácidos fortes: apresentam elevado grau de ionização.
+            - Ácidos fracos: apresentam baixo grau de ionização.
+            - pH ácido: menor que 7, em condições usuais de referência.
+            Regra principal: para classificar um ácido, observe três aspectos: presença de oxigênio, quantidade de hidrogênios ionizáveis e grau de ionização.`, tipo: 'h3'},
+    ],
+    //Bases
+    Bas: [
+        { titulo: 'bases', texto: `As bases são uma das principais funções inorgânicas estudadas na Química. Estão presentes em produtos de limpeza, medicamentos, fertilizantes e em diversos processos industriais.
+            Segundo a Teoria de Arrhenius, bases são substâncias que, quando dissolvidas em água, liberam íons hidróxido (OH⁻).`, tipo: 'h2'},
+        { titulo: 'Características das bases', texto: `As bases apresentam algumas características gerais:
+            - Liberam íons OH⁻ em solução aquosa.
+            - Podem conduzir corrente elétrica quando dissolvidas em água, devido à presença de íons.
+            - Alteram a coloração de determinados indicadores ácido-base.
+            - Reagem com ácidos em processos de neutralização.
+            - Muitas apresentam sensação escorregadia ao contato, mas nunca devem ser tocadas ou experimentadas para identificação.`, tipo: 'h3'},
+        { titulo: 'Dissociação iônica das bases', texto: `A maioria das bases estudadas no ensino médio é formada por compostos iônicos que, ao serem dissolvidos em água, separam seus íons.
+            Esse processo recebe o nome de dissociação iônica.
+            Exemplo: hidróxido de sódio (NaOH)
+            NaOH₍ₛ₎ - H₂O -> Na₍ₐᵩ₎ + OH₍ₐᵩ₎
+            Observe que:
+            - NaOH é o composto básico;
+            - Na⁺ é o cátion sódio;
+            - OH⁻ é o ânion hidróxido.
+            O íon OH⁻ é responsável pela característica básica da solução segundo Arrhenius.`, tipo: 'h3'},
+        { titulo: 'Classificação quanto ao número de hidroxilas (OH⁻)', texto: `As bases podem ser classificadas de acordo com a quantidade de grupos hidróxido presentes em sua fórmula.
+            Monobase -> 1 - Ex: NaOH
+            Dibase -> 2 - Ex: Ca(OH)₂
+            Tribase -> 3 - Ex: Al(OH)₃
+            Tetrabase -> 4 - Ex: Sn(OH)₄
+            Exemplos:
+            - NaOH: hidróxido de sódio.
+            - Mg(OH)₂: hidróxido de magnésio.
+            - Fe(OH)₃: hidróxido de ferro III.
+            - Pb(OH)₄: hidróxido de chumbo IV.`, tipo: 'h3'},
+        { titulo: 'Classificação quanto à força', texto: `A força de uma base está relacionada ao seu grau de dissociação em água, ou seja, à proporção de unidades da base que liberam íons OH⁻.
+            Bases fortes
+            Apresentam elevado grau de dissociação em água.
+            São geralmente os hidróxidos dos metais alcalinos (família 1A) e de alguns metais alcalino-terrosos (família 2A).
+            Exemplos:
+            - NaOH – hidróxido de sódio;
+            - KOH – hidróxido de potássio;
+            - Ba(OH)₂ – hidróxido de bário;
+            - Ca(OH)₂ – hidróxido de cálcio.
+
+            Bases fracas
+            Apresentam baixo grau de dissociação em água.
+            Exemplos:
+            - NH₄OH – hidróxido de amônio (representação tradicional da amônia em água);
+            - Al(OH)₃ – hidróxido de alumínio;
+            - Mg(OH)₂ – hidróxido de magnésio.
+
+            Atenção: força não é solubilidade.
+            Uma base pode ser forte e pouco solúvel em água. O hidróxido de cálcio, por exemplo, é considerado uma base forte, embora apresente solubilidade limitada.`, tipo: 'h3'},
+        { titulo: 'Classificação quanto à solubilidade', texto: `As bases também podem ser classificadas conforme sua capacidade de se dissolver em água.
+            Solúveis -> Dissolvem-se facilmente - Ex: NaOH e KOH
+            Pouco solúveis -> Dissolvem-se em quantidade limitada - Ex: Ca(OH)₂
+            Praticamente -> insolúveis	Apresentam solubilidade muito baixa - Ex: Al(OH)₃ e Fe(OH)₃
+
+            De maneira geral:
+            - Hidróxidos dos metais alcalinos são solúveis.
+            - Hidróxidos dos metais alcalino-terrosos apresentam solubilidade variável.
+            - A maioria dos demais hidróxidos é pouco solúvel ou praticamente insolúvel.`, tipo: 'h3'},
+        { titulo: 'Nomenclatura das bases', texto: `A nomenclatura das bases segue uma regra relativamente simples:
+            Hidróxido de + nome do elemento
+            Quando o elemento apresenta mais de um número de oxidação, utiliza-se um algarismo romano para indicar sua carga.
+            Exemplos:
+            Fórmula	Nome
+            NaOH	Hidróxido de sódio
+            KOH	Hidróxido de potássio
+            Ca(OH)₂	Hidróxido de cálcio
+            Al(OH)₃	Hidróxido de alumínio
+            Fe(OH)₂	Hidróxido de ferro II
+            Fe(OH)₃	Hidróxido de ferro III
+            CuOH	Hidróxido de cobre I
+            Cu(OH)₂	Hidróxido de cobre II`, tipo: 'h3'},
+        { titulo: 'Resumo para memorizar', texto: `Bases: liberam OH⁻ em solução aquosa segundo Arrhenius.
+            Monobases: possuem um grupo OH⁻.
+            Dibases: possuem dois grupos OH⁻.
+            Tribases: possuem três grupos OH⁻.
+            Bases fortes: apresentam elevado grau de dissociação.
+            Bases fracas: apresentam baixo grau de dissociação.
+            Bases solúveis: dissolvem-se facilmente em água.
+            Neutralização: reação entre ácido e base, geralmente formando sal e água.
+            Regra principal: para identificar uma base pela teoria de Arrhenius, observe se ela libera íons OH⁻ em solução aquosa. Não confunda quantidade de hidroxilas, força e solubilidade: são três classificações diferentes.`, tipo: 'h3'},
+    ],
+    //Sais
+    Sai: [
+        { titulo: 'sais', texto: `Os sais são compostos químicos iônicos formados por cátions (íons positivos) e ânions (íons negativos). Em geral, são produzidos por uma reação de neutralização entre um ácido e uma base.
+            Nessa reação, os íons H⁺ do ácido reagem com os íons OH⁻ da base, formando água. Os íons restantes formam o sal.`, tipo: 'h2'},
+        { titulo: 'Características dos sais', texto: `Os sais apresentam algumas propriedades gerais:
+            - São compostos iônicos, formados por cátions e ânions.
+            - Muitos são sólidos em temperatura ambiente.
+            - Geralmente apresentam altos pontos de fusão e ebulição.
+            - Podem conduzir corrente elétrica quando dissolvidos em água ou fundidos, caso tenham íons livres para se movimentar.
+            - Sua solubilidade em água varia conforme a composição química.
+            Atenção: nem todo sal é solúvel em água. O cloreto de sódio (NaCl), por exemplo, é solúvel, enquanto o carbonato de cálcio (CaCO₃) apresenta baixa solubilidade.`, tipo: 'h3'},
+        { titulo: 'Classificação dos sais', texto: `Os sais podem ser classificados de acordo com sua composição e com a presença de hidrogênios ionizáveis ou grupos hidroxila.
+            Sais normais (neutros)
+            São formados quando ocorre a substituição de todos os hidrogênios ionizáveis do ácido por cátions.
+            Exemplos:
+            - NaCl — cloreto de sódio.
+            - K₂SO₄ — sulfato de potássio.
+            - CaCO₃ — carbonato de cálcio.
+            Apesar do nome, um sal normal não necessariamente produz uma solução com pH igual a 7. Isso depende da reação dos seus íons com a água.
+
+            Sais ácidos (hidrogenossais)
+            São sais que ainda apresentam hidrogênios ionizáveis em sua composição, pois a neutralização do ácido foi parcial.
+            Exemplos:
+            - NaHCO₃ — hidrogenocarbonato de sódio (bicarbonato de sódio).
+            - NaHSO₄ — hidrogenossulfato de sódio.
+            - KH₂PO₄ — di-hidrogenofosfato de potássio.
+
+            Sais básicos (hidroxissais)
+            São sais que apresentam grupos hidroxila (OH) em sua composição, geralmente devido à neutralização parcial de uma base.
+            Exemplo:
+            Mg(OH)Cl
+            Nome: hidroxicloreto de magnésio.
+            3.4. Sais duplos ou mistos
+            São sais que apresentam dois cátions diferentes ou dois ânions diferentes em sua composição.
+            Exemplos:
+            - KAl(SO₄)₂ — sulfato duplo de potássio e alumínio.
+            - CaNa₂(SO₄)₂ — sulfato duplo de cálcio e sódio.`, tipo: 'h3'},
+        { titulo: 'Nomenclatura dos sais', texto: `A nomenclatura dos sais geralmente segue a estrutura:
+            Nome do ânion + de + nome do cátion
+            O nome do ânion depende do ácido que lhe deu origem.
+            Ácido de origem	Ânion	Terminação
+            Ácido terminado em -ídrico	Cloreto, sulfeto	-eto
+            Ácido terminado em -ico	Sulfato, nitrato	-ato
+            Ácido terminado em -oso	Sulfito, nitrito	-ito
+
+            Exemplos:
+            Fórmula	Nome
+            NaCl	Cloreto de sódio
+            CaS	Sulfeto de cálcio
+            KNO₃	Nitrato de potássio
+            Na₂SO₄	Sulfato de sódio
+            CaSO₃	Sulfito de cálcio
+            Na₂CO₃	Carbonato de sódio
+
+            Quando o cátion pode apresentar diferentes números de oxidação, eles podem ser indicados por algarismos romanos.
+            Exemplo:
+            - FeCl₂ — cloreto de ferro (II).
+            - FeCl₃ — cloreto de ferro (III).`, tipo: 'h3'},
+        { titulo: 'Reações de formação dos sais', texto: `A principal reação estudada no ensino médio é a neutralização entre ácidos e bases.
+            Neutralização total
+            Ocorre quando todos os hidrogênios ionizáveis do ácido são neutralizados pelos grupos OH da base.
+            HCl + NaOH -> NaCl + H₂O
+            Outro exemplo:
+            H₂SO₄ + 2NaOH -> Na₂SO_4 + 2H₂O
+
+            Neutralização parcial
+            Ocorre quando apenas parte dos hidrogênios ionizáveis do ácido ou dos grupos OH da base é neutralizada.
+            Exemplo:
+            H₂SO₄ + NaOH -> NaHSO₄ + H₂O
+            O produto NaHSO₄ é um sal ácido, pois ainda apresenta um hidrogênio ionizável.`, tipo: 'h3'},
+        { titulo: 'Dissociação dos sais em água', texto: `Quando um sal solúvel é colocado em água, seus íons se separam, processo chamado de dissociação iônica.
+            Exemplo:
+            NaCl₍ₛ₎ -> Na⁺₍ₐᵩ₎ + Cl⁻₍ₐᵩ₎
+            Isso significa que o cloreto de sódio se separa em íons sódio e cloreto na solução.
+            Outro exemplo:
+            CaCl₂ -> Ca⁺² + 2Cl⁻
+            Observe que a quantidade de íons precisa respeitar a fórmula do composto e sua neutralidade elétrica.`, tipo: 'h3'},
+        { titulo: 'Resumo geral', texto: `Sal normal -> Não apresenta H ionizável nem OH na fórmula
+            Sal ácido -> Apresenta hidrogênio ionizável
+            Sal básico -> Apresenta grupo OH na fórmula
+            Sal duplo ou misto -> Apresenta mais de um tipo de cátion ou ânion
+
+            Pontos importantes para memorizar:
+            - Sais são compostos iônicos formados por cátions e ânions.
+            - A neutralização entre ácido e base é uma forma comum de produzir sais.
+            - Sais solúveis podem sofrer dissociação iônica em água.
+            - A presença de hidrogênio ou OH na fórmula ajuda a identificar sais ácidos e básicos.
+            - Sal normal não significa necessariamente solução neutra.`, tipo: 'h3'},
+    ],
+    //Óxidos
+    Oxi: [
+        { titulo: 'óxidos', texto: `Os óxidos são compostos binários, ou seja, formados por apenas dois elementos químicos, sendo um deles obrigatoriamente o oxigênio.
+            Na maioria dos óxidos estudados no ensino médio, o oxigênio apresenta número de oxidação (NOX) igual a −2.
+            Exemplos:
+            - CO₂ — dióxido de carbono.
+            - CaO — óxido de cálcio.
+            - Fe₂O₃ — óxido de ferro (III).
+            - SO₃ — trióxido de enxofre.
+            Atenção: nem todo composto que contém oxigênio é um óxido. Por exemplo, H₂SO₄ (ácido sulfúrico) não é um óxido, pois possui três elementos químicos.`, tipo: 'h2'},
+        { titulo: 'Classificação dos óxidos', texto: `Os óxidos podem ser classificados de acordo com seu comportamento químico, principalmente em relação à reação com água, ácidos e bases.
+            Óxidos básicos
+            São geralmente formados por metais e apresentam comportamento básico.
+            Podem reagir com água, formando bases, ou com ácidos, formando sal e água.
+            Exemplo com água:
+            CaO + H₂O -> Ca(OH)₂
+            O óxido de cálcio reage com água e forma hidróxido de cálcio.
+            Exemplo com ácido:
+            CaO + 2HCl -> CaCl₂ + H₂O
+            Exemplos de óxidos básicos:
+            - Na₂O — óxido de sódio.
+            - CaO — óxido de cálcio.
+            - MgO — óxido de magnésio.
+            - FeO — óxido de ferro (II).
+
+            Óxidos ácidos
+            São geralmente formados por ametais e apresentam comportamento ácido.
+            Podem reagir com água, formando ácidos, ou com bases, formando sal e água.
+            Exemplo com água:
+            SO₃ + H₂O -> H₂SO₄
+            O trióxido de enxofre reage com água e forma ácido sulfúrico.
+            Exemplo com base:
+            CO₂ + 2NaOH -> Na₂CO₃ + H₂O
+            Exemplos de óxidos ácidos:
+            - CO₂ — dióxido de carbono.
+            - SO₂ — dióxido de enxofre.
+            - SO₃ — trióxido de enxofre.
+            - N₂O₅ — pentóxido de dinitrogênio.
+
+            Óxidos anfóteros
+            São óxidos que podem reagir tanto com ácidos quanto com bases, apresentando comportamento anfótero.
+            Exemplo:
+            O óxido de alumínio (Al₂O₃) pode reagir com ácidos:
+            Al₂O₃ + 6HCl -> 2AlCl₃ + 3H₂O
+            Também pode reagir com bases fortes, formando aluminatos.
+            Exemplos:
+            - Al₂O₃ — óxido de alumínio.
+            - ZnO — óxido de zinco.
+            - BeO — óxido de berílio.
+
+            Óxidos neutros
+            São óxidos que não apresentam comportamento ácido ou básico significativo nas reações comuns estudadas no ensino médio.
+            Geralmente, não reagem com água para formar ácidos ou bases.
+            Exemplos:
+            - CO — monóxido de carbono.
+            - NO — monóxido de nitrogênio.
+            - N₂O — monóxido de dinitrogênio.
+
+            Peróxidos
+            São compostos que apresentam o grupo O₂⁻², no qual cada oxigênio possui NOX igual a −1.
+            Diferentemente dos óxidos comuns, nos peróxidos o oxigênio não apresenta NOX −2.
+            Exemplos:
+            - H₂O₂ — peróxido de hidrogênio.
+            - Na₂O₂ — peróxido de sódio.
+            - CaO₂ — peróxido de cálcio.
+            Exemplo de decomposição do peróxido de hidrogênio:
+            2H₂O_₂ -> 2H₂O + O₂`, tipo: 'h3'},
+        { titulo: 'Nomenclatura dos óxidos', texto: `A nomenclatura depende dos elementos presentes e da quantidade de átomos na fórmula.
+            Nomenclatura com prefixos
+            É muito utilizada para óxidos moleculares, especialmente os formados por ametais.
+            Prefixo	Quantidade
+            Mono - 1
+            Di - 2
+            Tri - 3
+            Tetra - 4
+            Penta - 5
+            Hexa - 6
+            Hepta - 7
+            A estrutura é:
+            Prefixo + óxido de + prefixo + elemento
+            Exemplos:
+            Fórmula	Nome
+            CO -> Monóxido de carbono
+            CO₂ -> Dióxido de carbono
+            SO₂ -> Dióxido de enxofre
+            SO₃ -> Trióxido de enxofre
+            N₂O₅ -> Pentóxido de dinitrogênio
+
+            Nomenclatura com número de oxidação
+            É utilizada principalmente para óxidos metálicos quando o elemento pode apresentar diferentes números de oxidação.
+            A estrutura é:
+            Óxido de + elemento + (NOX)
+            Exemplos:
+            Fórmula	Nome
+            FeO	Óxido de ferro (II)
+            Fe₂O₃	Óxido de ferro (III)
+            Cu₂O	Óxido de cobre (I)
+            CuO	Óxido de cobre (II)
+            Quando o elemento apresenta apenas um NOX comum naquele contexto, o algarismo romano pode ser dispensado.`, tipo: 'h3'},
+        { titulo: 'Número de oxidação (NOX) nos óxidos', texto: `Para determinar a fórmula de um óxido, é importante compreender o número de oxidação dos elementos.
+            Nos óxidos comuns, o oxigênio apresenta NOX −2.
+            Como um composto neutro deve apresentar soma dos NOX igual a zero, podemos descobrir o NOX do outro elemento.
+            Exemplo: Fe₂O₃
+            Sabemos que:
+            - Ferro (Fe): NOX desconhecido.
+            - Oxigênio (O): NOX −2.
+            Montando a equação:
+            2x + 3(-2) = 0
+            2x - 6 = 0
+            2x = 6
+            x = +3
+            Portanto, o ferro apresenta NOX +3, e o composto é chamado de óxido de ferro (III).`, tipo: 'h3'},
+        { titulo: 'Resumo geral', texto: `Básico	Geralmente reage com ácidos	CaO
+            Ácido	Geralmente reage com bases	CO₂
+            Anfótero	Reage com ácidos e bases	Al₂O₃
+            Neutro	Não apresenta comportamento ácido ou básico significativo	CO
+            Peróxido	Oxigênio com NOX −1	H₂O₂
+
+            Pontos importantes para memorizar:
+            - Óxidos são compostos binários que possuem oxigênio.
+            - Nos óxidos comuns, o oxigênio apresenta NOX −2.
+            - Nos peróxidos, o oxigênio apresenta NOX −1.
+            - Óxidos básicos são geralmente formados por metais.
+            - Óxidos ácidos são geralmente formados por ametais.
+            - Óxidos anfóteros podem reagir com ácidos e bases.`, tipo: 'h3'},
+    ],
+    //Tipos de Reações Inorgânicas
+    TI: [
+        { titulo: 'tipos de reações inorgânicas', texto: `As reações inorgânicas são transformações químicas nas quais uma ou mais substâncias reagem, formando novas substâncias com propriedades e composições diferentes.
+            Essas transformações são representadas por equações químicas, nas quais os reagentes aparecem à esquerda e os produtos à direita.
+            Exemplo:
+            2H₂ + O₂ -> 2H₂O
+            - Reagentes: hidrogênio (H₂) e oxigênio (O₂).
+            - Produto: água (H₂O).
+            - A seta indica o sentido da transformação química.
+            As principais reações inorgânicas são divididas em quatro tipos:
+            1. Síntese ou adição.
+            2. Decomposição ou análise.
+            3. Simples troca ou deslocamento.
+            4. Dupla troca.`, tipo: 'h2'},
+        { titulo: 'Reação de síntese ou adição', texto: `É uma reação na qual duas ou mais substâncias se combinam para formar um único produto.
+            Representação geral:
+            A + B -> AB
+
+            Exemplos:
+            Formação da água:
+            2H₂ + O₂ -> 2H₂O
+
+            Formação do óxido de magnésio:
+            2Mg + O₂ -> 2MgO
+
+            Formação do cloreto de sódio:
+            2Na + Cl₂ -> 2NaCl
+
+            Características:
+            - Dois ou mais reagentes formam um único produto.
+            - Pode envolver substâncias simples, compostas ou ambas.
+            - É frequentemente chamada de reação de combinação.`, tipo: 'h3'},
+        { titulo: 'Reação de decomposição ou análise', texto: `É uma reação na qual uma única substância se divide, formando duas ou mais substâncias diferentes.
+            Representação geral:
+            AB -> A + B
+
+            Exemplos:
+            Decomposição do carbonato de cálcio:
+            CaCO₃ -> CaO + CO₂
+
+            Decomposição da água oxigenada:
+            2H₂O₂ -> 2H₂O + O₂
+
+            Decomposição da água por eletrólise:
+            2H₂O -> 2H₂ + O₂
+
+            Características:
+            - Existe apenas um reagente.
+            - São formados dois ou mais produtos.
+            - Pode ocorrer por aquecimento, eletricidade ou ação da luz, dependendo da substância.
+            Classificações específicas da decomposição
+            Algumas reações de decomposição recebem nomes de acordo com a fonte de energia utilizada:
+            Pirólise -> Calor
+            Eletrólise -> Energia elétrica
+            Fotólise -> Luz`, tipo: 'h3'},
+        { titulo: 'Reação de simples troca ou deslocamento', texto: `É uma reação na qual uma substância simples reage com uma substância composta, deslocando um de seus elementos.
+            Representação geral:
+            A + BC -> AC + B
+            Isso acontece quando o elemento isolado apresenta maior tendência de reação do que o elemento que será deslocado.
+            Exemplo:
+            Zn + 2HCl -> ZnCl₂ + H₂
+            Nesse caso:
+            - O zinco (Zn) reage com o ácido clorídrico (HCl).
+            - O zinco substitui o hidrogênio do ácido.
+            - São formados cloreto de zinco (ZnCl₂) e gás hidrogênio (H₂).
+
+            Série de reatividade
+            Nem todo elemento consegue deslocar outro de um composto. Para que a reação aconteça, é necessário considerar a reatividade química dos elementos.
+            Na simples troca entre metais, o metal livre geralmente precisa ser mais reativo que o metal presente no composto.
+            Exemplo:
+            Fe + CuSO₄ -> FeSO₄ + Cu
+            O ferro desloca o cobre porque apresenta maior reatividade nessa comparação.
+            Importante: se o metal livre for menos reativo que o metal do composto, a substituição geralmente não acontece.`, tipo: 'h3'},
+        { titulo: 'Reação de dupla troca', texto: `É uma reação na qual dois compostos trocam seus íons ou partes constituintes, formando dois novos compostos.
+            Representação geral:
+            AB + CD -> AD + CB
+            Geralmente, essas reações ocorrem em soluções aquosas e são favorecidas quando há formação de:
+            - Um precipitado (sólido insolúvel).
+            - Um gás.
+            - Uma substância pouco ionizada, como a água.
+
+            Formação de precipitado
+            Ocorre quando dois compostos em solução reagem e formam um produto insolúvel, que se separa da solução.
+            Exemplo:
+            AgNO₃ + NaCl -> AgCl + NaNO₃
+            O cloreto de prata (AgCl) é insolúvel em água e forma um precipitado.
+
+            Formação de gás
+            Algumas reações de dupla troca produzem substâncias instáveis que se decompõem, liberando gases.
+            Exemplo:
+            Na₂CO₃ + 2HCl -> 2NaCl + H₂O + CO₂
+            O ácido clorídrico reage com o carbonato de sódio, formando água, sal e dióxido de carbono.
+
+            Reação de neutralização
+            É um caso importante de reação entre ácido e base, frequentemente estudado dentro das reações de dupla troca.
+            Ocorre quando os íons H⁺ do ácido reagem com os íons OH⁻ da base, formando água.
+            Exemplo:
+            HCl + NaOH -> NaCl + H₂O
+            Produtos:
+            - NaCl: sal.
+            - H₂O: água.`, tipo: 'h3'},
+        { titulo: 'Comparação entre os quatro tipos de reações', texto: `Síntese - A + B → AB - Vários reagentes, um produto
+            Decomposição - AB → A + B - Um reagente, vários produtos
+            Simples troca - A + BC → AC + B - Um elemento desloca outro
+            Dupla troca - AB + CD → AD + CB - Dois compostos trocam íons`, tipo: 'h3'},
+    ],
 }

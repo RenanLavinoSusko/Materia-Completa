@@ -1,6 +1,12 @@
 /*Letras*/
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     /*cores*/
     --cor1: #00F57A;
@@ -34,13 +40,19 @@ header {
 h1 {
     font: 400 2em var(--letrat), sans-serif;
     display: inline-block;
-    margin: 0px 5px;
+    margin: 0px 0.5em;
 }
 
-header > a {
+header > button {
+    background-color: var(--cor1);
+    border: none;
     display: inline-block;
-    margin: 0 5em;
-    border: 2px solid black;   
+    flex-shrink: 0;
+    height: 64px;
+}
+
+header > button:hover {
+    background-color: #63088a60;
 }
 
 .container {
@@ -48,59 +60,252 @@ header > a {
     min-height: calc(100vh - 2em); /* 100% da tela menos a altura do header */
 }
 
-/*Main*/
-button {
-    border: none;
-    text-decoration: none;
-    background-color: var(--cor3);
-    color: white;
-    font: italic 1.3em var(--letrap), sans-serif;
-}
-
-input[type="radio"] {
-    display: block;
-    appearance: none;
-    text-decoration: underline;
+#quadro > img {
     margin: 0.5em auto;
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-input[type="radio"] + label:hover {
-    display: block;
-    align-items: center;
-    margin: 0 auto;
-    background-color: var(--cor5);
-    padding: 2px 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-input[type="radio"]:checked + label {
-    appearance: none;
-    width: 12em;
-    border-bottom: 2px solid var(--cor1);
 }
 
 main {
-    width: 12em;
-    background-color: var(--cor4);
+    background-color: var(--cor2);
 }
 
-#quadro {
-        flex: 1;
-        background-color: var(--cor5);
+h2 {
+    background-image: linear-gradient(135deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    font-family: var(--letrat);
+}
+
+#quadro p {
+    text-indent: 0; /* remove o 5px */
+    padding-left: 1em; /* indentação controlada */
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    button {
+        margin: 0.2em 4em
+    }
+    
+    main {
+        width: 30%;
+        min-width: 8em;
     }
 
-@media (min-width: 760px) {
+    h1 {
+        font: 400 1.5em var(--letrat);
+    }
+
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 1em;
+        }
+
+    h2 {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 450px) {
+    button {
+        margin: 0.2 1.5em;
+    }
+
+    main {
+        width: 35%;           /* não 4em */
+        min-width: 7em;       /* nunca menor que isso */
+    }
+
+    h1 {
+        font: 400 1.5em var(--letrat);
+    }
+
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+    label {
+        font-size: 0.7em;     /* não 0.5em */
+        line-height: 1.2;     /* espaço entre linhas */
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 0.5em;
+        }
+    h2 {
+        width: 100%;          /* não 10em */
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    button {
+        margin: 0.5em 6em
+    }
+
+    main {
+        width: 12em;
+        background-color: var(--cor3);
+        padding: 0 0.5em;
+    }
+
+    input[name="materia"] + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
+    /*Main*/
+    input[type="radio"] {
+        display: block;
+        appearance: none;
+        text-decoration: underline;
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input[type="radio"] + label:hover {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var(--cor5);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+        appearance: none;
+        border-bottom: 2px solid var(--cor1);
+    }
+
+    #quadro {
+            flex: 1;
+            background-color: var(--cor5);
+            text-align: center;
+            padding: 1em;
+    }
+
+    h2 {
+        width: 15em;
+        margin: 0em auto 1em;
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
+        font: 400 1.5em var(--letrat);
+        text-align: center;
+    }
+}
+
+@media (min-width: 1300px) {
+    button {
+        margin: 0.5em 12em;
+    }
+
     main {
         width: 14em;      /* coluna fixa */
         flex-shrink: 0;
         background-color: var(--cor3);
+        padding: 0 1em;
+    }
+
+    h2 {
+        width: 25em;
+        margin: 0em auto 1em auto;
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor3));
+        font: 400 2em var(--letrat);
+        text-align: center;
+    }
+
+    input[name="materia"] + label {
+    background-color: var(--cor4);
+    border-radius: 2px;
+    }
+
+    input[type="radio"]:checked + label {
+    appearance: none;
+    border-bottom: 2px solid var(--cor1);
+    }
+
+    input[type="radio"] + label:hover {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--cor5);
+    border-radius: 5px;
+    text-align: center;
     }
 }
+
+#materia_A, #materia_B {
+    margin: 1em auto;
+}
+
+h3 {
+    margin: 0.8em auto 0.2em;
+} 
