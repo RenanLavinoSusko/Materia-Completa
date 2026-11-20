@@ -804,7 +804,7 @@ O zigoto inicia sucessivas divisões mitóticas e passa por etapas de desenvolvi
     ],
 
     IG: [
-        { titulo: "Introdução à Genética", texto: `A Genética é a área da Biologia responsável pelo estudo da hereditariedade, da transmissão de características entre gerações e da variabilidade genética dos organismos. Ela busca compreender como as informações biológicas são armazenadas, transmitidas e expressas ao longo da vida.
+        { titulo: "introdução à genética", texto: `A Genética é a área da Biologia responsável pelo estudo da hereditariedade, da transmissão de características entre gerações e da variabilidade genética dos organismos. Ela busca compreender como as informações biológicas são armazenadas, transmitidas e expressas ao longo da vida.
 
 A hereditariedade é o processo pelo qual características biológicas podem ser transmitidas dos progenitores aos descendentes. Já a variabilidade genética corresponde às diferenças existentes entre indivíduos de uma mesma espécie, resultantes de fatores como mutações, recombinação genética e reprodução sexuada.
 
@@ -830,7 +830,7 @@ A organização do DNA em cromossomos permite sua compactação e distribuição
     ],
 
     M1: [
-        { titulo: "Experimentos de Mendel: Primeira Lei", texto: `Gregor Johann Mendel foi um monge e pesquisador que estudou a hereditariedade por meio de experimentos com ervilhas da espécie Pisum sativum. Suas pesquisas contribuíram para a compreensão de como características são transmitidas entre gerações.
+        { titulo: "experimentos de mendel: primeira lei", texto: `Gregor Johann Mendel foi um monge e pesquisador que estudou a hereditariedade por meio de experimentos com ervilhas da espécie Pisum sativum. Suas pesquisas contribuíram para a compreensão de como características são transmitidas entre gerações.
 
 Mendel escolheu ervilhas por apresentarem características contrastantes, ciclo relativamente curto, facilidade de cultivo e possibilidade de realizar cruzamentos controlados.
 
@@ -867,7 +867,7 @@ O quadro de Punnett auxilia no cálculo das probabilidades genotípicas e fenot�
     ],
 
     VM1: [
-        { titulo: "Variações da Primeira Lei de Mendel", texto: `A Primeira Lei de Mendel pode ser aplicada a diferentes padrões de herança, mas nem todas as características apresentam dominância completa.
+        { titulo: "variações da primeira lei de mendel", texto: `A Primeira Lei de Mendel pode ser aplicada a diferentes padrões de herança, mas nem todas as características apresentam dominância completa.
 
 Alguns genes apresentam padrões de expressão diferentes, como dominância incompleta, codominância e alelos múltiplos. Essas situações modificam as proporções fenotípicas observadas, sem deixar de envolver a segregação dos alelos durante a formação dos gametas.
 
@@ -894,7 +894,7 @@ A combinação desses alelos determina os grupos sanguíneos A, B, AB e O.`, tip
     ],
 
     GS: [
-        { titulo: "Grupos Sanguíneos", texto: `Os grupos sanguíneos são determinados por características presentes nas membranas das hemácias e por componentes relacionados à compatibilidade imunológica.
+        { titulo: "grupos sanguíneos", texto: `Os grupos sanguíneos são determinados por características presentes nas membranas das hemácias e por componentes relacionados à compatibilidade imunológica.
 
 Os sistemas ABO e Rh são importantes na transfusão sanguínea, na medicina e no acompanhamento de determinadas situações durante a gestação.
 
@@ -939,7 +939,7 @@ O acompanhamento médico e a prevenção adequada reduzem significativamente os 
     ],
 
     M2: [
-        { titulo: "Segunda Lei de Mendel", texto: `A Segunda Lei de Mendel, conhecida como Lei da Segregação Independente, descreve a distribuição independente de pares de alelos de genes diferentes durante a formação dos gametas, quando os genes não estão ligados ou quando o comportamento cromossômico permite a independência.
+        { titulo: "segunda lei de mendel", texto: `A Segunda Lei de Mendel, conhecida como Lei da Segregação Independente, descreve a distribuição independente de pares de alelos de genes diferentes durante a formação dos gametas, quando os genes não estão ligados ou quando o comportamento cromossômico permite a independência.
 
 Mendel estudou características diferentes simultaneamente, como cor e forma das sementes de ervilhas, observando combinações entre características que podiam surgir independentemente.
 
@@ -965,7 +965,7 @@ Portanto, a Segunda Lei não se aplica de maneira irrestrita a todos os genes.`,
     ],
 
     ING: [
-        { titulo: "Interação Gênica", texto: `Interação gênica ocorre quando dois ou mais genes influenciam conjuntamente a manifestação de uma característica.
+        { titulo: "interação gênica", texto: `Interação gênica ocorre quando dois ou mais genes influenciam conjuntamente a manifestação de uma característica.
 
 Nem todas as características são determinadas por um único gene. Algumas envolvem múltiplos genes, fatores ambientais e mecanismos complexos de regulação.
 
@@ -989,7 +989,7 @@ A herança poligênica é diferente da epistasia, embora ambas envolvam a partic
     ],
 
     GC: [
-        { titulo: "Genoma Humano e Cromossomos Sexuais", texto: `O genoma corresponde ao conjunto completo de material genético de um organismo. No ser humano, o genoma inclui o DNA nuclear e o DNA mitocondrial.
+        { titulo: "genoma humano e cromossomos sexuais", texto: `O genoma corresponde ao conjunto completo de material genético de um organismo. No ser humano, o genoma inclui o DNA nuclear e o DNA mitocondrial.
 
 As células somáticas humanas normalmente apresentam 46 cromossomos, organizados em 23 pares. Os gametas apresentam 23 cromossomos.
 
@@ -1022,7 +1022,7 @@ Nem todas as características localizadas nos cromossomos sexuais seguem os mesm
     ],
 
     MC: [
-        { titulo: "Mutações Gênicas e Cromossômicas", texto: `Mutações são alterações no material genético. Elas podem ocorrer espontaneamente ou estar associadas à exposição a determinados agentes mutagênicos.
+        { titulo: "mutações gênicas e cromossômicas", texto: `Mutações são alterações no material genético. Elas podem ocorrer espontaneamente ou estar associadas à exposição a determinados agentes mutagênicos.
 
 As mutações podem afetar a sequência de DNA, a estrutura dos cromossomos ou o número de cromossomos.
 
@@ -1065,7 +1065,7 @@ Essas alterações podem ocorrer por erros na segregação cromossômica durante
     ],
 
     BT: [
-        { titulo: "Biotecnologia", texto: `Biotecnologia é o conjunto de técnicas e conhecimentos que utilizam organismos vivos, células, moléculas biológicas ou processos biológicos para desenvolver produtos, processos e aplicações.
+        { titulo: "biotecnologia", texto: `Biotecnologia é o conjunto de técnicas e conhecimentos que utilizam organismos vivos, células, moléculas biológicas ou processos biológicos para desenvolver produtos, processos e aplicações.
 
 A biotecnologia é utilizada na medicina, agricultura, indústria, produção de alimentos, pesquisa científica e conservação ambiental.
 
@@ -2043,7 +2043,7 @@ Essas ações contribuem para a manutenção da biodiversidade e para a recupera
     ],
 
     TO: [
-        { titulo: "Tipos de Ovos e Segmentação", texto: `O desenvolvimento embrionário inicia-se após a fecundação, quando ocorre a formação do zigoto. A partir desse momento, o embrião passa por sucessivas divisões celulares e processos de organização.
+        { titulo: "tipos de ovos e segmentação", texto: `O desenvolvimento embrionário inicia-se após a fecundação, quando ocorre a formação do zigoto. A partir desse momento, o embrião passa por sucessivas divisões celulares e processos de organização.
 
 A quantidade e a distribuição do vitelo, substância nutritiva presente no ovo, influenciam o padrão de segmentação embrionária.
 
@@ -2074,7 +2074,7 @@ Essas etapas apresentam variações entre grupos de animais.`, tipo: "h3" }
     ],
 
     DA: [
-        { titulo: "Desenvolvimento e Anexos Embrionários", texto: `O desenvolvimento embrionário é o conjunto de processos pelos quais o embrião se organiza e forma estruturas, tecidos e órgãos.
+        { titulo: "desenvolvimento e anexos embrionários", texto: `O desenvolvimento embrionário é o conjunto de processos pelos quais o embrião se organiza e forma estruturas, tecidos e órgãos.
 
 Após a fecundação, ocorrem segmentação, gastrulação, neurulação em determinados grupos e organogênese.
 
@@ -2116,7 +2116,7 @@ O sangue materno e fetal normalmente não se mistura diretamente em grande quant
     ],
 
     CT: [
-        { titulo: "Células-Tronco e Clonagem", texto: `Células-tronco são células capazes de se dividir e, dependendo de seu tipo e contexto, produzir células que mantêm características de células-tronco ou se diferenciam em outros tipos celulares.
+        { titulo: "células-tronco e clonagem", texto: `Células-tronco são células capazes de se dividir e, dependendo de seu tipo e contexto, produzir células que mantêm características de células-tronco ou se diferenciam em outros tipos celulares.
 
 Elas são importantes para o desenvolvimento embrionário, manutenção de tecidos, regeneração e pesquisas biomédicas.
 
@@ -2158,7 +2158,7 @@ Além dos desafios científicos, existem questões éticas, legais e sociais que
     ],
 
     TP: [
-        { titulo: "Tecido Epitelial", texto: `O tecido epitelial é formado por células muito próximas entre si, com pouca matriz extracelular. Ele reveste superfícies, cavidades e órgãos e também pode formar estruturas glandulares.
+        { titulo: "tecido epitelial", texto: `O tecido epitelial é formado por células muito próximas entre si, com pouca matriz extracelular. Ele reveste superfícies, cavidades e órgãos e também pode formar estruturas glandulares.
 
 Entre suas funções estão proteção, absorção, secreção, transporte e percepção sensorial, dependendo de sua localização e organização.
 
@@ -2197,7 +2197,7 @@ A classificação glandular também pode considerar o tipo de secreção, a orga
     ],
 
     TC: [
-        { titulo: "Tecido Conjuntivo", texto: `O tecido conjuntivo é caracterizado pela presença de células distribuídas em uma matriz extracelular, cuja composição e organização variam conforme o tipo de tecido.
+        { titulo: "tecido conjuntivo", texto: `O tecido conjuntivo é caracterizado pela presença de células distribuídas em uma matriz extracelular, cuja composição e organização variam conforme o tipo de tecido.
 
 Ele participa da sustentação, preenchimento, proteção, transporte, armazenamento, defesa e reparação de estruturas.
 
@@ -2246,7 +2246,7 @@ O sangue participa do transporte, da defesa, da regulação e da manutenção da
     ],
 
     TN: [
-        { titulo: "Tecido Nervoso", texto: `O tecido nervoso é especializado na recepção, processamento e transmissão de informações.
+        { titulo: "tecido nervoso", texto: `O tecido nervoso é especializado na recepção, processamento e transmissão de informações.
 
 Ele é formado principalmente por neurônios e células da glia, que desempenham funções de suporte, proteção, regulação e manutenção.
 
@@ -2292,7 +2292,7 @@ Células ependimárias revestem determinadas cavidades do sistema nervoso centra
     ],
 
     TM: [
-        { titulo: "Tecido Muscular", texto: `O tecido muscular é especializado na contração, permitindo movimentação, manutenção da postura, produção de calor e movimentação de substâncias pelo organismo.
+        { titulo: "tecido muscular", texto: `O tecido muscular é especializado na contração, permitindo movimentação, manutenção da postura, produção de calor e movimentação de substâncias pelo organismo.
 
 As células musculares apresentam proteínas contráteis, principalmente actina e miosina, que participam dos mecanismos de contração.
 
