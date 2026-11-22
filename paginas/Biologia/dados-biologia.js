@@ -8,7 +8,7 @@ const conteudosBiologia = {
             texto: `As células são formadas por diferentes substâncias químicas que desempenham funções essenciais para a manutenção da vida. Entre elas estão a água, os sais minerais, os carboidratos, os lipídios, as proteínas, as vitaminas e os ácidos nucleicos. Essas substâncias podem ser classificadas em inorgânicas, como água e sais minerais, e orgânicas, como carboidratos, lipídios, proteínas e ácidos nucleicos.
 
 A composição química varia de acordo com o tipo de célula e sua atividade metabólica. Entretanto, água e proteínas geralmente representam uma parcela significativa da massa celular.`,
-            tipo: "h2"
+            tipo: "h2", imagem: ['../../imagens/biologia/biologia_a/composicao_da_celula/moleculas_organicas_inorganicas_800px.jpg', '../../imagens/biologia/biologia_a/composicao_da_celula/moleculas_organicas_inorganicas_600px.jpg', '../../imagens/biologia/biologia_a/composicao_da_celula/moleculas_organicas_inorganicas_400px.jpg', '../../imagens/biologia/biologia_a/composicao_da_celula/moleculas_organicas_inorganicas_200px.jpg',  'Demonstração das çõoes']
         },
         {
             titulo: "Água",
@@ -90,7 +90,7 @@ A sequência de aminoácidos é determinada pela informação genética e influe
 A estrutura primária corresponde à sequência linear de aminoácidos. A estrutura secundária envolve dobramentos locais, como hélices alfa e folhas beta, estabilizados principalmente por ligações de hidrogênio. A estrutura terciária representa o formato tridimensional de uma cadeia polipeptídica. A estrutura quaternária ocorre quando duas ou mais cadeias polipeptídicas se associam.
 
 A forma tridimensional é essencial para a função da proteína. Alterações nessa estrutura podem prejudicar sua atividade biológica.`,
-            tipo: "h3"
+            tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/proteinas_enzimas/proteina_enzima_800px.jpg', '../../imagens/biologia/biologia_a/proteinas_enzimas/proteina_enzima_600px.jpg', '../../imagens/biologia/biologia_a/proteinas_enzimas/proteina_enzima_400px.jpg', '../../imagens/biologia/biologia_a/proteinas_enzimas/proteina_enzima_200px.jpg', 'Exemplifica;áo da estrutura']
         },
         {
             titulo: "Desnaturação proteica",
@@ -147,7 +147,8 @@ A sequência das bases nitrogenadas constitui a informação genética. A ordem 
 As bases nitrogenadas se unem por ligações de hidrogênio de maneira complementar: adenina com timina e citosina com guanina. Assim, a sequência de uma cadeia permite determinar a sequência complementar da outra.
 
 O DNA é encontrado principalmente no núcleo das células eucarióticas, mas também está presente em organelas como mitocôndrias e cloroplastos.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/acidos_nucleicos/dna_rna_800px.jpg', '../../imagens/biologia/biologia_a/acidos_nucleicos/dna_rna_600px.jpg', '../../imagens/biologia/biologia_a/acidos_nucleicos/dna_rna_400px.jpg', '../../imagens/biologia/biologia_a/acidos_nucleicos/dna_rna_200px.jpg', 'Diferen;a DNA fita dupla e unica']
         },
         {
             titulo: "Estrutura e tipos de RNA",
@@ -222,7 +223,8 @@ Bactérias e arqueias são organismos procariontes. Apesar de sua organização 
 São encontradas em animais, plantas, fungos e protistas. Apesar de compartilharem uma organização básica, existem diferenças entre os tipos celulares.
 
 As células vegetais geralmente apresentam parede celular de celulose, cloroplastos e um grande vacúolo central. As células animais não possuem parede celular nem cloroplastos.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/introducao_citologia/procarionte_eucarionte_800px.jpg', '../../imagens/biologia/biologia_a/introducao_citologia/procarionte_eucarionte_600px.jpg', '../../imagens/biologia/biologia_a/introducao_citologia/procarionte_eucarionte_400px.jpg', '../../imagens/biologia/biologia_a/introducao_citologia/procarionte_eucarionte_200px.jpg', 'Diferença entre células procariontes e eucariontes']
         },
         {
             titulo: "Microscopia",
@@ -270,7 +272,8 @@ As proteínas da membrana podem atuar no transporte de substâncias, no reconhec
 Os componentes da membrana possuem certa mobilidade lateral, o que confere flexibilidade à estrutura. O colesterol, presente principalmente em membranas de células animais, contribui para regular sua fluidez.
 
 A membrana não é uma estrutura rígida: sua organização pode se modificar de acordo com as condições ambientais e as necessidades da célula.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/envoltorios_celulares/transporte_membrana_800px.jpg', '../../imagens/biologia/biologia_a/envoltorios_celulares/transporte_membrana_600px.jpg', '../../imagens/biologia/biologia_a/envoltorios_celulares/transporte_membrana_400px.jpg', '../../imagens/biologia/biologia_a/envoltorios_celulares/transporte_membrana_200px.jpg', 'Transporte pela membrana']
         },
         {
             titulo: "Permeabilidade seletiva",
@@ -372,7 +375,8 @@ As mitocôndrias possuem DNA e ribossomos próprios, característica relacionada
 Apresentam dupla membrana e estruturas internas chamadas tilacoides, que podem formar pilhas denominadas grana. A clorofila, pigmento responsável pela absorção de luz, está presente nas membranas dos tilacoides.
 
 O estroma é a região fluida interna do cloroplasto, onde ocorre o ciclo de Calvin. Assim como as mitocôndrias, os cloroplastos possuem DNA e ribossomos próprios.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/citoplasma/animal_vegetal_800px.jpg', '../../imagens/biologia/biologia_a/citoplasma/animal_vegetal_600px.jpg', '../../imagens/biologia/biologia_a/citoplasma/animal_vegetal_400px.jpg', '../../imagens/biologia/biologia_a/citoplasma/animal_vegetal_200px.jpg', 'Comparação célula animal/vegetal']
         },
         {
             titulo: "Citoesqueleto",
@@ -433,7 +437,8 @@ Também ocorre a redução de NADP⁺, formando NADPH. ATP e NADPH são utilizad
 A enzima RuBisCO participa da fixação do CO₂, que é incorporado a uma molécula de cinco carbonos chamada ribulose-1,5-bifosfato (RuBP).
 
 Após uma sequência de reações, são produzidas moléculas de gliceraldeído-3-fosfato (G3P), que podem ser utilizadas na síntese de carboidratos e na regeneração da RuBP. O ciclo não depende diretamente da luz, mas depende dos produtos gerados na fase fotoquímica.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/fotossintese_quimiossintese/cloropasto_fotossintese_800px.jpg', '../../imagens/biologia/biologia_a/fotossintese_quimiossintese/cloropasto_fotossintese_600px.jpg', '../../imagens/biologia/biologia_a/fotossintese_quimiossintese/cloropasto_fotossintese_400px.jpg', '../../imagens/biologia/biologia_a/fotossintese_quimiossintese/cloropasto_fotossintese_200px.jpg', 'Demonstração do processo da fotossintese']
         },
         {
             titulo: "Fatores que influenciam a fotossíntese",
@@ -499,7 +504,8 @@ Essa etapa não exige oxigênio diretamente e ocorre tanto na respiração aeró
 Após a glicólise, o piruvato é convertido em acetil-CoA, que entra no ciclo de Krebs. Nesse ciclo, ocorre a liberação de CO₂ e a produção de moléculas transportadoras de elétrons, como NADH e FADH₂.
 
 Na cadeia transportadora de elétrons, localizada na membrana interna da mitocôndria, a energia liberada pelo transporte de elétrons é utilizada para formar um gradiente de prótons. Esse gradiente impulsiona a ATP sintase, responsável pela produção de grande parte do ATP.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/respiracao_fermentacao/respiracao_celular_800px.jpg', '../../imagens/biologia/biologia_a/respiracao_fermentacao/respiracao_celular_600px.jpg', '../../imagens/biologia/biologia_a/respiracao_fermentacao/respiracao_celular_400px.jpg', '../../imagens/biologia/biologia_a/respiracao_fermentacao/respiracao_celular_200px.jpg', 'Etapas da respiração']
         },
         {
             titulo: "Fermentação alcoólica",
@@ -583,7 +589,8 @@ O tamanho e a quantidade de nucléolos podem variar conforme a atividade de prod
 Células diploides, representadas por 2n, possuem dois conjuntos de cromossomos, geralmente um herdado de cada progenitor. Células haploides, representadas por n, possuem apenas um conjunto.
 
 Na espécie humana, as células somáticas são diploides, com 46 cromossomos, enquanto os gametas são haploides, com 23 cromossomos.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/nucleo_celular/organizacao_cromossomo_800px.jpg', '../../imagens/biologia/biologia_a/nucleo_celular/organizacao_cromossomo_600px.jpg', '../../imagens/biologia/biologia_a/nucleo_celular/organizacao_cromossomo_400px.jpg', '../../imagens/biologia/biologia_a/nucleo_celular/organizacao_cromossomo_200px.jpg', 'Organização cromossomica']
         }
     ],
 
@@ -640,7 +647,8 @@ O RNA transportador apresenta uma região chamada anticódon, complementar ao c�
 Na iniciação, o ribossomo se organiza sobre o RNA mensageiro e reconhece o códon de início, geralmente AUG, que codifica metionina. Na elongação, novos RNAs transportadores entregam aminoácidos, que são unidos por ligações peptídicas.
 
 Na terminação, um códon de parada é reconhecido por fatores de liberação, encerrando a produção da cadeia polipeptídica. A proteína pode passar por modificações e dobramentos antes de se tornar funcional.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/sintese_proteica/dna_para_proteina_800px.jpg', '../../imagens/biologia/biologia_a/sintese_proteica/dna_para_proteina_600px.jpg', '../../imagens/biologia/biologia_a/sintese_proteica/dna_para_proteina_400px.jpg', '../../imagens/biologia/biologia_a/sintese_proteica/dna_para_proteina_200px.jpg', 'Processo da sintese proteica']
         },
         {
             titulo: "Polirribossomos",
@@ -724,7 +732,8 @@ Ao final da meiose II, geralmente são formadas quatro células haploides, que a
 Na mitose, não ocorre o pareamento regular de cromossomos homólogos nem o crossing-over típico da prófase I da meiose. Na meiose, esses processos contribuem para a variabilidade genética.
 
 A mitose está relacionada principalmente ao crescimento e à manutenção dos tecidos, enquanto a meiose participa da formação de células haploides associadas à reprodução sexuada.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/ciclo_celular/mitose_meiose_800px.jpg', '../../imagens/biologia/biologia_a/ciclo_celular/mitose_meiose_600px.jpg', '../../imagens/biologia/biologia_a/ciclo_celular/mitose_meiose_400px.jpg', '../../imagens/biologia/biologia_a/ciclo_celular/mitose_meiose_200px.jpg', 'Mitose x Meiose']
         },
         {
             titulo: "Controle do ciclo celular",
@@ -790,7 +799,8 @@ O gameta feminino fornece o material genético materno e grande parte do citopla
 Na ovogênese, as divisões são desiguais, concentrando a maior parte do citoplasma em uma única célula funcional. Por isso, geralmente se forma um gameta feminino funcional e corpúsculos polares.
 
 A produção de espermatozoides ocorre continuamente após a puberdade, enquanto o desenvolvimento dos ovócitos apresenta interrupções e é regulado pelo ciclo ovariano.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_a/gametogenese/espermatogenese_ovogenese_800px.jpg', '../../imagens/biologia/biologia_a/gametogenese/espermatogenese_ovogenese_600px.jpg', '../../imagens/biologia/biologia_a/gametogenese/espermatogenese_ovogenese_400px.jpg', '../../imagens/biologia/biologia_a/gametogenese/espermatogenese_ovogenese_200px.jpg', 'Espermatogènese x Ovogènese']
         },
         {
             titulo: "Fecundação",
@@ -826,7 +836,7 @@ O DNA contém informações necessárias para o funcionamento, desenvolvimento e
 
 Genes são regiões do DNA relacionadas à produção de moléculas funcionais. Os cromossomos possuem muitos genes distribuídos ao longo de sua estrutura.
 
-A organização do DNA em cromossomos permite sua compactação e distribuição adequada durante a divisão celular.`, tipo: "h3" }
+A organização do DNA em cromossomos permite sua compactação e distribuição adequada durante a divisão celular.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/introducao_genetica_800px', '../../imagens/biologia/biologia_a/introducao_genetica_600px', '../../imagens/biologia/biologia_a/introducao_genetica_400px', '../../imagens/biologia/biologia_a/introducao_genetica_200px', 'Hierarquia genica']}
     ],
 
     M1: [
@@ -863,7 +873,7 @@ Essas proporções são probabilidades esperadas em grandes amostras, não garan
 
 Em um cruzamento Aa × Aa, cada progenitor pode produzir gametas A ou a. A combinação dos gametas permite identificar os genótipos possíveis: AA, Aa e aa.
 
-O quadro de Punnett auxilia no cálculo das probabilidades genotípicas e fenotípicas, mas não representa um mecanismo biológico. É apenas uma representação matemática das possibilidades de fecundação.`, tipo: "h3" }
+O quadro de Punnett auxilia no cálculo das probabilidades genotípicas e fenotípicas, mas não representa um mecanismo biológico. É apenas uma representação matemática das possibilidades de fecundação.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/lei1/punnet_800px.jpg', '../../imagens/biologia/biologia_a/lei1/punnet_600px.jpg', '../../imagens/biologia/biologia_a/lei1/punnet_400px.jpg', '../../imagens/biologia/biologia_a/lei1/punnet_200px.jpg', 'Quadro de punnet 2x2 montado']}
     ],
 
     VM1: [
@@ -883,7 +893,7 @@ Nesse padrão, a proporção fenotípica coincide com a proporção genotípica 
 
 Um exemplo é a expressão dos alelos IA e IB do sistema ABO, que produzem características distintas e são expressos conjuntamente no indivíduo de grupo sanguíneo AB.
 
-A codominância não deve ser confundida com dominância incompleta, pois nela os dois efeitos são manifestados simultaneamente, e não como um fenótipo intermediário.`, tipo: "h3" },
+A codominância não deve ser confundida com dominância incompleta, pois nela os dois efeitos são manifestados simultaneamente, e não como um fenótipo intermediário.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/vlei1/variacao_alelos_800px.jpg', '../../imagens/biologia/biologia_a/vlei1/variacao_alelos_600px.jpg', '../../imagens/biologia/biologia_a/vlei1/variacao_alelos_400px.jpg', '../../imagens/biologia/biologia_a/vlei1/variacao_alelos_200px.jpg', 'Exemplificação visual de Codominància'] },
         { titulo: "Alelos múltiplos", texto: `Alelos múltiplos ocorrem quando um gene apresenta mais de duas versões possíveis na população. Entretanto, um indivíduo diploide normalmente possui apenas dois alelos desse gene.
 
 O sistema ABO é um exemplo de alelos múltiplos, envolvendo IA, IB e i.
@@ -935,7 +945,7 @@ A exposição de uma pessoa Rh negativa a hemácias Rh positivas pode levar à f
 
 A sensibilização Rh é especialmente relevante durante a gestação, pois anticorpos maternos podem atravessar a placenta e afetar hemácias fetais em determinadas situações.
 
-O acompanhamento médico e a prevenção adequada reduzem significativamente os riscos associados à incompatibilidade Rh.`, tipo: "h3" }
+O acompanhamento médico e a prevenção adequada reduzem significativamente os riscos associados à incompatibilidade Rh.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/grupos_sanguineos/sangues_800px.jpg', '../../imagens/biologia/biologia_a/grupos_sanguineos/sangues_600px.jpg', '../../imagens/biologia/biologia_a/grupos_sanguineos/sangues_400px.jpg', '../../imagens/biologia/biologia_a/grupos_sanguineos/sangues_200px.jpg', 'Demonstração da diferença dos sangues'] }
     ],
 
     M2: [
@@ -954,7 +964,7 @@ Em um cruzamento entre dois indivíduos AaBb, considerando dominância completa 
 
 Essa proporção corresponde a quatro classes fenotípicas, desde que os genes apresentem os padrões de dominância considerados e não estejam ligados.
 
-A proporção não é universal para qualquer cruzamento entre dois genes.`, tipo: "h3" },
+A proporção não é universal para qualquer cruzamento entre dois genes.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/lei2/punnet_4x4_800px.jpg', '../../imagens/biologia/biologia_a/lei2/punnet_4x4_600px.jpg', '../../imagens/biologia/biologia_a/lei2/punnet_4x4_400px.jpg', '../../imagens/biologia/biologia_a/lei2/punnet_4x4_200px.jpg', 'Demonstração do quadro punnet 4x4'] },
         { titulo: "Segregação independente e meiose", texto: `A segregação independente ocorre devido à orientação aleatória dos pares de cromossomos homólogos na metáfase I da meiose.
 
 Essa orientação permite diferentes combinações de cromossomos maternos e paternos nos gametas.
@@ -978,7 +988,7 @@ Na epistasia recessiva, a presença de determinado genótipo recessivo em um gen
 
 Na epistasia dominante, um alelo dominante de determinado gene pode interferir na expressão de outro gene.
 
-Essas interações são importantes para compreender características como pigmentação, padrões de coloração e determinadas características metabólicas.`, tipo: "h3" },
+Essas interações são importantes para compreender características como pigmentação, padrões de coloração e determinadas características metabólicas.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/interacao_genica/epistasia_800px.jpg', '../../imagens/biologia/biologia_a/interacao_genica/epistasia_600px.jpg', '../../imagens/biologia/biologia_a/interacao_genica/epistasia_400px.jpg', '../../imagens/biologia/biologia_a/interacao_genica/epistasia_200px.jpg', 'Exemplificação da epistacia no quadro 4x4 de punnet'] },
         { titulo: "Herança poligênica", texto: `A herança poligênica ocorre quando uma característica é influenciada por vários genes.
 
 Características como altura humana e diversos aspectos da pigmentação envolvem múltiplos genes e também podem ser influenciadas pelo ambiente.
@@ -1002,7 +1012,7 @@ No cariótipo humano típico, existem 22 pares de cromossomos autossômicos e um
 
 Em muitas pessoas, o cariótipo é 46,XX ou 46,XY. Existem também variações cromossômicas relacionadas aos cromossomos sexuais.
 
-O cariótipo pode ser utilizado para investigar alterações no número ou na estrutura dos cromossomos.`, tipo: "h3" },
+O cariótipo pode ser utilizado para investigar alterações no número ou na estrutura dos cromossomos.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/genoma_humano/cariotipo_humano_800px.jpg', '../../imagens/biologia/biologia_a/genoma_humano/cariotipo_humano_600px.jpg', '../../imagens/biologia/biologia_a/genoma_humano/cariotipo_humano_400px.jpg', '../../imagens/biologia/biologia_a/genoma_humano/cariotipo_humano_200px.jpg', 'Demonstração do cariótipo humano'] },
         { titulo: "Cromossomos sexuais", texto: `Os cromossomos sexuais estão relacionados à determinação sexual em diversos organismos e possuem genes que também influenciam outras características.
 
 No sistema humano mais comum, XX está associado ao desenvolvimento sexual feminino e XY ao masculino, embora existam variações no desenvolvimento sexual e na composição cromossômica.
@@ -1061,7 +1071,7 @@ Monossomia corresponde à presença de apenas uma cópia de determinado cromosso
 
 Poliploidia envolve conjuntos completos adicionais de cromossomos e é comum em algumas plantas.
 
-Essas alterações podem ocorrer por erros na segregação cromossômica durante divisões celulares.`, tipo: "h3" }
+Essas alterações podem ocorrer por erros na segregação cromossômica durante divisões celulares.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/mutacoes_gc/mutacoes_ilustradas_800px.jpg', '../../imagens/biologia/biologia_a/mutacoes_gc/mutacoes_ilustradas_600px.jpg', '../../imagens/biologia/biologia_a/mutacoes_gc/mutacoes_ilustradas_400px.jpg', '../../imagens/biologia/biologia_a/mutacoes_gc/mutacoes_ilustradas_200px.jpg', 'Como ocorre as mutações'] }
     ],
 
     BT: [
@@ -1101,7 +1111,7 @@ Sistemas CRISPR, como o CRISPR-Cas9, podem ser utilizados para direcionar altera
 
 A edição genética possui potencial para pesquisas sobre doenças, desenvolvimento de terapias e aplicações agrícolas.
 
-Entretanto, apresenta limitações técnicas, riscos, desafios éticos e questões regulatórias, especialmente quando envolve alterações hereditárias em seres humanos.`, tipo: "h3" }
+Entretanto, apresenta limitações técnicas, riscos, desafios éticos e questões regulatórias, especialmente quando envolve alterações hereditárias em seres humanos.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_a/biotecnologia/dna_pcr_crispr_800px.jpg', '../../imagens/biologia/biologia_a/biotecnologia/dna_pcr_crispr_600px.jpg', '../../imagens/biologia/biologia_a/biotecnologia/dna_pcr_crispr_400px.jpg', '../../imagens/biologia/biologia_a/biotecnologia/dna_pcr_crispr_200px.jpg', 'Esquema dos 3 topicos acima da biotecnologia'] }
     ],
 
     // BIOLOGIA B — 1º ANO
@@ -1256,7 +1266,7 @@ Essa hipótese é uma das explicações científicas investigadas para compreend
         }
     ],
 
-    EB: [
+    EB: [ 
         {
             titulo: "evidências da evolução biológica",
             texto: `A evolução biológica é sustentada por diferentes conjuntos de evidências provenientes da Paleontologia, Anatomia Comparada, Embriologia, Biogeografia, Genética e Biologia Molecular.
@@ -1291,7 +1301,7 @@ A idade dos fósseis pode ser estimada por métodos de datação relativa, que e
 No ser humano, o cóccix é um exemplo de estrutura relacionada à cauda presente em ancestrais evolutivos. Outros exemplos incluem músculos auriculares reduzidos em muitas pessoas.
 
 Uma estrutura vestigial não precisa ser completamente inútil: ela pode manter funções secundárias ou adquirir novas funções ao longo da evolução.`,
-            tipo: "h3"
+            tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/evidencias_evolucao/exemplos_orgaos_800px.jpg', '../../imagens/biologia/biologia_b/evidencias_evolucao/exemplos_orgaos_600px.jpg', '../../imagens/biologia/biologia_b/evidencias_evolucao/exemplos_orgaos_400px.jpg', '../../imagens/biologia/biologia_b/evidencias_evolucao/exemplos_orgaos_200px.jpg', 'Exemplos de orgãos vestigiais']
         },
         {
             titulo: "Embriologia comparada",
@@ -1357,7 +1367,8 @@ Embora suas explicações sobre a hereditariedade não sejam aceitas pela Biolog
 Em uma população, os indivíduos apresentam variações hereditárias. Quando determinadas características aumentam a sobrevivência ou o sucesso reprodutivo em um ambiente, seus portadores podem deixar mais descendentes.
 
 Ao longo das gerações, essas características podem se tornar mais frequentes na população. A seleção natural não ocorre porque os organismos precisam mudar, mas porque existem diferenças hereditárias sobre as quais o ambiente atua.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_b/teorias_evolucionistas/lamark_darwing_800px.jpg', '../../imagens/biologia/biologia_b/teorias_evolucionistas/lamark_darwing_600px.jpg', '../../imagens/biologia/biologia_b/teorias_evolucionistas/lamark_darwing_400px.jpg', '../../imagens/biologia/biologia_b/teorias_evolucionistas/lamark_darwing_200px.jpg', 'Comparação entre Darwing x Lamarck']
         },
         {
             titulo: "Seleção natural",
@@ -1441,7 +1452,8 @@ Após muitas gerações, pode surgir isolamento reprodutivo, caracterizando a fo
 Em plantas, a poliploidia, que corresponde à presença de conjuntos adicionais de cromossomos, pode provocar isolamento reprodutivo rapidamente.
 
 Diferenças ecológicas, comportamentais ou de preferência por parceiros também podem contribuir para a redução do fluxo gênico.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_b/formacao_especie/esquema_especiacao_800px.jpg', '../../imagens/biologia/biologia_b/formacao_especie/esquema_especiacao_600px.jpg', '../../imagens/biologia/biologia_b/formacao_especie/esquema_especiacao_400px.jpg', '../../imagens/biologia/biologia_b/formacao_especie/esquema_especiacao_200px.jpg', 'Comparação entre a especialização alopátrica e simpátrica']
         },
         {
             titulo: "Radiação adaptativa",
@@ -1600,7 +1612,8 @@ As teias alimentares representam de forma mais realista a complexidade das rela�
 A pirâmide de números representa a quantidade de indivíduos em cada nível. A pirâmide de biomassa representa a massa de matéria orgânica. A pirâmide de energia representa a quantidade de energia disponível em cada nível trófico.
 
 A pirâmide de energia é sempre direta, pois a energia disponível diminui ao longo das transferências entre níveis tróficos. Já as pirâmides de números e biomassa podem apresentar formatos diferentes.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['', '', '', '', 'Demonstração de uma cadeia alimentaar e piramide energética']
         },
         {
             titulo: "Produtividade ecológica",
@@ -1666,7 +1679,8 @@ Na amonificação, compostos nitrogenados da matéria orgânica são convertidos
 O intemperismo das rochas libera fosfatos no solo e na água. As plantas absorvem esses íons pelas raízes, e os animais obtêm fósforo por meio da alimentação.
 
 A decomposição de organismos devolve parte do fósforo ao ambiente. Uma parcela pode ser transportada para ambientes aquáticos e sedimentar, participando da formação de novas rochas ao longo do tempo.`,
-            tipo: "h3"
+            tipo: "h3",
+            imagem: ['../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_800px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_600px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_400px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_200px.jpg', 'Ilustração dos ciclos da água, carbono e nitrogênio']
         },
         {
             titulo: "Impactos humanos nos ciclos biogeoquímicos",
@@ -1877,7 +1891,8 @@ Na curva do tipo II, a probabilidade de morte é relativamente constante ao long
 Durante a sucessão, diferentes espécies colonizam o ambiente, modificam suas condições e podem favorecer a chegada de outras espécies.
 
 Esse processo pode ocorrer em ambientes recém-formados ou em locais que sofreram perturbações, como incêndios e desmatamentos. A sucessão contribui para a reorganização das comunidades e para a recuperação de ecossistemas.`,
-            tipo: "h2"
+            tipo: "h2",
+            imagem: ['../../imagens/biologia/biologia_b/sequencia_ecologica/sucessao_ecologica_800px.jpg', '../../imagens/biologia/biologia_b/sequencia_ecologica/sucessao_ecologica_600px.jpg', '../../imagens/biologia/biologia_b/sequencia_ecologica/sucessao_ecologica_400px.jpg', '../../imagens/biologia/biologia_b/sequencia_ecologica/sucessao_ecologica_200px.jpg', 'Estagios da sucessão ecológica']
         },
         {
             titulo: "Sucessão primária",
@@ -2063,7 +2078,7 @@ Segmentação holoblástica ocorre quando o ovo é dividido completamente durant
 
 Segmentação meroblástica ocorre quando a divisão celular não abrange toda a massa do ovo, geralmente devido à grande quantidade de vitelo. Pode ser discoidal ou superficial, conforme o organismo.
 
-Esses padrões estão relacionados à quantidade e à distribuição do vitelo e às características do desenvolvimento embrionário.`, tipo: "h3" },
+Esses padrões estão relacionados à quantidade e à distribuição do vitelo e às características do desenvolvimento embrionário.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/ovos_segmentacao_/tipos_ovossge_800px.jpg', '../../imagens/biologia/biologia_b/ovos_segmentacao_/tipos_ovossge_600px.jpg', '../../imagens/biologia/biologia_b/ovos_segmentacao_/tipos_ovossge_400px.jpg', '../../imagens/biologia/biologia_b/ovos_segmentacao_/tipos_ovossge_200px.jpg', 'Exemplificação dos tipos de ovos e segmentação'] },
         { titulo: "Etapas iniciais do desenvolvimento", texto: `Durante a segmentação, o zigoto forma sucessivos blastômeros. Em muitos organismos, essas divisões resultam na formação da mórula, uma massa de células.
 
 Posteriormente, ocorre a formação da blástula ou estrutura equivalente, caracterizada pela organização de células em torno de uma região ou estrutura embrionária.
@@ -2112,7 +2127,7 @@ Ela participa de trocas de gases, nutrientes e resíduos, além de produzir horm
 
 O cordão umbilical conecta o feto à placenta e contém vasos sanguíneos responsáveis pelo transporte de substâncias.
 
-O sangue materno e fetal normalmente não se mistura diretamente em grande quantidade, embora as substâncias possam atravessar a interface placentária.`, tipo: "h3" }
+O sangue materno e fetal normalmente não se mistura diretamente em grande quantidade, embora as substâncias possam atravessar a interface placentária.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/embriao_anexos/anexos_embrionarios_800px.jpg', '../../imagens/biologia/biologia_b/embriao_anexos/anexos_embrionarios_600px.jpg', '../../imagens/biologia/biologia_b/embriao_anexos/anexos_embrionarios_400px.jpg', '../../imagens/biologia/biologia_b/embriao_anexos/anexos_embrionarios_200px.jpg', 'imagem com as funções gerais do embrião'] }
     ],
 
     CT: [
@@ -2149,7 +2164,7 @@ Clonagem reprodutiva busca produzir um organismo geneticamente semelhante ao org
 
 Clonagem terapêutica é uma abordagem de pesquisa relacionada à obtenção de células para investigar processos de desenvolvimento e possíveis aplicações regenerativas.
 
-Clones podem apresentar diferenças devido a fatores ambientais, epigenéticos, mutações e outros processos biológicos.`, tipo: "h3" },
+Clones podem apresentar diferenças devido a fatores ambientais, epigenéticos, mutações e outros processos biológicos.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/ct_clonagem/celular_clonagem_800px.jpg', '../../imagens/biologia/biologia_b/ct_clonagem/celular_clonagem_600px.jpg', '../../imagens/biologia/biologia_b/ct_clonagem/celular_clonagem_400px.jpg', '../../imagens/biologia/biologia_b/ct_clonagem/celular_clonagem_200px.jpg', 'Diferença entre difernciação e clonagem'] },
         { titulo: "Aplicações e desafios", texto: `Células-tronco e técnicas de clonagem são estudadas para compreender doenças, regeneração de tecidos, desenvolvimento embrionário e possíveis terapias.
 
 As pesquisas enfrentam desafios como controle da diferenciação, rejeição imunológica, segurança, formação de tumores e integração funcional dos tecidos.
@@ -2193,7 +2208,7 @@ Glândulas endócrinas liberam hormônios ou outras substâncias diretamente no 
 
 Glândulas mistas apresentam funções endócrinas e exócrinas, como ocorre no pâncreas.
 
-A classificação glandular também pode considerar o tipo de secreção, a organização celular e o mecanismo de liberação.`, tipo: "h3" }
+A classificação glandular também pode considerar o tipo de secreção, a organização celular e o mecanismo de liberação.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/tecido_epitelial/epitelios_800px.jpg', '../../imagens/biologia/biologia_b/tecido_epitelial/epitelios_600px.jpg', '../../imagens/biologia/biologia_b/tecido_epitelial/epitelios_400px.jpg', '../../imagens/biologia/biologia_b/tecido_epitelial/epitelios_200px.jpg', 'Ilustração das diversas formas do tecido epitelial'] }
     ],
 
     TC: [
@@ -2242,7 +2257,7 @@ Plaquetas participam de processos relacionados à coagulação.
 
 O plasma é a porção líquida do sangue, contendo água, proteínas, sais, nutrientes, hormônios e outras substâncias.
 
-O sangue participa do transporte, da defesa, da regulação e da manutenção da homeostase.`, tipo: "h3" }
+O sangue participa do transporte, da defesa, da regulação e da manutenção da homeostase.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/tecido_conjuntivo/conjuntivo_800px.jpg', '../../imagens/biologia/biologia_b/tecido_conjuntivo/conjuntivo_600px.jpg', '../../imagens/biologia/biologia_b/tecido_conjuntivo/conjuntivo_400px.jpg', '../../imagens/biologia/biologia_b/tecido_conjuntivo/conjuntivo_200px.jpg', 'Imagem mostrando a classificação e funções do tecido conjuntivo'] }
     ],
 
     TN: [
@@ -2288,7 +2303,7 @@ Células de Schwann formam mielina no sistema nervoso periférico e participam d
 
 Micróglia participa da defesa imunológica e da remoção de componentes celulares.
 
-Células ependimárias revestem determinadas cavidades do sistema nervoso central e participam de funções relacionadas ao líquido cerebrospinal.`, tipo: "h3" }
+Células ependimárias revestem determinadas cavidades do sistema nervoso central e participam de funções relacionadas ao líquido cerebrospinal.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/tecido_nervoso/neuronio_800px.jpg', '../../imagens/biologia/biologia_b/tecido_nervoso/neuronio_600px.jpg', '../../imagens/biologia/biologia_b/tecido_nervoso/neuronio_400px.jpg', '../../imagens/biologia/biologia_b/tecido_nervoso/neuronio_200px.jpg', 'Anatomia do neurônio e sinapse'] }
     ],
 
     TM: [
@@ -2328,6 +2343,6 @@ A energia utilizada no ciclo de contração é fornecida pelo ATP.
 
 Durante a contração, os filamentos deslizam entre si, produzindo o encurtamento dos sarcômeros, sem que os filamentos precisem encurtar individualmente.
 
-A relaxação ocorre quando os mecanismos regulatórios permitem a interrupção da interação contrátil e o cálcio é removido do citoplasma.`, tipo: "h3" }
+A relaxação ocorre quando os mecanismos regulatórios permitem a interrupção da interação contrátil e o cálcio é removido do citoplasma.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/tecido_muscular/muscular_800px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_600px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_400px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_200px.jpg', 'Comparação entre os três tecidos musculares'] }
     ]
 };
