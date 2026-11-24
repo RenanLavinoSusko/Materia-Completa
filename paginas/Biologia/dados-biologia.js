@@ -1680,7 +1680,7 @@ O intemperismo das rochas libera fosfatos no solo e na água. As plantas absorve
 
 A decomposição de organismos devolve parte do fósforo ao ambiente. Uma parcela pode ser transportada para ambientes aquáticos e sedimentar, participando da formação de novas rochas ao longo do tempo.`,
             tipo: "h3",
-            imagem: ['../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_800px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_600px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_400px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquímicos/ciclos_200px.jpg', 'Ilustração dos ciclos da água, carbono e nitrogênio']
+            imagem: ['../../imagens/biologia/biologia_b/ciclos_biogeoquimicos/ciclos_800px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquimicos/ciclos_600px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquimicos/ciclos_400px.jpg', '../../imagens/biologia/biologia_b/ciclos_biogeoquimicos/ciclos_200px.jpg', 'Ilustração dos ciclos da água, carbono e nitrogênio']
         },
         {
             titulo: "Impactos humanos nos ciclos biogeoquímicos",

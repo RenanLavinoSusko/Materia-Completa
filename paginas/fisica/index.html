@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="fisica.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <!--Fisica A-->
+                <input type="radio" name="materia" id="A">
+                <label for="A">Física A</label>
+
+                <div id="materia_A">
+                    <input type="radio" name="ano" id="an1A">
+                    <label for="an1A">1º Ano</label>
+                    <!--1 Ano-->
+                    <div id="ano1A">
+                        <!--1 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="GF">
+                            <label for="GF">Grandezas Físicas</label>
+                            <input type="radio" name="conteudo" id="FC">
+                            <label for="FC">Fundamentos da Cinemática</label>
+                            <input type="radio" name="conteudo" id="MU">
+                            <label for="MU">Movimento Uniforme</label>
+                            <input type="radio" name="conteudo" id="MUV">
+                            <label for="MUV">Movimento Uniformemente Variado</label>
+                            <input type="radio" name="conteudo" id="CM">
+                            <label for="CM">Composição de Movimentos</label>
+                        </section>
+
+                        <!--2 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="LH">
+                            <label for="LH">Lançamento Horizontal</label>
+                            <input type="radio" name="conteudo" id="LO">
+                            <label for="LO">Lançamento Oblíquio</label>
+                            <input type="radio" name="conteudo" id="TE">
+                            <label for="TE">Trabalho e Energia</label>
+                            <input type="radio" name="conteudo" id="EC">
+                            <label for="EC">Energia Cinética</label>
+                            <input type="radio" name="conteudo" id="EP">
+                            <label for="EP">Energia Potencial</label>
+                            <input type="radio" name="conteudo" id="EM">
+                            <label for="EM">Energia Mecânica</label>
+                        </section>
+
+                        <!--3 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="EPM">
+                            <label for="EPM">Estática do Ponto Material</label>
+                            <input type="radio" name="conteudo" id="ECE">
+                            <label for="ECE">Estática do Corpo Extenso</label>
+                            <input type="radio" name="conteudo" id="EF">
+                            <label for="EF">Estática dos Fluídos</label>
+                        </section>
+                    </div>
+
+                    <input type="radio" name="ano" id="an2A">
+                    <label for="an2A">2º Ano</label>
+                    <!--2 Ano-->
+                    <div id="ano2A">
+
+                    </div>
+
+                    <input type="radio" name="ano" id="an3A">
+                    <label for="an3A">3º Ano</label>
+                    <!--3 Ano-->
+                    <div id="ano3A">
+
+                    </div>
+
+                </div>
+
+                <!--Fisica B-->
+                <input type="radio" name="materia" id="B">
+                <label for="B">Física B</label>
+                
+                    <div id="materia_B">
+                        <input type="radio" name="ano" id="an1B">
+                        <label for="an1B">1º Ano</label>
+                        <!--1 Ano-->
+                        <div id="ano1B">
+                            <!--1 Trimestre-->
+                            <section>                            
+                                <input type="radio" name="conteudo" id="V">
+                                <label for="V">Vetores</label>    
+                                <input type="radio" name="conteudo" id="LN">
+                                <label for="LN">Leis de Newton</label>
+                            </section>
+
+                            <!--2 Trimestre-->
+                            <section>
+                                <input type="radio" name="conteudo" id="PI">
+                                <label for="PI">Plano Inclinado</label>
+                                <input type="radio" name="conteudo" id="FA">
+                                <label for="FA">Força de Atrito</label>
+                                <input type="radio" name="conteudo" id="DMC">
+                                <label for="DMC">Dinâmica do Movimento Circular</label>
+                                <input type="radio" name="conteudo" id="ALK">
+                                <label for="ALK">Astronomia e Leis de Kepler</label>
+                                <input type="radio" name="conteudo" id="GU">
+                                <label for="GU">Gravitação Universal</label>
+                            </section>
+
+                            <!--3 Trimestre-->
+                            <section>
+                                <input type="radio" name="conteudo" id="DIC">
+                                <label for="DIC">Dinâmica Impulsiva de um Corpo</label>
+                                <input type="radio" name="conteudo" id="DIS">
+                                <label for="DIS">Dinâmica Impulsiva em Sistema</label>
+                                <input type="radio" name="conteudo" id="C">
+                                <label for="C">Colisões</label>
+                            </section>
+                        </div>
+
+                        <input type="radio" name="ano" id="an2B">
+                        <label for="an2B">2º Ano</label>
+                        <!--2 Ano-->
+                        <div id="ano2B">
+
+                        </div>
+
+                        <input type="radio" name="ano" id="an3B">
+                        <label for="an3B">3º Ano</label>
+                        <div id="ano3B">
+
+                        </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script src="logica.js"></script>
+    <script src="dados-fisica.js"></script>
+</body>
+</html>

@@ -1,120 +1,224 @@
-//Variaveis
-    //Materias
-let materiaA = document.getElementById('materia_A');
-let materiaB = document.getElementById('materia_B');
+// Variavels
+    // Matérias
+const materiaA = document.getElementById('materia_A');
+const materiaB = document.getElementById('materia_B');
 
-    //Conteudo
-let h2_ou_h3 = 0;
-let local = document.querySelector('#quadro');
+const div_materia = [
+    materiaA, materiaB
+];
+const materia_id = [
+    "A", "B"
+];
 
-    //Ano
-let ano1A = document.getElementById('ano1A');
-let ano2A = document.getElementById('ano2A');
-let ano3A = document.getElementById('ano3A');
-let ano1B = document.getElementById('ano1B');
-let ano2B = document.getElementById('ano2B');
-let ano3B = document.getElementById('ano3B');
+    // Conteudo 
+const local = document.querySelector('#quadro');
 
-//Funções
-    //Materias
-function atualizarMaterias() {  
-    document.getElementsByName('materia').forEach((input) => {
-        ano1A.style.display = ano1B.style.display = ano2A.style.display = ano2B.style.display = ano3A.style.display = ano3B.style.display = 'none'
-        if (input.checked) { // Verifica qual rádio está selecionado
-            if (input.id === "A") {
-                materiaA.style.display = "block";
-                materiaB.style.display = "none";
-            } else if (input.id === "B") {
-                materiaB.style.display = "block";
-                materiaA.style.display = "none";
-            }
-        }
+    // anos 
+const ano1A = document.getElementById('ano1A');
+const ano2A = document.getElementById('ano2A');
+const ano3A = document.getElementById('ano3A');
+
+const ano1B = document.getElementById('ano1B');
+const ano2B = document.getElementById('ano2B');
+const ano3B = document.getElementById('ano3B');
+
+const div_anos = [
+        ano1A, ano2A, ano3A,
+        ano1B, ano2B, ano3B
+];
+
+const anos_id = [
+    'an1A', 'an2A', 'an3A',
+    'an1B', 'an2B', 'an3B',
+];
+
+    // Controle de Animações
+let execucaoescrita = 0;
+
+// Funções
+    // Das Matérias e Anos
+function atualizarMaterias() {
+    // Deixa os anos invisiveis
+    div_anos.forEach(ano => {
+        ano.style.display = 'none'
     });
-}// Função que atualiza a visibilidade das matérias
 
-    //Anos
-function atualizarano() {
-    document.getElementsByName('ano').forEach((input) => {
-    if (input.checked) {
-        if (input.id === 'an1A' || input.id === 'an1B') {
-            ano1A.style.display = ano1B.style.display = 'block'
-            ano2A.style.display = ano2B.style.display = ano3A.style.display = ano3B.style.display = 'none'
-        }
-        else if (input.id === 'an2A' || input.id === 'an2B') {
-            ano2A.style.display = ano2B.style.display = 'block'
-            ano1A.style.display = ano1B.style.display = ano3A.style.display = ano3B.style.display = 'none'
-        }
-        else if (input.id === 'an3A' || input.id === 'an3B') {
-            ano3A.style.display = ano3B.style.display = 'block'
-            ano1A.style.display = ano1B.style.display = ano2A.style.display = ano2B.style.display = 'none'
-        }   
-    }
-    })
-}
+    // Tira os checked
+    document.getElementsByName('ano').forEach(checado => {
+        checado.checked = false;
+    });
 
-    //Conteudo
-function escrita(titulo, texto) {
-    return new Promise((resolve) => {
-
-        let h;
-
-        if (h2_ou_h3 === 0) {
-            h = document.createElement('h2');
-        } else {
-            h = document.createElement('h3');
-        }
-
-        let p = document.createElement('p');
-
-        p.style.whiteSpace = "pre-line";
-
-        
-        local.appendChild(h);
-        local.appendChild(p);
-        
-        var cont = 0;
-        var cont1 = 0;
-        
-        let intervalo = setInterval(() => {
-            if (cont < titulo.length) {
-                h.textContent += titulo[cont];
-                cont++;
-            }
-            else if (cont1 < texto.length) {
-                p.textContent += texto[cont1];
-                cont1++;
+    // A materia selecionada mostra os anos
+    document.getElementsByName('materia').forEach(materia => {
+        const indice = materia_id.indexOf(materia.id);
+        if (indice >= 0) {
+            if (materia.checked) {
+                div_materia[indice].style.display = 'block';
             }
             else {
-                clearInterval(intervalo);
-                resolve();
-            };
-        }, 10);
+                div_materia[indice].style.display = 'none'
+            }
+        };
     });
 };
 
-function imagem(img1, img2, img3, img4, alt) {
-    let img = document.createElement('img');
-    if (window.matchMedia('(min-width: 800px).').matches) {
-        img.src = img1;
-    } else if (window.matchMedia('(min-width: 600px').matches){
-        img.src = img2;
-    } else if (window.matchMedia(`(min-width: 400px)`).matches) {
-        img.src = img3;
-    } else {
-        img.src = img4;
-    };
-    img.alt = alt;
-    local.appendChild(img);
+    // Do ano
+function atualizarAno() {
+        // A materia selecionada mostra os anos
+    document.getElementsByName('ano').forEach(ano => {
+        const indice = anos_id.indexOf(ano.id);
+        if (indice >= 0) {
+            div_anos[indice].style.display = 'none';
+            if (ano.checked) {
+                div_anos[indice].style.display = 'block';
+            };
+        };
+    });
 };
 
-// Seleciona a primeira materia "A"
+    // Escrita
+function escrita(titulo, texto, tipo ='h3', image ='', execucao) {
+
+    return new Promise(resolve => {
+
+        // Verifica se a execução ainda é válida (resolve() nao para só avisa)
+        if (execucao !== execucaoescrita) {
+            resolve();
+            return;
+        };
+
+        // Cria Variaveis  
+        let h;
+        if (tipo === 'h2') {
+            h = document.createElement('h2');
+        }
+        else {
+            h = document.createElement('h3');
+        };
+        const p = document.createElement('p');
+        p.style.whiteSpace = 'pre-line';
+
+        local.appendChild(h);
+        local.appendChild(p);
+
+        let indicetitulo = 0;
+        let indicetexto = 0;
+
+        const escrevendo = setInterval(() => {
+            // Para encerrar animações antigas
+            if (execucao !== execucaoescrita) {
+                clearInterval(escrevendo);
+                resolve();
+                return; 
+            };
+            // Escreve Titulo
+            if (indicetitulo < titulo.length) {
+                h.textContent += titulo[indicetitulo];
+                indicetitulo++;
+            }
+            // Escreve Texto
+            else if (indicetexto < texto.length) {
+                p.textContent += texto[indicetexto];
+                indicetexto++;
+            }
+            // Adiciona imagem
+            else {
+                clearInterval(escrevendo);
+                if (Array.isArray(image) && image.length >= 5) {
+
+                    imagens(
+                        image[0],
+                        image[1],
+                        image[2],
+                        image[3],
+                        image[4]
+                    );
+                };
+
+                resolve();
+            };
+        }, 10)
+    });
+};
+
+    // Imagem
+function imagens(img1, img2, img3, img4, alt) {
+
+    const picture = document.createElement('picture');
+
+    const tamanho4 = document.createElement('source');
+    tamanho4.media = '(min-width: 800px)';
+    tamanho4.srcset = img1;
+
+    const tamanho3 = document.createElement('source');
+    tamanho3.media = '(min-width: 600px)';
+    tamanho3.srcset = img2;
+
+    const tamanho2 = document.createElement('source');
+    tamanho2.media = '(min-width: 400px)';
+    tamanho2.srcset = img3;
+
+    const tamanho1 = document.createElement('img');
+    tamanho1.src = img4;
+    tamanho1.alt = alt;
+
+    picture.appendChild(tamanho4);
+    picture.appendChild(tamanho3);
+    picture.appendChild(tamanho2);
+    picture.appendChild(tamanho1);
+
+    local.appendChild(picture);
+};
+
+    // Conteudo
+async function conteudo(id) {
+    // Para controle de execução
+    const execucaoid = ++execucaoescrita;
+    // Limpa o quadro, melhor que local.innerHTML = ''
+    local.replaceChildren();
+
+    const bloco = conteudosQuimica[id]; //Pega os dados
+
+    if (!bloco) {
+        alert('Erro na procura da matéria tente outro conteudo');
+        return;
+    };
+
+    for (const i of bloco) {
+        await escrita(
+            i.titulo || '',
+            i.texto || '',
+            i.tipo || '',
+            i.imagem || '',
+            execucaoid
+        );
+
+        //Caso mude para outro conteudo para
+        if (execucaoid !== execucaoescrita) {
+            return
+        };
+    };
+    
+}
+
 atualizarMaterias();
 
-// Adiciona o evento de "change" (mudança) para cada rádio button
-document.getElementsByName('materia').forEach((input) => {
+// Eventos das matérias
+document.getElementsByName('materia').forEach(input => {
     input.addEventListener('change', atualizarMaterias);
 });
 
-document.getElementsByName('ano').forEach((input) => {
-    input.addEventListener('change', atualizarano);
+
+// Eventos dos anos
+document.getElementsByName('ano').forEach(input => {
+    input.addEventListener('change', atualizarAno);
 });
+
+
+// Eventos dos conteúdos
+document.getElementsByName('conteudo').forEach(input => {
+
+    input.addEventListener('change', () => {
+        conteudo(input.id);
+    });
+});   
