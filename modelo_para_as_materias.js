@@ -144,6 +144,7 @@ function escrita(titulo, texto, tipo ='h3', image ='', execucao) {
     // Imagem
 function imagens(img1, img2, img3, img4, alt) {
 
+    const link_img800px = document.createElement('a')
     const picture = document.createElement('picture');
 
     const tamanho4 = document.createElement('source');
@@ -167,7 +168,11 @@ function imagens(img1, img2, img3, img4, alt) {
     picture.appendChild(tamanho2);
     picture.appendChild(tamanho1);
 
-    local.appendChild(picture);
+    link_img800px.href = img1
+    link_img800px.appendChild(picture);
+
+    local.appendChild(link_img800px);
+    
 };
 
     // Conteudo
@@ -177,7 +182,7 @@ async function conteudo(id) {
     // Limpa o quadro, melhor que local.innerHTML = ''
     local.replaceChildren();
 
-    const bloco = conteudosQuimica[id]; //Pega os dados
+    const bloco = conteudosBiologia[id]; //Pega os dados
 
     if (!bloco) {
         alert('Erro na procura da matéria tente outro conteudo');

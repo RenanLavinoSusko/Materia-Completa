@@ -67,9 +67,9 @@ function atualizarAno() {
         // A materia selecionada mostra os anos
     document.getElementsByName('ano').forEach(ano => {
         const indice = anos_id.indexOf(ano.id);
-        div_anos[indice].style.display = 'none';
-        if (ano.checked) {
-            if (indice >= 0) {
+        if (indice >= 0) {
+            div_anos[indice].style.display = 'none';
+            if (ano.checked) {
                 div_anos[indice].style.display = 'block';
             };
         };
@@ -144,6 +144,7 @@ function escrita(titulo, texto, tipo ='h3', image ='', execucao) {
     // Imagem
 function imagens(img1, img2, img3, img4, alt) {
 
+    const link_img800px = document.createElement('a')
     const picture = document.createElement('picture');
 
     const tamanho4 = document.createElement('source');
@@ -167,7 +168,11 @@ function imagens(img1, img2, img3, img4, alt) {
     picture.appendChild(tamanho2);
     picture.appendChild(tamanho1);
 
-    local.appendChild(picture);
+    link_img800px.href = img1
+    link_img800px.appendChild(picture);
+
+    local.appendChild(link_img800px);
+    
 };
 
     // Conteudo
@@ -221,4 +226,4 @@ document.getElementsByName('conteudo').forEach(input => {
     input.addEventListener('change', () => {
         conteudo(input.id);
     });
-});
+});   
