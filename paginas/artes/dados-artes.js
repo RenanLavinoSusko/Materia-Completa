@@ -68,11 +68,9 @@ O Parque Nacional da Serra da Capivara, no Piauí, destaca-se pela grande quanti
 
 Esses registros mostram que a produção artística e simbólica também esteve presente entre os antigos habitantes das Américas.`,
             tipo: "h2",
-            imagem: [
-                "Comparação entre pinturas rupestres do Paleolítico e do Neolítico, mostrando animais, figuras humanas, cenas cotidianas e diferentes técnicas de representação.",
-                "Fotografia ou reconstrução ilustrativa de Stonehenge, destacando a disposição dos grandes blocos de pedra."
-            ]
-        }
+            imagem: ['../../imagens/artes/1ano/arte_prehist/pintura_rupestre_800px.jpeg', '../../imagens/artes/1ano/arte_prehist/pintura_rupestre_600px.jpeg', '../../imagens/artes/1ano/arte_prehist/pintura_rupestre_400px.jpeg', '../../imagens/artes/1ano/arte_prehist/pintura_rupestre_200px.jpeg', "Comparação entre pinturas rupestres do Paleolítico e do Neolítico, mostrando animais, figuras humanas, cenas cotidianas e diferentes técnicas de representação."]
+        },
+        {imagem: ['../../imagens/artes/1ano/arte_prehist/stonehenge_800px.jpeg', '../../imagens/artes/1ano/arte_prehist/stonehenge_600px.jpeg', '../../imagens/artes/1ano/arte_prehist/stonehenge_400px.jpeg', '../../imagens/artes/1ano/arte_prehist/stonehenge_200px.jpeg', "Fotografia ou reconstrução ilustrativa de Stonehenge, destacando a disposição dos grandes blocos de pedra."]}
     ],
 
     AU: [
@@ -126,9 +124,7 @@ As civilizações antigas deixaram contribuições fundamentais para a arquitetu
 
 Muitos princípios desenvolvidos nesse período continuam sendo estudados e utilizados na arte e na arquitetura contemporâneas.`,
             tipo: "h2",
-            imagem: [
-                "Painel comparativo da arquitetura da Antiguidade mostrando um zigurate mesopotâmico, uma pirâmide egípcia, um templo grego e o Coliseu romano."
-            ]
+            imagem: ['../../imagens/artes/1ano/antig_naoultra/comp_arquit_800px.jpeg','../../imagens/artes/1ano/antig_naoultra/comp_arquit_600px.jpeg', '../../imagens/artes/1ano/antig_naoultra/comp_arquit_400px.jpeg', '../../imagens/artes/1ano/antig_naoultra/comp_arquit_200px.jpeg', "Painel comparativo da arquitetura da Antiguidade mostrando um zigurate mesopotâmico, uma pirâmide egípcia, um templo grego e o Coliseu romano."]
         }
     ],
 
@@ -173,9 +169,7 @@ Essas figuras foram representadas em pinturas, esculturas, relevos e construçõ
 
 A arte greco-romana continuou influenciando diferentes períodos históricos, especialmente o Renascimento e o Neoclassicismo, que retomaram princípios de proporção, simetria, equilíbrio e referências à Antiguidade.`,
             tipo: "h2",
-            imagem: [
-                "Comparação visual entre uma escultura grega idealizada e um busto romano de caráter realista, destacando diferenças de representação."
-            ]
+            imagem: ['../../imagens/artes/1ano/lig_grerom/escultura_800px.jpeg', '../../imagens/artes/1ano/lig_grerom/escultura_600px.jpeg', '../../imagens/artes/1ano/lig_grerom/escultura_400px.jpeg', '../../imagens/artes/1ano/lig_grerom/escultura_200px.jpeg', "Comparação visual entre uma escultura grega idealizada e um busto romano de caráter realista, destacando diferenças de representação."]
         }
     ],
 
@@ -228,9 +222,7 @@ O teatro de animação possui diferentes tradições culturais e históricas, ut
 
 Essas manifestações demonstram que o teatro não depende exclusivamente da atuação de pessoas, podendo utilizar objetos e figuras animadas como elementos centrais da apresentação.`,
             tipo: "h2",
-            imagem: [
-                "Ilustração de duas máscaras teatrais clássicas da Grécia Antiga, uma representando a tragédia e outra a comédia, com expressões faciais contrastantes."
-            ]
+            imagem: ['../../imagens/artes/1ano/ctmmbi/mascaras_800px.jpeg', '../../imagens/artes/1ano/ctmmbi/mascaras_600px.jpeg', '../../imagens/artes/1ano/ctmmbi/mascaras_400px.jpeg', '../../imagens/artes/1ano/ctmmbi/mascaras_200px.jpeg', "Ilustração de duas máscaras teatrais clássicas da Grécia Antiga, uma representando a tragédia e outra a comédia, com expressões faciais contrastantes."]
         }
     ],
 
@@ -283,9 +275,7 @@ Tanto a arte bizantina quanto a islâmica influenciaram a arquitetura, a decora�
 
 Suas técnicas e características continuam sendo estudadas como parte importante da história da arte mundial.`,
             tipo: "h2",
-            imagem: [
-                "Comparação entre um mosaico bizantino com fundo dourado e um painel de arte islâmica com padrões geométricos e arabescos, destacando as diferenças visuais."
-            ]
+            imagem: ['../../imagens/artes/1ano/arte_bizisla/biz_isl_800px.jpeg', '../../imagens/artes/1ano/arte_bizisla/biz_isl_600px.jpeg', '../../imagens/artes/1ano/arte_bizisla/biz_isl_400px.jpeg', '../../imagens/artes/1ano/arte_bizisla/biz_isl_200px.jpeg', "Comparação entre um mosaico bizantino com fundo dourado e um painel de arte islâmica com padrões geométricos e arabescos, destacando as diferenças visuais."]
         }
     ],
 
@@ -342,13 +332,11 @@ A arte medieval deixou importantes contribuições para a arquitetura, a pintura
 
 As catedrais, os manuscritos iluminados e as construções religiosas demonstram a diversidade e a complexidade das manifestações artísticas desse período.`,
             tipo: "h2",
-            imagem: [
-                "Comparação arquitetônica entre uma igreja românica, com paredes espessas e arcos de volta perfeita, e uma catedral gótica, com arcos ogivais, vitrais e arcobotantes."
-            ]
+            imagem: ['../../imagens/artes/1ano/idadem_trevas/roman_gotic_800px.jpeg', '../../imagens/artes/1ano/idadem_trevas/roman_gotic_600px.jpeg', '../../imagens/artes/1ano/idadem_trevas/roman_gotic_400px.jpeg', '../../imagens/artes/1ano/idadem_trevas/roman_gotic_200px.jpeg', "Comparação arquitetônica entre uma igreja românica, com paredes espessas e arcos de volta perfeita, e uma catedral gótica, com arcos ogivais, vitrais e arcobotantes."]
         }
     ],
 
-    PPOM: [
+    PPOP: [
         {
             titulo: "do povo para o povo",
             texto: `A arte popular reúne manifestações artísticas produzidas por pessoas e comunidades que expressam seus costumes, crenças, tradições e experiências cotidianas.
@@ -385,9 +373,7 @@ A arte popular é importante para a preservação da memória coletiva. Por meio
 
 Ela também demonstra que a produção artística não está restrita a museus, galerias ou artistas reconhecidos, estando presente nas atividades e expressões culturais de diferentes grupos sociais.`,
             tipo: "h2",
-            imagem: [
-                "Composição de manifestações da arte popular brasileira, incluindo cerâmica artesanal, xilogravura de cordel, esculturas em madeira e artesanato regional."
-            ]
+            imagem: ['../../imagens/artes/1ano/povo/arte_povo_800px.jpeg', '../../imagens/artes/1ano/povo/arte_povo_600px.jpeg', '../../imagens/artes/1ano/povo/arte_povo_400px.jpeg', '../../imagens/artes/1ano/povo/arte_povo_200px.jpeg', "Composição de manifestações da arte popular brasileira, incluindo cerâmica artesanal, xilogravura de cordel, esculturas em madeira e artesanato regional."]
         }
     ],
 
@@ -440,9 +426,7 @@ O estudo dessas manifestações permite compreender que a arte é uma produção
 
 Conhecer diferentes tradições artísticas ajuda a evitar uma visão limitada da história da arte, reconhecendo a importância de culturas que desenvolveram suas próprias linguagens e conhecimentos.`,
             tipo: "h2",
-            imagem: [
-                "Painel comparativo de manifestações artísticas chinesas, japonesas, africanas e pré-colombianas, mostrando pintura, escultura, máscaras, arquitetura e cerâmica."
-            ]
+            imagem: ['../../imagens/artes/1ano/ocidente/artes_ocidentais_800px.jpeg', '../../imagens/artes/1ano/ocidente/artes_ocidentais_600px.jpeg', '../../imagens/artes/1ano/ocidente/artes_ocidentais_400px.jpeg', '../../imagens/artes/1ano/ocidente/artes_ocidentais_200px.jpeg', "Painel comparativo de manifestações artísticas chinesas, japonesas, africanas e pré-colombianas, mostrando pintura, escultura, máscaras, arquitetura e cerâmica."]
         }
     ],
 
@@ -494,9 +478,7 @@ Rafael Sanzio, conhecido por suas composições equilibradas e obras como A Esco
 
 O Renascimento transformou a produção artística europeia e contribuiu para o desenvolvimento de técnicas de representação, estudos científicos e novas formas de compreender a relação entre o ser humano e o mundo.`,
             tipo: "h2",
-            imagem: [
-                "Comparação entre uma escultura clássica greco-romana e uma escultura renascentista, destacando proporção, anatomia e naturalismo."
-            ]
+            imagem: ['../../imagens/artes/1ano/velho_padrao/grerom_rens_800px.jpg', '../../imagens/artes/1ano/velho_padrao/grerom_rens_600px.jpg', '../../imagens/artes/1ano/velho_padrao/grerom_rens_400px.jpg', '../../imagens/artes/1ano/velho_padrao/grerom_rens_200px.jpg', "Comparação entre uma escultura clássica greco-romana e uma escultura renascentista, destacando proporção, anatomia e naturalismo."]
         }
     ],
 
@@ -554,11 +536,9 @@ Leonardo da Vinci também explorou técnicas de perspectiva, luz, sombra e profu
 
 Essas técnicas influenciaram profundamente a pintura ocidental e continuam sendo utilizadas no desenho, na arquitetura e nas artes visuais.`,
             tipo: "h2",
-            imagem: [
-                "Diagrama didático de perspectiva linear com um ponto de fuga, mostrando linha do horizonte, ponto de fuga e linhas convergentes em um corredor.",
-                "Comparação entre perspectiva de um ponto de fuga e perspectiva de dois pontos de fuga em desenhos arquitetônicos."
-            ]
-        }
+            imagem: ['../../imagens/artes/1ano/persp_renas/perspectiva_800px.jpg', '../../imagens/artes/1ano/persp_renas/perspectiva_600px.jpg', '../../imagens/artes/1ano/persp_renas/perspectiva_400px.jpg', '../../imagens/artes/1ano/persp_renas/perspectiva_200px.jpg', "Diagrama didático de perspectiva linear com um ponto de fuga, mostrando linha do horizonte, ponto de fuga e linhas convergentes em um corredor."]
+        },
+        {imagem: ['../../imagens/artes/1ano/persp_renas/p1_p2_800px.jpg', '../../imagens/artes/1ano/persp_renas/p1_p2_600px.jpg', '../../imagens/artes/1ano/persp_renas/p1_p2_400px.jpg', '../../imagens/artes/1ano/persp_renas/p1_p2_200px.jpg', "Comparação entre perspectiva de um ponto de fuga e perspectiva de dois pontos de fuga em desenhos arquitetônicos."]}
     ],
 
     CD: [
@@ -621,9 +601,7 @@ Antônio Francisco Lisboa, conhecido como Aleijadinho, foi um dos principais art
 
 Manuel da Costa Ataíde também se destacou pela pintura religiosa, especialmente pelas decorações de igrejas mineiras.`,
             tipo: "h2",
-            imagem: [
-                "Comparação entre uma pintura renascentista equilibrada e uma pintura barroca dramática, destacando movimento, diagonais, expressões e contrastes de luz e sombra."
-            ]
+            imagem: ['../../imagens/artes/1ano/curvas/comp_renabar_800px.jpg', '../../imagens/artes/1ano/curvas/comp_renabar_600px.jpg', '../../imagens/artes/1ano/curvas/comp_renabar_400px.jpg', '../../imagens/artes/1ano/curvas/comp_renabar_200px.jpg', "Comparação entre uma pintura renascentista equilibrada e uma pintura barroca dramática, destacando movimento, diagonais, expressões e contrastes de luz e sombra."]
         }
     ],
 
@@ -674,9 +652,7 @@ Suas obras revelam aspectos da sociedade colonial, da religiosidade, das relaç�
 
 Também é importante compreender que essa produção ocorreu em uma sociedade marcada pela escravidão e por profundas desigualdades sociais.`,
             tipo: "h2",
-            imagem: [
-                "Painel de arte barroca brasileira mostrando detalhes de talha dourada em igrejas mineiras, esculturas dos Profetas de Aleijadinho e pintura de teto de Mestre Ataíde."
-            ]
+            imagem: ['../../imagens/artes/1ano/barroco_pers/barroco_br_800px.jpg', '../../imagens/artes/1ano/barroco_pers/barroco_br_600px.jpg', '../../imagens/artes/1ano/barroco_pers/barroco_br_400px.jpg', '../../imagens/artes/1ano/barroco_pers/barroco_br_200px.jpg', "Painel de arte barroca brasileira mostrando detalhes de talha dourada em igrejas mineiras, esculturas dos Profetas de Aleijadinho e pintura de teto de Mestre Ataíde."]
         }
     ],
 
@@ -735,10 +711,7 @@ O Rococó tende a apresentar maior leveza, cores suaves, ornamentação delicada
 
 O Rococó representa uma importante etapa da história da arte europeia, demonstrando como os estilos artísticos podem refletir os costumes, os valores e os ambientes sociais de determinada época.`,
             tipo: "h2",
-            imagem: [
-                "Comparação visual entre uma pintura barroca de iluminação dramática e uma pintura rococó de cores claras, cenas aristocráticas e ornamentação delicada."
-            ]
+            imagem: ['../../imagens/artes/1ano/mund_diverti/barroco_rococo_800px.jpg', '../../imagens/artes/1ano/mund_diverti/barroco_rococo_600px.jpg', '../../imagens/artes/1ano/mund_diverti/barroco_rococo_400px.jpg', '../../imagens/artes/1ano/mund_diverti/barroco_rococo_200px.jpg', "Comparação visual entre uma pintura barroca de iluminação dramática e uma pintura rococó de cores claras, cenas aristocráticas e ornamentação delicada."]
         }
     ]
-
 };
