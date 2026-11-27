@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="page-mat" content="Historia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="historia.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <!--Biologia A-->
+                <input type="radio" name="materia" id="A">
+                <label for="A">História A</label>
+
+                <div id="materia_A">
+                    <input type="radio" name="ano" id="an1A">
+                    <label for="an1A">1º Ano</label>
+                    <!--1 Ano-->
+                    <div id="ano1A">
+                        <!--1 Trimestre-->
+                        <section>    
+                            <input type="radio" name="conteudo" id="TH">
+                            <label for="TH">Teoria da História</label>
+                            <input type="radio" name="conteudo" id="PH">
+                            <label for="PH">Pré-História</label>
+                            <input type="radio" name="conteudo" id="AOR">
+                            <label for="AOR">Antiguidade Oriental</label>
+                            <input type="radio" name="conteudo" id="AOC">
+                            <label for="AOC">Antiguidade Ocidental</label>
+                            <input type="radio" name="conteudo" id="OM">
+                            <label for="OM">Oriente Medieval</label>
+                            <input type="radio" name="conteudo" id="AM">
+                            <label for="AM">África Medieval</label>
+                        </section>
+                                
+                        <!--2 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="EM">
+                            <label for="EM">Europa Medieval</label>
+                            <input type="radio" name="conteudo" id="MN">
+                            <label for="MN">Monarquias Nacionais</label>
+                            <input type="radio" name="conteudo" id="Ren">
+                            <label for="Ren">Renascimento</label>
+                            <input type="radio" name="conteudo" id="ECE">
+                            <label for="ECE">Expansão Colonial Europeia</label>
+                        </section>
+
+                        <!--3 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="CA">
+                            <label for="CA">Colonização na América</label>
+                            <input type="radio" name="conteudo" id="RP">
+                            <label for="RP">Reforma Protestante</label>
+                            <input type="radio" name="conteudo" id="RB">
+                            <label for="RB">Revolução Burguesa</label>
+                            <input type="radio" name="conteudo" id="RI">
+                            <label for="RI">Revolução Industrial</label>
+                            <input type="radio" name="conteudo" id="RF">
+                            <label for="RF">Revolução Francesa</label>
+                            <input type="radio" name="conteudo" id="ENIE">
+                            <label for="ENIE">Era Napoleonica e Independências na América Espanhola</label>
+                        </section>
+                    </div>
+
+                    <input type="radio" name="ano" id="an2A">
+                    <label for="an2A">2º Ano</label>
+                    <!--2 Ano-->
+                    <div id="ano2A">
+
+                    </div>
+
+                    <input type="radio" name="ano" id="an3A">
+                    <label for="an3A">3º Ano</label>
+                    <!--3 Ano-->
+                    <div id="ano3A">
+
+                    </div>
+
+                </div>
+
+                <!--Biologia B-->
+                <input type="radio" name="materia" id="B">
+                <label for="B">História B</label>
+                
+                    <div id="materia_B">
+                        <input type="radio" name="ano" id="an1B">
+                        <label for="an1B">1º Ano</label>
+                        <!--1 Ano-->
+                        <div id="ano1B">
+                        <!--1 Trimestre-->
+                        <section>    
+                            <input type="radio" name="conteudo" id="HB">
+                            <label for="HB">História Geral e Brasil Conexões</label>
+                            <input type="radio" name="conteudo" id="SC">
+                            <label for="SC">Sistema Colonial</label>
+                            <input type="radio" name="conteudo" id="CEP">
+                            <label for="CEP">Cotidiano, Escravidão e Poder</label>
+                            <input type="radio" name="conteudo" id="APP">
+                            <label for="APP">Ameaças ao Projeto Poratuguês</label>
+                        </section>
+                                
+                        <!--2 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="ET">
+                            <label for="ET">Expansão Territorial</label>
+                            <input type="radio" name="conteudo" id="CUP">
+                            <label for="CUP">Cotidiano, Urbanização e Poder</label>
+                            <input type="radio" name="conteudo" id="AGP">
+                            <label for="AGP">Administração e Governode Pombal</label>
+                        </section>
+
+                        <!--3 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="RCNV">
+                            <label for="RCNV">Revoltas Coloniais Nativistas e Emancipantes</label>
+                            <input type="radio" name="conteudo" id="GJ">
+                            <label for="GJ">Governo Joanino</label>
+                        </section>
+                    </div>
+
+                        <input type="radio" name="ano" id="an2B">
+                        <label for="an2B">2º Ano</label>
+                        <!--2 Ano-->
+                        <div id="ano2B">
+
+                        </div>
+
+                        <input type="radio" name="ano" id="an3B">
+                        <label for="an3B">3º Ano</label>
+                        <div id="ano3B">
+
+                        </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script>const catalogo = {};</script>
+    <script src="dados-historia.js"></script>
+    <script src="../logica_materiasAB.js"></script>
+</body>
+</html>
