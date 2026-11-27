@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="page-mat" content="Sociologia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="sociologia.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <input type="radio" name="ano" id="an1">
+                <label for="an1">1º Ano</label>
+                <!--1 Ano-->
+                <div id="ano1">
+                    <!--1 Semestre-->
+                    <input type="radio" name="semestre" id="sem11">
+                    <label for="sem11">1º Semestre</label>
+                    <div id="se11">
+                        <section>    
+                            <input type="radio" name="conteudo" id="CS">
+                            <label for="CS">Ciência da Sociedade</label>
+                            <input type="radio" name="conteudo" id="ES">
+                            <label for="ES">Estrutura Social</label>
+                            <input type="radio" name="conteudo" id="Rel">
+                            <label for="Rel">Religão</label>
+                            <input type="radio" name="conteudo" id="Fam">
+                            <label for="Fam">Família</label>
+                            <input type="radio" name="conteudo" id="Edu">
+                            <label for="Edu">Educação</label>
+                            <input type="radio" name="conteudo" id="SC">
+                            <label for="SC">Sociedades e Comunidades</label>
+                        </section>
+                    </div>
+
+                    <!--2 Semestre-->
+                    <input type="radio" name="semestre" id="sem12">
+                    <label for="sem12">2º Semestre</label>
+                    <div id="se12">
+                        <section>
+                            <input type="radio" name="conteudo" id="Cul">
+                            <label for="Cul">Cultura</label>
+                            <input type="radio" name="conteudo" id="ESS">
+                            <label for="ESS">Estratificação Social</label>
+                            <input type="radio" name="conteudo" id="DSP">
+                            <label for="DSP">Desigualdade Social e Pobreza</label>
+                            <input type="radio" name="conteudo" id="CDS">
+                            <label for="CDS">Controle e Desvio Social</label>
+                            <input type="radio" name="conteudo" id="DC">
+                            <label for="DC">Democracia e Cidadania</label>
+                            <input type="radio" name="conteudo" id="PD">
+                            <label for="PD">Poder e Dominação</label>
+                        </section>
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an2">
+                <label for="an2">2º Ano</label>
+                <!--2 Ano-->
+                <div id="ano2">
+                    <input type="radio" name="semestre" id="sem21">
+                    <label for="sem21">1º Semestre</label>
+                    <div id="se21">
+
+                    </div>   
+
+                    <input type="radio" name="semestre" id="sem22">
+                    <label for="sem22">2º Semestre</label>
+                    <div id="se22">
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an3">
+                <label for="an3">3º Ano</label>
+                <!--3 Ano-->
+                <div id="ano3">
+                    <input type="radio" name="semestre" id="sem31">
+                    <label for="sem31">1º Semestre</label>
+                    <div id="se31">
+
+                    </div>
+
+                    <input type="radio" name="semestre" id="sem32">
+                    <label for="sem32">2º Semestre</label>
+                    <div id="se32">
+
+                    </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script>const catalogo = {};</script>
+    <script src="dados-sociologia.js"></script>
+    <script src="../logica_semestres.js"></script>
+</body>
+</html>
