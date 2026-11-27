@@ -1341,9 +1341,7 @@ const conteudosPortugues = {
             titulo: "Gonçalves Dias",
             texto: `Gonçalves Dias foi um dos principais poetas da primeira geração romântica brasileira. Sua produção apresenta nacionalismo, indianismo e valorização da natureza. Entre suas obras mais conhecidas está a Canção do Exílio, que expressa saudade da terra natal, além de poemas como I-Juca-Pirama, que apresenta um personagem indígena em uma narrativa marcada por honra e coragem.`,
             tipo: "h3",
-            imagem: [
-                "Sugestão de imagem: retrato histórico de Gonçalves Dias."
-            ]
+            imagem: ['../../imagens/portugues/literatura/prim_geracao/goncalves_dias_800px.jpg', '../../imagens/portugues/literatura/prim_geracao/goncalves_dias_600px.jpg', '../../imagens/portugues/literatura/prim_geracao/goncalves_dias_400px.jpg', '../../imagens/portugues/literatura/prim_geracao/goncalves_dias_200px.jpg', "Retrato histórico de Gonçalves Dias."]
         }
     ],
 
