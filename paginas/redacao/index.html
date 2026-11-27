@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="page-mat" content="Redacao">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="redacao.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <input type="radio" name="ano" id="an1">
+                <label for="an1">1º Ano</label>
+                <!--1 Ano-->
+                <div id="ano1">
+                    <!--1 Semestre-->
+                    <input type="radio" name="semestre" id="sem11">
+                    <label for="sem11">1º Semestre</label>
+                    <div id="se11">
+                        <section>    
+                            <input type="radio" name="conteudo" id="EF">
+                            <label for="EF">Escrita como Ferramenta</label>
+                            <input type="radio" name="conteudo" id="GIT">
+                            <label for="GIT">Gêneros e Intenções Textuais</label>
+                            <input type="radio" name="conteudo" id="EC">
+                            <label for="EC">Escrita no Cotidiano</label>
+                            <input type="radio" name="conteudo" id="ACH">
+                            <label for="ACH">A Arte de Contar Histórias</label>
+                            <input type="radio" name="conteudo" id="AC">
+                            <label for="AC">Anatomia do Conto</label>
+                            <input type="radio" name="conteudo" id="MN">
+                            <label for="MN">Modos de Narrar</label>
+                        </section>
+                    </div>
+
+                    <!--2 Semestre-->
+                    <input type="radio" name="semestre" id="sem12">
+                    <label for="sem12">2º Semestre</label>
+                    <div id="se12">
+                        <section>
+                            <input type="radio" name="conteudo" id="GI">
+                            <label for="GI">Gêneros Informativos</label>
+                            <input type="radio" name="conteudo" id="DR">
+                            <label for="DR">Lendo o Mundo: Dados e Reportagens</label>
+                            <input type="radio" name="conteudo" id="DPV">
+                            <label for="DPV">Defendendo Pontos de Vista</label>
+                            <input type="radio" name="conteudo" id="AR">
+                            <label for="AR">Do assunto ao Recorte Temático</label>
+                            <input type="radio" name="conteudo" id="LE">
+                            <label for="LE">Leitura Estratégica</label>
+                            <input type="radio" name="conteudo" id="PT">
+                            <label for="PT">Projeto de Texto</label>
+                        </section>
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an2">
+                <label for="an2">2º Ano</label>
+                <!--2 Ano-->
+                <div id="ano2">
+                    <input type="radio" name="semestre" id="sem21">
+                    <label for="sem21">1º Semestre</label>
+                    <div id="se21">
+
+                    </div>   
+
+                    <input type="radio" name="semestre" id="sem22">
+                    <label for="sem22">2º Semestre</label>
+                    <div id="se22">
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an3">
+                <label for="an3">3º Ano</label>
+                <!--3 Ano-->
+                <div id="ano3">
+                    <input type="radio" name="semestre" id="sem31">
+                    <label for="sem31">1º Semestre</label>
+                    <div id="se31">
+
+                    </div>
+
+                    <input type="radio" name="semestre" id="sem32">
+                    <label for="sem32">2º Semestre</label>
+                    <div id="se32">
+
+                    </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script>const catalogo = {};</script>
+    <script src="dados-Redacao.js"></script>
+    <script src="../logica_semestres.js"></script>
+</body>
+</html>

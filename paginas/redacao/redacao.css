@@ -1,0 +1,16 @@
+/*pega a estrutura base*/
+@import url('../materia_base.css');
+
+:root {
+    /*cores*/
+    --cor1: #D2FCDE;
+    --cor2: #AACEB5;
+    --cor3: #8EAB97;
+    --cor4: #6C8273;
+    --cor5: #333333;
+}
+
+input[name="ano"] + label, input[name="ano"]:checked + label {
+    background-color: var(--cor4);
+    border-radius: 2px;
+}
