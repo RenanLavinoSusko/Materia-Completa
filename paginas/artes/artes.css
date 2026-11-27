@@ -10,7 +10,7 @@
     --cor5: #333333;
 }
 
-input[name="ano"]:checked + label {
+input[name="ano"] + label, input[name="ano"]:checked + label {
     background-color: var(--cor4);
     border-radius: 2px;
 }

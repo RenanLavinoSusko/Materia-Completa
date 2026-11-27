@@ -1,4 +1,3 @@
-
 const conteudosArtes = {
 
     EA: [
@@ -873,3 +872,5 @@ O Rococó tende a apresentar maior leveza, cores suaves, ornamentação delicada
         }
     ]
 };
+
+catalogo.Artes = conteudosArtes

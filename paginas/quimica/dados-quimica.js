@@ -1842,3 +1842,5 @@ const conteudosQuimica = {
             Dupla troca - AB + CD → AD + CB - Dois compostos trocam íons`, tipo: 'h3'},
     ],
 }
+
+catalogo.Quimica = conteudosQuimica

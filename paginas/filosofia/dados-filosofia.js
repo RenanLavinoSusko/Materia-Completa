@@ -1146,3 +1146,5 @@ A investigação kantiana sobre as estruturas cognitivas, os limites da razão e
         }
     ]
 };
+
+catalogo.Filosofia = conteudosFilosofia

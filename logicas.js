@@ -11,6 +11,15 @@ const materia_id = [
 ];
 
     // Conteudo 
+let conteudo_pg = document.querySelector('meta[name="page-mat"]')?.content;
+const catalogo = {
+    Biologia: conteudosBiologia,
+    Fisica: conteudosFisica, 
+    Geografia: conteudosGeografia,
+    Historia: conteudosHistoria,
+    Portugues: conteudosPortugues,
+    Quimica: conteudosQuimica,
+};
 const local = document.querySelector('#quadro');
 
     // anos 
@@ -182,7 +191,7 @@ async function conteudo(id) {
     // Limpa o quadro, melhor que local.innerHTML = ''
     local.replaceChildren();
 
-    const bloco = conteudosFisica[id]; //Pega os dados
+    const bloco = catalogo[conteudo_pg][id]; //Pega os dados
 
     if (!bloco) {
         alert('Erro na procura da matéria tente outro conteudo');

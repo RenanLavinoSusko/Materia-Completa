@@ -10,7 +10,8 @@ const materia_id = [
     "A", "B"
 ];
 
-    // Conteudo 
+    // Conteudo
+let conteudo_pg = document.querySelector('meta[name="page-mat"]')?.content;
 const local = document.querySelector('#quadro');
 
     // anos 
@@ -182,7 +183,7 @@ async function conteudo(id) {
     // Limpa o quadro, melhor que local.innerHTML = ''
     local.replaceChildren();
 
-    const bloco = conteudosBiologia[id]; //Pega os dados
+    const bloco = catalogo[conteudo_pg][id]; //Pega os dados
 
     if (!bloco) {
         alert('Erro na procura da matéria tente outro conteudo');

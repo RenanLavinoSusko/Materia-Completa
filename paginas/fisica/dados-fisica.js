@@ -1686,3 +1686,5 @@ A conservação da energia cinética deve ser analisada separadamente, pois não
         }
     ]
 };
+
+catalogo.Fisica = conteudosFisica

@@ -1,35 +1,38 @@
 // Variavels
     // Matérias
-const materiaA = document.getElementById('materia_A');
-const materiaB = document.getElementById('materia_B');
+const se11 = document.getElementById('se11');
+const se12 = document.getElementById('se12');
+const se21 = document.getElementById('se21');
+const se22 = document.getElementById('se22');
+const se31 = document.getElementById('se31');
+const se32 = document.getElementById('se32');
 
-const div_materia = [
-    materiaA, materiaB
+const div_semestre = [
+    se11, se12, 
+    se21, se22,
+    se31, se32
 ];
-const materia_id = [
-    "A", "B"
+const semestre_id = [
+    'sem11', 'sem12',
+    'sem21', 'sem22', 
+    'sem31', 'sem32'
 ];
 
-    // Conteudo 
+    // Conteudo
+let conteudo_pg = document.querySelector('meta[name="page-mat"]')?.content;
 const local = document.querySelector('#quadro');
 
     // anos 
-const ano1A = document.getElementById('ano1A');
-const ano2A = document.getElementById('ano2A');
-const ano3A = document.getElementById('ano3A');
-
-const ano1B = document.getElementById('ano1B');
-const ano2B = document.getElementById('ano2B');
-const ano3B = document.getElementById('ano3B');
+const ano1 = document.getElementById('ano1');
+const ano2 = document.getElementById('ano2');
+const ano3 = document.getElementById('ano3');
 
 const div_anos = [
-        ano1A, ano2A, ano3A,
-        ano1B, ano2B, ano3B
+        ano1, ano2, ano3
 ];
 
 const anos_id = [
-    'an1A', 'an2A', 'an3A',
-    'an1B', 'an2B', 'an3B',
+    'an1', 'an2', 'an3',
 ];
 
     // Controle de Animações
@@ -37,33 +40,31 @@ let execucaoescrita = 0;
 
 // Funções
     // Das Matérias e Anos
-function atualizarMaterias() {
-    // Deixa os anos invisiveis
-    div_anos.forEach(ano => {
-        ano.style.display = 'none'
-    });
-
-    // Tira os checked
-    document.getElementsByName('ano').forEach(checado => {
-        checado.checked = false;
-    });
+function atualizarSemestre() {
 
     // A materia selecionada mostra os anos
-    document.getElementsByName('materia').forEach(materia => {
-        const indice = materia_id.indexOf(materia.id);
+    document.getElementsByName('semestre').forEach(sem => {
+        const indice = semestre_id.indexOf(sem.id);
         if (indice >= 0) {
-            if (materia.checked) {
-                div_materia[indice].style.display = 'block';
-            }
-            else {
-                div_materia[indice].style.display = 'none'
-            }
+            div_semestre[indice].style.display = 'none';
+
+            if (sem.checked) {
+                div_semestre[indice].style.display = 'block';
+            };
         };
     });
 };
 
     // Do ano
 function atualizarAno() {
+    document.getElementsByName('semestre').forEach(sem => {
+        const indice = semestre_id.indexOf(sem.id);
+        if (indice >= 0) {
+            div_semestre[indice].style.display = 'none'
+        }    
+        sem.checked = false;
+    });
+
         // A materia selecionada mostra os anos
     document.getElementsByName('ano').forEach(ano => {
         const indice = anos_id.indexOf(ano.id);
@@ -182,7 +183,7 @@ async function conteudo(id) {
     // Limpa o quadro, melhor que local.innerHTML = ''
     local.replaceChildren();
 
-    const bloco = conteudosBiologia[id]; //Pega os dados
+    const bloco = catalogo[conteudo_pg][id]; //Pega os dados
 
     if (!bloco) {
         alert('Erro na procura da matéria tente outro conteudo');
@@ -206,11 +207,11 @@ async function conteudo(id) {
     
 }
 
-atualizarMaterias();
+atualizarAno();
 
 // Eventos das matérias
-document.getElementsByName('materia').forEach(input => {
-    input.addEventListener('change', atualizarMaterias);
+document.getElementsByName('semestre').forEach(input => {
+    input.addEventListener('change', atualizarSemestre);
 });
 
 

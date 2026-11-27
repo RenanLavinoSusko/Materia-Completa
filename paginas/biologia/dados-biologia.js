@@ -1,4 +1,3 @@
-
 const conteudosBiologia = {
     // BIOLOGIA A — 1º ANO
 
@@ -2346,3 +2345,5 @@ Durante a contração, os filamentos deslizam entre si, produzindo o encurtament
 A relaxação ocorre quando os mecanismos regulatórios permitem a interrupção da interação contrátil e o cálcio é removido do citoplasma.`, tipo: "h3", imagem: ['../../imagens/biologia/biologia_b/tecido_muscular/muscular_800px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_600px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_400px.jpg', '../../imagens/biologia/biologia_b/tecido_muscular/muscular_200px.jpg', 'Comparação entre os três tecidos musculares'] }
     ]
 };
+
+catalogo.Biologia = conteudosBiologia

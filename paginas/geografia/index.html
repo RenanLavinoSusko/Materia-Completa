@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="page-mat" content="Geografia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="geografia.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <!--Biologia A-->
+                <input type="radio" name="materia" id="A">
+                <label for="A">Geografia A</label>
+
+                <div id="materia_A">
+                    <input type="radio" name="ano" id="an1A">
+                    <label for="an1A">1º Ano</label>
+                    <!--1 Ano-->
+                    <div id="ano1A">
+                        <!--1 Trimestre-->
+                        <section>    
+                            <input type="radio" name="conteudo" id="OM">
+                            <label for="OM">Origem do Planeta e Movimento da Terra</label>
+                            <input type="radio" name="conteudo" id="RC">
+                            <label for="RC">Representação Cartografica</label>
+                            <input type="radio" name="conteudo" id="FE">
+                            <label for="FE">Formação e Evolução Geologica da Terra</label>
+                            <input type="radio" name="conteudo" id="RT">
+                            <label for="RT">Relevo Terrestre</label>
+                        </section>
+                                
+                        <!--2 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="CS">
+                            <label for="CS">Concientização dos Solos</label>
+                            <input type="radio" name="conteudo" id="MM">
+                            <label for="MM">Minérios e Mineração</label>
+                            <input type="radio" name="conteudo" id="CD">
+                            <label for="CD">Fundamentos da Climatologia e Dinâmica Climática</label>
+                            <input type="radio" name="conteudo" id="PC">
+                            <label for="PC">Principais Climas do Planeta</label>
+                        </section>
+
+                        <!--3 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="HM">
+                            <label for="HM">Hidrografia do Brasil e do Mundo</label>
+                            <input type="radio" name="conteudo" id="GA">
+                            <label for="GA">Geopolitica das Águas</label>
+                            <input type="radio" name="conteudo" id="BM">
+                            <label for="BM">Biogeografia Mundial</label>
+                            <input type="radio" name="conteudo" id="BB">
+                            <label for="BB">Biogeografia Brasileira</label>
+                        </section>
+                    </div>
+
+                    <input type="radio" name="ano" id="an2A">
+                    <label for="an2A">2º Ano</label>
+                    <!--2 Ano-->
+                    <div id="ano2A">
+
+                    </div>
+
+                    <input type="radio" name="ano" id="an3A">
+                    <label for="an3A">3º Ano</label>
+                    <!--3 Ano-->
+                    <div id="ano3A">
+
+                    </div>
+
+                </div>
+
+                <!--Biologia B-->
+                <input type="radio" name="materia" id="B">
+                <label for="B">Geografia B</label>
+                
+                    <div id="materia_B">
+                        <input type="radio" name="ano" id="an1B">
+                        <label for="an1B">1º Ano</label>
+                        <!--1 Ano-->
+                        <div id="ano1B">
+                        <!--1 Trimestre-->
+                        <section>    
+                            <input type="radio" name="conteudo" id="EE">
+                            <label for="EE">Geografia e Estudo da Economia</label>
+                            <input type="radio" name="conteudo" id="NG">
+                            <label for="NG">Do Meio Natural ao Espaço Globalizado</label>
+                            <input type="radio" name="conteudo" id="IE">
+                            <label for="IE">Industrialização e sua Evolução</label>
+                        </section>
+                                
+                        <!--2 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="IM">
+                            <label for="IM">Industrialização do Mundo e do Brasil</label>
+                            <input type="radio" name="conteudo" id="SA">
+                            <label for="SA">Sistema Agropecuário no Brasil e no Mundo</label>
+                        </section>
+
+                        <!--3 Trimestre-->
+                        <section>
+                            <input type="radio" name="conteudo" id="FE">
+                            <label for="FE">Fontes e Matrizes Energéticas no Brasil e no Mundo</label>
+                            <input type="radio" name="conteudo" id="RF">
+                            <label for="RF">Redes e Fluxos Materiais e Imateriais</label>
+                        </section>
+                    </div>
+
+                        <input type="radio" name="ano" id="an2B">
+                        <label for="an2B">2º Ano</label>
+                        <!--2 Ano-->
+                        <div id="ano2B">
+
+                        </div>
+
+                        <input type="radio" name="ano" id="an3B">
+                        <label for="an3B">3º Ano</label>
+                        <div id="ano3B">
+
+                        </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script>const catalogo = {};</script>
+    <script src="dados-geografia.js"></script>
+    <script src="../logica_materiasAB.js"></script>
+</body>
+</html>
