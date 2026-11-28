@@ -1,0 +1,11 @@
+/*pega a estrutura base*/
+@import url('../materia_base.css');
+
+:root {
+    /*cores*/
+    --cor1: #00FCF4;
+    --cor2: #00CEC8;
+    --cor3: #00ABA5;
+    --cor4: #00827E;
+    --cor5: #333333;
+}

@@ -104,6 +104,11 @@ main > img {
         border-radius: 2px;
     }
 
+    input[name="ano"] + label, input[name="ano"]:checked + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
     /*Main*/
     input[type="radio"] {
         display: block;
@@ -161,11 +166,6 @@ main > img {
         font: 400 1.5em var(--letrat);
     }
 
-    input[name="materia"] + label {
-        background-color: var(--cor4);
-        border-radius: 2px;
-    }
-
     /*Main*/
     input[type="radio"] {
         display: block;
@@ -219,6 +219,11 @@ main > img {
     }
 
     input[name="materia"] + label {
+        background-color: var(--cor4);
+        border-radius: 2px;
+    }
+
+    input[name="ano"] + label, input[name="ano"]:checked + label {
         background-color: var(--cor4);
         border-radius: 2px;
     }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="page-mat" content="Ingles">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagens/icon-materiacompleta.png" type="image/x-icon">
+    <title>Matéria Completa</title>
+    <link rel="stylesheet" href="ingles.css">
+</head>
+<body>
+    
+        <header>
+            <!--Topo pagina-->
+            <h1>matéria completa</h1>
+            <button type="button"><img src="../../imagens/doacao.png"></button>
+        </header>
+
+        <div class="container">
+            <main>
+                <input type="radio" name="ano" id="an1">
+                <label for="an1">1º Ano</label>
+                <!--1 Ano-->
+                <div id="ano1">
+                    <!--1 Semestre-->
+                    <input type="radio" name="semestre" id="sem11">
+                    <label for="sem11">1º Semestre</label>
+                    <div id="se11">
+                        <section>    
+                            <input type="radio" name="conteudo" id="RC">
+                            <label for="RC">Reading Comprehension</label>
+                            <input type="radio" name="conteudo" id="AN">
+                            <label for="AN">Articles and Nouns</label>
+                            <input type="radio" name="conteudo" id="HH">
+                            <label for="HH">Have and Have got</label>
+                            <input type="radio" name="conteudo" id="WP">
+                            <label for="WP">Wh- worlds</label>
+                            <input type="radio" name="conteudo" id="VP">
+                            <label for="VP">Verb to be and Pronouns</label>
+                            <input type="radio" name="conteudo" id="TBSP">
+                            <label for="TBSP">There be: Simple Present</label>
+                            <input type="radio" name="conteudo" id="SP">
+                            <label for="SP">Use of the Simple Present</label>
+                            <input type="radio" name="conteudo" id="AF">
+                            <label for="AF">Adverbs of Frequency</label>
+                            <input type="radio" name="conteudo" id="QW">
+                            <label for="QW">Question Words</label>
+                            <input type="radio" name="conteudo" id="Pro">
+                            <label for="Pro">Pronouns</label>
+                            <input type="radio" name="conteudo" id="PC">
+                            <label for="PC">Present Continuous</label>
+                            <input type="radio" name="conteudo" id="Ger">
+                            <label for="Ger">Gerunds</label>
+                        </section>
+                    </div>
+
+                    <!--2 Semestre-->
+                    <input type="radio" name="semestre" id="sem12">
+                    <label for="sem12">2º Semestre</label>
+                    <div id="se12">
+                        <section>
+                            <input type="radio" name="conteudo" id="VBSP">
+                            <label for="VBSP">Verb to be: Simple Past</label>
+                            <input type="radio" name="conteudo" id="TBS">
+                            <label for="TBS">There be: Simple Past</label>
+                            <input type="radio" name="conteudo" id="Pre">
+                            <label for="Pre">Preposition</label>
+                            <input type="radio" name="conteudo" id="SPRV">
+                            <label for="SPRV">Simple Past: Regular Verbs</label>
+                            <input type="radio" name="conteudo" id="SPIV">
+                            <label for="SPIV">Simple Past of Irregular Verbs</label>
+                            <input type="radio" name="conteudo" id="SPR">
+                            <label for="SPR">Simple Past Review</label>
+                            <input type="radio" name="conteudo" id="PCT">
+                            <label for="PCT">Past Continuous Tense</label>
+                            <input type="radio" name="conteudo" id="SPPC">
+                            <label for="SPPC">Simple Past vs. Past Continuous</label>
+                            <input type="radio" name="conteudo" id="PPT">
+                            <label for="PPT">Present and Past Tenses</label>
+                            <input type="radio" name="conteudo" id="CU">
+                            <label for="CU">Contable and Uncontable Nouns</label>
+                            <input type="radio" name="conteudo" id="Qua">
+                            <label for="Qua">Quantifiers</label>
+                        </section>
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an2">
+                <label for="an2">2º Ano</label>
+                <!--2 Ano-->
+                <div id="ano2">
+                    <input type="radio" name="semestre" id="sem21">
+                    <label for="sem21">1º Semestre</label>
+                    <div id="se21">
+                    </div>   
+
+                    <input type="radio" name="semestre" id="sem22">
+                    <label for="sem22">2º Semestre</label>
+                    <div id="se22">
+                        
+                    </div>
+                </div>
+
+                <input type="radio" name="ano" id="an3">
+                <label for="an3">3º Ano</label>
+                <!--3 Ano-->
+                <div id="ano3">
+                    <input type="radio" name="semestre" id="sem31">
+                    <label for="sem31">1º Semestre</label>
+                    <div id="se31">
+
+                    </div>
+
+                    <input type="radio" name="semestre" id="sem32">
+                    <label for="sem32">2º Semestre</label>
+                    <div id="se32">
+
+                    </div>
+                </div>
+            </main>
+
+        <div id="quadro"></div>
+
+    </div>
+
+    <script>const catalogo = {};</script>
+    <script src="dados-ingles.js"></script>
+    <script src="../logica_semestres.js"></script>
+</body>
+</html>
